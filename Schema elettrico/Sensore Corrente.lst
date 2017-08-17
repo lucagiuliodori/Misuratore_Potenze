@@ -1,0 +1,42 @@
+eeschema (2013-07-07 BZR 4022)-stable  >> Creation date: 16/11/2015 19:39:45
+#Cmp ( ordine = Riferimento )
+| BT1        3,3V        
+| D1         1N4148      
+| D2         1N4148      
+| D3         3.3         
+| D4         SR102       
+| DL1        LED         
+| P1         Programmazione (5 PIN)
+| P2         Antenna (2 PIN)
+| P3         Sensore corrente (2 PIN)
+| R1         10k         
+| R2         1k          
+| R3         33.2        
+| R4         10k         
+| SW1        SW_PUSH     
+| SW2        DIP         
+| U1         PIC16F1518  
+| U2         TRX_32000985
+#End Cmp
+
+#Cmp ( ordine = Valore )
+| 3,3V         BT1       
+| 3.3          D3        
+| 1N4148       D1        
+| 1N4148       D2        
+| SR102        D4        
+| LED          DL1       
+| Programmazione (5 PIN) P1        
+| Antenna (2 PIN) P2        
+| Sensore corrente (2 PIN) P3        
+| 33.2         R3        
+| 1k           R2        
+| 10k          R1        
+| 10k          R4        
+| SW_PUSH      SW1       
+| DIP          SW2       
+| PIC16F1518   U1        
+| TRX_32000985 U2        
+#Fine Cmp
+
+#Fine Lista

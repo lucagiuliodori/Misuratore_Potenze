@@ -1,0 +1,1141 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1518 ]
+[d frameptr 6 ]
+"92 D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+[e E1838 _CC1_STB `uc
+SRES 48
+SFSTXON 49
+SXOFF 50
+SCAL 51
+SRX 52
+STX 53
+SIDLE 54
+SWOR 56
+SPWD 57
+SFRX 58
+SFTX 59
+SWORRST 60
+SNOP 61
+]
+"72 D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+[e E1835 _DPY_RS `uc
+RS_ISTRUCTION 0
+RS_DATA 1
+]
+"146
+[e E1839 _DPY_BF `uc
+BF_NOTBUSY 0
+BF_BUSY 1
+]
+"81 D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+[e E1858 _RTX_UPD_DPY `uc
+UPD_DPY_POWER 0
+UPD_DPY_CURRSENSGEN 1
+UPD_DPY_CURRSENSCON 2
+UPD_DPY_VOLTSENS 3
+UPD_DPY_PGMDONECURRSENSGEN 4
+UPD_DPY_PGMDONECURRSENSCON 5
+UPD_DPY_PGMDONEVOLTSENS 6
+UPD_DPY_PGMRST 7
+]
+"69 D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+[e E2120 _RTX_UPD_DPY `uc
+UPD_DPY_POWER 0
+UPD_DPY_CURRSENSGEN 1
+UPD_DPY_CURRSENSCON 2
+UPD_DPY_VOLTSENS 3
+UPD_DPY_PGMDONECURRSENSGEN 4
+UPD_DPY_PGMDONECURRSENSCON 5
+UPD_DPY_PGMDONEVOLTSENS 6
+UPD_DPY_PGMRST 7
+]
+"103
+[e E2000 _CC1_STB `uc
+SRES 48
+SFSTXON 49
+SXOFF 50
+SCAL 51
+SRX 52
+STX 53
+SIDLE 54
+SWOR 56
+SPWD 57
+SFRX 58
+SFTX 59
+SWORRST 60
+SNOP 61
+]
+"452
+[e E2015 _CC1_STA `uc
+SLEEP 0
+IDLE 1
+XOFF 2
+VCOON_MC 3
+REGON_MC 4
+MANCAL 5
+VCOON 6
+REGON 7
+STARTCAL 8
+BWBOOST 9
+FS_LOCK 10
+IFADCON 11
+ENDCAL 12
+RX 13
+RX_END 14
+RX_RST 15
+TXRX_SWITCH 16
+RXFIFO_OVERFLOW 17
+FSTXON 18
+TX 19
+TX_END 20
+RXTX_SWITCH 21
+TXFIFO_UNDERFLOW 22
+]
+"515
+[e E2174 _DEV_TYPE `uc
+BASE 0
+SENS_CURRGEN 1
+SENS_CURRCON 2
+SENS_VOLT 3
+]
+"527
+[e E2160 _POS_PKT `uc
+ID_DEST 0
+TYPE_DEST 1
+ID_SOURCE 2
+TYPE_SOURCE 3
+OP 4
+VAL 5
+BAT 8
+]
+[e E2168 _RTX_OP `uc
+DAT 0
+PGM 1
+rDAT 128
+rPGM 129
+]
+"37 D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+[v _INTIsr INTIsr `II(v  1 e 0 0 ]
+"50
+[v _main main `(v  1 e 0 0 ]
+"492 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftoa.c
+[v _ftoa ftoa `(*.5uc  1 e 1 0 ]
+"18 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+[v _itoa itoa `(*.4uc  1 e 1 0 ]
+"17
+[v _utoa utoa `(*.4uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"77 D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+[v _CC1Init CC1Init `(v  1 e 0 0 ]
+"105
+[v _CC1Strobe CC1Strobe `(v  1 e 0 0 ]
+"120
+[v _CC1Read CC1Read `(v  1 e 0 0 ]
+"138
+[v _CC1Write CC1Write `(v  1 e 0 0 ]
+"24 D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+[v _DINInit DINInit `(v  1 e 0 0 ]
+"46
+[v _DINTick DINTick `(v  1 e 0 0 ]
+"79
+[v _DINTask DINTask `(v  1 e 0 0 ]
+"6 D:\Progetti\Misuratore potenze\Firmware\Base.X\DLY.c
+[v _DLYDelay_us DLYDelay_us `(v  1 e 0 0 ]
+"17
+[v _DLYDelay_ms DLYDelay_ms `(v  1 e 0 0 ]
+"46 D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+[v _DPYInit DPYInit `(v  1 e 0 0 ]
+"63
+[v _DPYInitDisplay DPYInitDisplay `(v  1 s 0 DPYInitDisplay ]
+"103
+[v _DPYDrawChar DPYDrawChar `(v  1 s 0 DPYDrawChar ]
+"115
+[v _DPYSetCur DPYSetCur `(v  1 s 0 DPYSetCur ]
+"129
+[v _DPYSendChar DPYSendChar `(v  1 s 0 DPYSendChar ]
+"135
+[v _DPYSendStr DPYSendStr `(v  1 e 0 0 ]
+"166
+[v _DPYWriteNibble DPYWriteNibble `(v  1 s 0 DPYWriteNibble ]
+"199
+[v _DPYWriteByte DPYWriteByte `(v  1 s 0 DPYWriteByte ]
+"311
+[v _DPYIsBusy DPYIsBusy `(E1839  1 s 1 DPYIsBusy ]
+"6 D:\Progetti\Misuratore potenze\Firmware\Base.X\IN.c
+[v _INInit INInit `(v  1 e 0 0 ]
+"6 D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+[v _NVMInit NVMInit `(v  1 e 0 0 ]
+"23
+[v _NVMRead NVMRead `(v  1 e 0 0 ]
+"38
+[v _NVMWrite NVMWrite `(v  1 e 0 0 ]
+"6 D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+[v _OUTInit OUTInit `(v  1 e 0 0 ]
+"23
+[v _OUTSetHTCDataNibble OUTSetHTCDataNibble `(v  1 e 0 0 ]
+"17 D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+[v _PGMInit PGMInit `(v  1 e 0 0 ]
+"36
+[v _PGMReadNvm PGMReadNvm `(v  1 s 0 PGMReadNvm ]
+"41
+[v _PGMWriteNvm PGMWriteNvm `(v  1 e 0 0 ]
+"46
+[v _PGMCheckNvm PGMCheckNvm `(v  1 s 0 PGMCheckNvm ]
+"52
+[v _PGMNvmReset PGMNvmReset `(v  1 s 0 PGMNvmReset ]
+"68
+[v _PGMSelLong PGMSelLong `(v  1 e 0 0 ]
+"79 D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+[v _RTXInit RTXInit `(v  1 e 0 0 ]
+"112
+[v _RTXTick RTXTick `(v  1 e 0 0 ]
+"139
+[v _RTXTask RTXTask `(v  1 e 0 0 ]
+"146
+[v _RTXUpdateDisplay RTXUpdateDisplay `(v  1 e 0 0 ]
+"405
+[v _RTXVisDec RTXVisDec `(uc  1 s 1 RTXVisDec ]
+"446
+[v _RTXSup RTXSup `(v  1 s 0 RTXSup ]
+"468
+[v _RTXSelDown RTXSelDown `(v  1 e 0 0 ]
+"484
+[v _RTXSndPkt RTXSndPkt `(v  1 s 0 RTXSndPkt ]
+"506
+[v _RTXRcvPkt RTXRcvPkt `(v  1 s 0 RTXRcvPkt ]
+"512
+[v _RTXReadPkt RTXReadPkt `(v  1 e 0 0 ]
+"663
+[v _RTXSendRData RTXSendRData `(v  1 s 0 RTXSendRData ]
+"682
+[v _RTXSendRPgm RTXSendRPgm `(v  1 s 0 RTXSendRPgm ]
+"8 D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+[v _SPIInit SPIInit `(v  1 e 0 0 ]
+"25
+[v _SPIRead SPIRead `(v  1 e 0 0 ]
+"39
+[v _SPIWrite SPIWrite `(v  1 e 0 0 ]
+"14 D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+[v _SYSInit SYSInit `(v  1 e 0 0 ]
+"32
+[v _SYSInt SYSInt `(v  1 e 0 0 ]
+"41
+[v _SYSTask SYSTask `(v  1 e 0 0 ]
+"337 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic16f1518.h
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+[s S230 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"360
+[s S239 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S244 . 1 `S230 1 . 1 0 `S239 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES244  1 e 1 @11 ]
+[s S422 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"431
+[u S431 . 1 `S422 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES431  1 e 1 @12 ]
+[s S306 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"492
+[u S315 . 1 `S306 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES315  1 e 1 @13 ]
+"617
+[v _PIR1 PIR1 `VEuc  1 e 1 @17 ]
+[s S68 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"634
+[u S77 . 1 `S68 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES77  1 e 1 @17 ]
+"678
+[v _PIR2 PIR2 `VEuc  1 e 1 @18 ]
+"711
+[v _TMR0 TMR0 `VEuc  1 e 1 @21 ]
+"736
+[v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
+"755
+[v _TMR1H TMR1H `VEuc  1 e 1 @23 ]
+"774
+[v _T1CON T1CON `VEuc  1 e 1 @24 ]
+"1022
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1083
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1144
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+"1211
+[v _PIE1 PIE1 `VEuc  1 e 1 @145 ]
+"1272
+[v _PIE2 PIE2 `VEuc  1 e 1 @146 ]
+"1305
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
+"1443
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1501
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1808
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S157 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"1825
+[u S166 . 1 `S157 1 . 1 0 ]
+[v _LATAbits LATAbits `VES166  1 e 1 @268 ]
+"2106
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2158
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"2215
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"2276
+[v _PMADR PMADR `VEus  1 e 2 @401 ]
+"2320
+[v _PMDAT PMDAT `VEus  1 e 2 @403 ]
+"2364
+[v _PMCON1 PMCON1 `VEuc  1 e 1 @405 ]
+[s S209 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 LWLO 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+]
+"2380
+[u S217 . 1 `S209 1 . 1 0 ]
+[v _PMCON1bits PMCON1bits `VES217  1 e 1 @405 ]
+"2419
+[v _PMCON2 PMCON2 `VEuc  1 e 1 @406 ]
+"2765
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"2854
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @529 ]
+"2965
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @532 ]
+"3086
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @533 ]
+[s S38 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"3178
+[s S44 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S49 . 1 `S38 1 . 1 0 `S44 1 . 1 0 ]
+[v _SSPCONbits SSPCONbits `VES49  1 e 1 @533 ]
+"3289
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @534 ]
+"3745
+[v _IOCBP IOCBP `VEuc  1 e 1 @916 ]
+"3814
+[v _IOCBN IOCBN `VEuc  1 e 1 @917 ]
+"354 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+[v _dpowers dpowers `DCC[10]ul  1 s 40 dpowers ]
+"14 D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+[v _cc1InitVal cc1InitVal `[47]uc  1 e 47 0 ]
+"65
+[v _cc1PaTable cc1PaTable `[8]uc  1 e 8 0 ]
+[s S300 . 1 `uc 1 tmrDbncSel 1 0 :1:0 
+`uc 1 tmrLongSel 1 0 :1:1 
+]
+"19 D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+[u S303 _FLG_DIN 1 `uc 1 val 1 0 `S300 1 . 1 0 ]
+[v _u_flg_din u_flg_din `S303  1 s 1 u_flg_din ]
+[s S295 . 1 `uc 1 sel 1 0 :1:0 
+]
+"20
+[u S297 _STA_DIN 1 `uc 1 val 1 0 `S295 1 . 1 0 ]
+[v _u_in_sta_currTask u_in_sta_currTask `S297  1 s 1 u_in_sta_currTask ]
+[v _u_in_sta_tmpTask u_in_sta_tmpTask `S297  1 s 1 u_in_sta_tmpTask ]
+"21
+[v _tmrDbncSel tmrDbncSel `uc  1 s 1 tmrDbncSel ]
+"22
+[v _tmrLongSel tmrLongSel `us  1 s 2 tmrLongSel ]
+[s S295 . 1 `uc 1 sel 1 0 :1:0 
+]
+"11 D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.h
+[u S297 _STA_DIN 1 `uc 1 val 1 0 `S295 1 . 1 0 ]
+[v _u_in_ev_up u_in_ev_up `S297  1 e 1 0 ]
+[v _u_in_ev_down u_in_ev_down `S297  1 e 1 0 ]
+[v _u_in_ev_long u_in_ev_long `S297  1 e 1 0 ]
+"23 D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+[v _picBatt picBatt `[9]uc  1 e 9 0 ]
+[s S496 . 1 `uc 1 gen_curr_sensIsProg 1 0 :1:0 
+`uc 1 con_curr_sensIsProg 1 0 :1:1 
+`uc 1 volt_sensIsProg 1 0 :1:2 
+]
+"39 D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.h
+[u S500 _PGM_MENU 1 `uc 1 val 1 0 `S496 1 . 1 0 ]
+[s S503 _PGM_CFG 7 `uc 1 valChk1 1 0 `uc 1 valChk2 1 1 `S500 1 menu 1 2 `uc 1 base_id 1 3 `uc 1 gen_curr_sens_id 1 4 `uc 1 con_curr_sens_id 1 5 `uc 1 volt_sens_id 1 6 ]
+[v _pgm_cfg pgm_cfg `S503  1 e 7 0 ]
+"40
+[s S511 _PGM_PGM_CFG 32 `S503 1 pgm_cfg 7 0 `[25]uc 1 dummy 25 7 ]
+[v _nvm_pgm_cfg nvm_pgm_cfg `DCCS511  1 e 32 @14368 ]
+"66 D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+[v _sta sta `uc  1 s 1 sta ]
+[v _numRxByte numRxByte `uc  1 s 1 numRxByte ]
+[v _numTxByte numTxByte `uc  1 s 1 numTxByte ]
+"67
+[v _pktRx pktRx `[11]uc  1 s 11 pktRx ]
+[v _pktTx pktTx `[11]uc  1 s 11 pktTx ]
+"68
+[v _tmrCalibration tmrCalibration `us  1 s 2 tmrCalibration ]
+[v _tmrVis tmrVis `us  1 s 2 tmrVis ]
+"69
+[v _visTypeDpy visTypeDpy `E2120  1 s 1 visTypeDpy ]
+[s S490 . 1 `uc 1 pgmDone 1 0 :1:0 
+`uc 1 dataReceived 1 0 :1:1 
+]
+"63 D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.h
+[u S493 _RTX_FLG 1 `uc 1 val 1 0 `S490 1 . 1 0 ]
+[v _rtx_flg rtx_flg `S493  1 e 1 0 ]
+"64
+[v _gen_power gen_power `f  1 e 3 0 ]
+[v _con_power con_power `f  1 e 3 0 ]
+"65
+[v _gen_curr_sens gen_curr_sens `f  1 e 3 0 ]
+[v _con_curr_sens con_curr_sens `f  1 e 3 0 ]
+[v _volt_sens volt_sens `f  1 e 3 0 ]
+"66
+[v _batt_gen_curr_sens batt_gen_curr_sens `f  1 e 3 0 ]
+[v _batt_con_curr_sens batt_con_curr_sens `f  1 e 3 0 ]
+[v _batt_volt_sens batt_volt_sens `f  1 e 3 0 ]
+[s S857 . 1 `uc 1 TICK 1 0 :1:0 
+]
+"11 D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.h
+[u S859 _SYS_STA 1 `uc 1 VAL 1 0 `S857 1 . 1 0 ]
+[v _u_SYS_STA u_SYS_STA `S859  1 e 1 0 ]
+"50 D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+[v _main main `(v  1 e 0 0 ]
+{
+"52
+[v main@i i `uc  1 a 1 72 ]
+"84
+} 0
+"41 D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+[v _SYSTask SYSTask `(v  1 e 0 0 ]
+{
+"71
+} 0
+"112 D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+[v _RTXTick RTXTick `(v  1 e 0 0 ]
+{
+"137
+} 0
+"468
+[v _RTXSelDown RTXSelDown `(v  1 e 0 0 ]
+{
+"482
+} 0
+"68 D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+[v _PGMSelLong PGMSelLong `(v  1 e 0 0 ]
+{
+"86
+} 0
+"46 D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+[v _DINTick DINTick `(v  1 e 0 0 ]
+{
+"77
+} 0
+"14 D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+[v _SYSInit SYSInit `(v  1 e 0 0 ]
+{
+[v SYSInit@state state `uc  1 a 1 wreg ]
+[v SYSInit@state state `uc  1 a 1 wreg ]
+[v SYSInit@state state `uc  1 a 1 2 ]
+"30
+} 0
+"8 D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+[v _SPIInit SPIInit `(v  1 e 0 0 ]
+{
+[v SPIInit@state state `uc  1 a 1 wreg ]
+[v SPIInit@state state `uc  1 a 1 wreg ]
+[v SPIInit@state state `uc  1 a 1 2 ]
+"23
+} 0
+"139 D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+[v _RTXTask RTXTask `(v  1 e 0 0 ]
+{
+"144
+} 0
+"512
+[v _RTXReadPkt RTXReadPkt `(v  1 e 0 0 ]
+{
+[u S722 _RTX_DATA 3 `f 1 val 3 0 `[3]uc 1 val_byte 3 0 ]
+"516
+[v RTXReadPkt@valBatt valBatt `S722  1 a 3 73 ]
+[v RTXReadPkt@valVoltCurr valVoltCurr `S722  1 a 3 70 ]
+"517
+[v RTXReadPkt@volt4Calc volt4Calc `f  1 a 3 65 ]
+"515
+[v RTXReadPkt@dev_type dev_type `E2174  1 a 1 69 ]
+"514
+[v RTXReadPkt@dev_id dev_id `uc  1 a 1 68 ]
+"661
+} 0
+"446
+[v _RTXSup RTXSup `(v  1 s 0 RTXSup ]
+{
+"466
+} 0
+"682
+[v _RTXSendRPgm RTXSendRPgm `(v  1 s 0 RTXSendRPgm ]
+{
+[v RTXSendRPgm@id id `uc  1 a 1 wreg ]
+[v RTXSendRPgm@id id `uc  1 a 1 wreg ]
+[v RTXSendRPgm@type type `E2174  1 p 1 7 ]
+"685
+[v RTXSendRPgm@id id `uc  1 a 1 9 ]
+"699
+} 0
+"663
+[v _RTXSendRData RTXSendRData `(v  1 s 0 RTXSendRData ]
+{
+[v RTXSendRData@id id `uc  1 a 1 wreg ]
+[v RTXSendRData@id id `uc  1 a 1 wreg ]
+[v RTXSendRData@type type `E2174  1 p 1 7 ]
+"666
+[v RTXSendRData@id id `uc  1 a 1 9 ]
+"680
+} 0
+"484
+[v _RTXSndPkt RTXSndPkt `(v  1 s 0 RTXSndPkt ]
+{
+[v RTXSndPkt@src src `*.5uc  1 a 1 wreg ]
+[v RTXSndPkt@src src `*.5uc  1 a 1 wreg ]
+[v RTXSndPkt@len len `uc  1 p 1 3 ]
+"489
+[v RTXSndPkt@src src `*.5uc  1 a 1 6 ]
+"504
+} 0
+"506
+[v _RTXRcvPkt RTXRcvPkt `(v  1 s 0 RTXRcvPkt ]
+{
+[v RTXRcvPkt@dst dst `*.5uc  1 a 1 wreg ]
+[v RTXRcvPkt@dst dst `*.5uc  1 a 1 wreg ]
+[v RTXRcvPkt@len len `uc  1 p 1 3 ]
+"509
+[v RTXRcvPkt@dst dst `*.5uc  1 a 1 5 ]
+"510
+} 0
+"120 D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+[v _CC1Read CC1Read `(v  1 e 0 0 ]
+{
+[v CC1Read@addr addr `uc  1 a 1 wreg ]
+"122
+[v CC1Read@cc1Addr cc1Addr `uc  1 a 1 2 ]
+"120
+[v CC1Read@addr addr `uc  1 a 1 wreg ]
+[v CC1Read@dst dst `*.39uc  1 p 2 9 ]
+[v CC1Read@len len `uc  1 p 1 11 ]
+"125
+[v CC1Read@addr addr `uc  1 a 1 1 ]
+"136
+} 0
+"25 D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+[v _SPIRead SPIRead `(v  1 e 0 0 ]
+{
+"27
+[v SPIRead@i i `uc  1 a 1 8 ]
+"25
+[v SPIRead@dstPtr dstPtr `*.39uc  1 p 2 1 ]
+[v SPIRead@len len `uc  1 p 1 3 ]
+"37
+} 0
+"79 D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+[v _RTXInit RTXInit `(v  1 e 0 0 ]
+{
+[v RTXInit@state state `uc  1 a 1 wreg ]
+[v RTXInit@state state `uc  1 a 1 wreg ]
+[v RTXInit@state state `uc  1 a 1 70 ]
+"110
+} 0
+"146
+[v _RTXUpdateDisplay RTXUpdateDisplay `(v  1 e 0 0 ]
+{
+[v RTXUpdateDisplay@val val `E2120  1 a 1 wreg ]
+"149
+[v RTXUpdateDisplay@strRow1 strRow1 `[16]uc  1 a 16 47 ]
+[v RTXUpdateDisplay@strRow2 strRow2 `[16]uc  1 a 16 31 ]
+[v RTXUpdateDisplay@charIdSens charIdSens `[4]uc  1 a 4 23 ]
+"148
+[v RTXUpdateDisplay@diffPower diffPower `f  1 a 3 27 ]
+"150
+[v RTXUpdateDisplay@iR iR `uc  1 a 1 64 ]
+[v RTXUpdateDisplay@i i `uc  1 a 1 30 ]
+"146
+[v RTXUpdateDisplay@val val `E2120  1 a 1 wreg ]
+"153
+[v RTXUpdateDisplay@val val `E2120  1 a 1 63 ]
+"403
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+[v _itoa itoa `(*.4uc  1 e 1 0 ]
+{
+[v itoa@buf buf `*.4uc  1 a 1 wreg ]
+"6
+[v itoa@cp cp `*.4uc  1 a 1 12 ]
+"4
+[v itoa@buf buf `*.4uc  1 a 1 wreg ]
+[v itoa@val val `i  1 p 2 8 ]
+[v itoa@base base `i  1 p 2 10 ]
+"6
+[v itoa@buf buf `*.4uc  1 a 1 13 ]
+"14
+} 0
+"17
+[v _utoa utoa `(*.4uc  1 e 1 0 ]
+{
+[v utoa@buf buf `*.4uc  1 a 1 wreg ]
+"19
+[v utoa@v v `ui  1 a 2 4 ]
+"20
+[v utoa@c c `uc  1 a 1 6 ]
+"17
+[v utoa@buf buf `*.4uc  1 a 1 wreg ]
+[v utoa@val val `ui  1 p 2 0 ]
+[v utoa@base base `i  1 p 2 2 ]
+"22
+[v utoa@buf buf `*.4uc  1 a 1 7 ]
+"37
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 6 ]
+"6
+[v ___lwmod@divisor divisor `ui  1 p 2 1 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 3 ]
+"26
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 6 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 8 ]
+"6
+[v ___lwdiv@divisor divisor `ui  1 p 2 1 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 3 ]
+"31
+} 0
+"405 D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+[v _RTXVisDec RTXVisDec `(uc  1 s 1 RTXVisDec ]
+{
+"408
+[v RTXVisDec@strTmp strTmp `[16]uc  1 a 16 0 ]
+"409
+[v RTXVisDec@status status `i  1 a 2 16 ]
+"408
+[v RTXVisDec@i i `uc  1 a 1 22 ]
+[v RTXVisDec@j j `uc  1 a 1 21 ]
+"407
+[v RTXVisDec@p p `*.5uc  1 a 1 20 ]
+"408
+[v RTXVisDec@isDec isDec `uc  1 a 1 19 ]
+[v RTXVisDec@posDec posDec `uc  1 a 1 18 ]
+"405
+[v RTXVisDec@val val `f  1 p 3 55 ]
+[v RTXVisDec@buff buff `*.4uc  1 p 1 58 ]
+[v RTXVisDec@maxDigit maxDigit `uc  1 p 1 59 ]
+[v RTXVisDec@offset offset `uc  1 p 1 60 ]
+"444
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftoa.c
+[v _ftoa ftoa `(*.5uc  1 e 1 0 ]
+{
+"10
+[v ftoa@l l `ul  1 a 4 50 ]
+[v ftoa@rem rem `ul  1 a 4 46 ]
+"9
+[v ftoa@cp cp `*.5uc  1 a 1 54 ]
+"6
+[v ftoa@f f `f  1 p 3 41 ]
+[v ftoa@status status `*.4i  1 p 1 44 ]
+"8
+[v ftoa@buf buf `[17]uc  1 s 17 buf ]
+"21
+} 0
+"492 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.5uc  1 a 1 wreg ]
+"528
+[v sprintf@val val `ul  1 a 4 31 ]
+"504
+[v sprintf@prec prec `i  1 a 2 38 ]
+"501
+[v sprintf@width width `i  1 a 2 36 ]
+"499
+[v sprintf@c c `c  1 a 1 40 ]
+"494
+[v sprintf@ap ap `[1]*.4v  1 a 1 30 ]
+"508
+[v sprintf@flag flag `uc  1 a 1 29 ]
+"492
+[v sprintf@sp sp `*.5uc  1 a 1 wreg ]
+[v sprintf@f f `*.25DCCuc  1 p 2 13 ]
+"533
+[v sprintf@sp sp `*.5uc  1 a 1 35 ]
+"1541
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 2 ]
+"15
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 5 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 1 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 3 ]
+"53
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"11
+[v ___llmod@counter counter `uc  1 a 1 11 ]
+"6
+[v ___llmod@divisor divisor `ul  1 p 4 5 ]
+[v ___llmod@dividend dividend `ul  1 p 4 9 ]
+"26
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 0 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 4 ]
+"6
+[v ___lldiv@divisor divisor `ul  1 p 4 1 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 5 ]
+"31
+} 0
+"35 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+{
+"37
+[v ___lltoft@exp exp `uc  1 a 1 10 ]
+"35
+[v ___lltoft@c c `ul  1 p 4 0 ]
+"46
+} 0
+"44 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 25 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 29 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 24 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 16 ]
+"73
+} 0
+"18 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+{
+[v ___ftsub@f2 f2 `f  1 p 3 10 ]
+[v ___ftsub@f1 f1 `f  1 p 3 13 ]
+"27
+} 0
+"86 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 11 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 10 ]
+[v ___ftadd@sign sign `uc  1 a 1 9 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 0 ]
+[v ___ftadd@f2 f2 `f  1 p 3 3 ]
+"148
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v ___ftneg@f1 f1 `f  1 p 3 1 ]
+"20
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 11 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 15 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 14 ]
+[v ___ftmul@exp exp `uc  1 a 1 10 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 0 ]
+[v ___ftmul@f2 f2 `f  1 p 3 3 ]
+"157
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 1 ]
+[v ___ftpack@exp exp `uc  1 p 1 4 ]
+[v ___ftpack@sign sign `uc  1 p 1 5 ]
+"86
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 1 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 4 ]
+"13
+} 0
+"135 D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+[v _DPYSendStr DPYSendStr `(v  1 e 0 0 ]
+{
+[v DPYSendStr@row row `uc  1 a 1 wreg ]
+"137
+[v DPYSendStr@i i `uc  1 a 1 4 ]
+"135
+[v DPYSendStr@row row `uc  1 a 1 wreg ]
+[v DPYSendStr@col col `uc  1 p 1 0 ]
+[v DPYSendStr@data data `*.4uc  1 p 1 1 ]
+[v DPYSendStr@len len `uc  1 p 1 2 ]
+"140
+[v DPYSendStr@row row `uc  1 a 1 5 ]
+"164
+} 0
+"115
+[v _DPYSetCur DPYSetCur `(v  1 s 0 DPYSetCur ]
+{
+[v DPYSetCur@row row `uc  1 a 1 wreg ]
+"117
+[v DPYSetCur@addr addr `uc  1 a 1 11 ]
+"115
+[v DPYSetCur@row row `uc  1 a 1 wreg ]
+[v DPYSetCur@col col `uc  1 p 1 8 ]
+"120
+[v DPYSetCur@row row `uc  1 a 1 10 ]
+"127
+} 0
+"129
+[v _DPYSendChar DPYSendChar `(v  1 s 0 DPYSendChar ]
+{
+[v DPYSendChar@c c `uc  1 a 1 wreg ]
+[v DPYSendChar@c c `uc  1 a 1 wreg ]
+"132
+[v DPYSendChar@c c `uc  1 a 1 9 ]
+"133
+} 0
+"311
+[v _DPYIsBusy DPYIsBusy `(E1839  1 s 1 DPYIsBusy ]
+{
+"313
+[v DPYIsBusy@bf bf `E1839  1 a 1 6 ]
+"355
+} 0
+"17 D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+[v _PGMInit PGMInit `(v  1 e 0 0 ]
+{
+[v PGMInit@state state `uc  1 a 1 wreg ]
+[v PGMInit@state state `uc  1 a 1 wreg ]
+[v PGMInit@state state `uc  1 a 1 11 ]
+"34
+} 0
+"36
+[v _PGMReadNvm PGMReadNvm `(v  1 s 0 PGMReadNvm ]
+{
+"39
+} 0
+"23 D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+[v _NVMRead NVMRead `(v  1 e 0 0 ]
+{
+"25
+[v NVMRead@i i `uc  1 a 1 7 ]
+"23
+[v NVMRead@addr addr `us  1 p 2 1 ]
+[v NVMRead@dest dest `*.5uc  1 p 1 3 ]
+[v NVMRead@len len `uc  1 p 1 4 ]
+"36
+} 0
+"46 D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+[v _PGMCheckNvm PGMCheckNvm `(v  1 s 0 PGMCheckNvm ]
+{
+"50
+} 0
+"52
+[v _PGMNvmReset PGMNvmReset `(v  1 s 0 PGMNvmReset ]
+{
+"66
+} 0
+"41
+[v _PGMWriteNvm PGMWriteNvm `(v  1 e 0 0 ]
+{
+"44
+} 0
+"38 D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+[v _NVMWrite NVMWrite `(v  1 e 0 0 ]
+{
+"41
+[v NVMWrite@bufTmpRow bufTmpRow `[32]us  1 a 64 0 ]
+[v NVMWrite@rowAddr rowAddr `us  1 a 2 64 ]
+"40
+[v NVMWrite@j j `uc  1 a 1 68 ]
+[v NVMWrite@latchAddr latchAddr `uc  1 a 1 67 ]
+[v NVMWrite@i i `uc  1 a 1 66 ]
+"38
+[v NVMWrite@addr addr `us  1 p 2 1 ]
+[v NVMWrite@source source `*.5uc  1 p 1 3 ]
+[v NVMWrite@len len `uc  1 p 1 4 ]
+"114
+} 0
+"6 D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+[v _OUTInit OUTInit `(v  1 e 0 0 ]
+{
+[v OUTInit@sta sta `uc  1 a 1 wreg ]
+[v OUTInit@sta sta `uc  1 a 1 wreg ]
+[v OUTInit@sta sta `uc  1 a 1 2 ]
+"21
+} 0
+"6 D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+[v _NVMInit NVMInit `(v  1 e 0 0 ]
+{
+[v NVMInit@sta sta `uc  1 a 1 wreg ]
+[v NVMInit@sta sta `uc  1 a 1 wreg ]
+[v NVMInit@sta sta `uc  1 a 1 1 ]
+"21
+} 0
+"6 D:\Progetti\Misuratore potenze\Firmware\Base.X\IN.c
+[v _INInit INInit `(v  1 e 0 0 ]
+{
+[v INInit@sta sta `uc  1 a 1 wreg ]
+[v INInit@sta sta `uc  1 a 1 wreg ]
+[v INInit@sta sta `uc  1 a 1 2 ]
+"21
+} 0
+"46 D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+[v _DPYInit DPYInit `(v  1 e 0 0 ]
+{
+[v DPYInit@sta sta `uc  1 a 1 wreg ]
+[v DPYInit@sta sta `uc  1 a 1 wreg ]
+[v DPYInit@sta sta `uc  1 a 1 4 ]
+"61
+} 0
+"63
+[v _DPYInitDisplay DPYInitDisplay `(v  1 s 0 DPYInitDisplay ]
+{
+"65
+[v DPYInitDisplay@tmp tmp `uc  1 a 1 3 ]
+"101
+} 0
+"166
+[v _DPYWriteNibble DPYWriteNibble `(v  1 s 0 DPYWriteNibble ]
+{
+[v DPYWriteNibble@rs rs `E1835  1 a 1 wreg ]
+[v DPYWriteNibble@rs rs `E1835  1 a 1 wreg ]
+[v DPYWriteNibble@val val `uc  1 p 1 5 ]
+"171
+[v DPYWriteNibble@rs rs `E1835  1 a 1 6 ]
+"197
+} 0
+"103
+[v _DPYDrawChar DPYDrawChar `(v  1 s 0 DPYDrawChar ]
+{
+[v DPYDrawChar@addr addr `uc  1 a 1 wreg ]
+"105
+[v DPYDrawChar@i i `uc  1 a 1 2 ]
+[v DPYDrawChar@tmpAddr tmpAddr `uc  1 a 1 1 ]
+"103
+[v DPYDrawChar@addr addr `uc  1 a 1 wreg ]
+[v DPYDrawChar@p p `*.5uc  1 p 1 8 ]
+"107
+[v DPYDrawChar@addr addr `uc  1 a 1 0 ]
+"113
+} 0
+"199
+[v _DPYWriteByte DPYWriteByte `(v  1 s 0 DPYWriteByte ]
+{
+[v DPYWriteByte@rs rs `E1835  1 a 1 wreg ]
+[v DPYWriteByte@rs rs `E1835  1 a 1 wreg ]
+[v DPYWriteByte@val val `uc  1 p 1 5 ]
+"202
+[v DPYWriteByte@rs rs `E1835  1 a 1 7 ]
+"240
+} 0
+"23 D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+[v _OUTSetHTCDataNibble OUTSetHTCDataNibble `(v  1 e 0 0 ]
+{
+[v OUTSetHTCDataNibble@val val `uc  1 a 1 wreg ]
+"25
+[v OUTSetHTCDataNibble@dataToSet dataToSet `uc  1 a 1 3 ]
+"23
+[v OUTSetHTCDataNibble@val val `uc  1 a 1 wreg ]
+"25
+[v OUTSetHTCDataNibble@val val `uc  1 a 1 2 ]
+"40
+} 0
+"6 D:\Progetti\Misuratore potenze\Firmware\Base.X\DLY.c
+[v _DLYDelay_us DLYDelay_us `(v  1 e 0 0 ]
+{
+"8
+[v DLYDelay_us@i i `us  1 a 2 3 ]
+"6
+[v DLYDelay_us@val val `us  1 p 2 1 ]
+"15
+} 0
+"79 D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+[v _DINTask DINTask `(v  1 e 0 0 ]
+{
+"101
+} 0
+"24
+[v _DINInit DINInit `(v  1 e 0 0 ]
+{
+[v DINInit@sta sta `uc  1 a 1 wreg ]
+[v DINInit@sta sta `uc  1 a 1 wreg ]
+[v DINInit@sta sta `uc  1 a 1 1 ]
+"44
+} 0
+"77 D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+[v _CC1Init CC1Init `(v  1 e 0 0 ]
+{
+[v CC1Init@state state `uc  1 a 1 wreg ]
+[v CC1Init@state state `uc  1 a 1 wreg ]
+[v CC1Init@state state `uc  1 a 1 2 ]
+"103
+} 0
+"17 D:\Progetti\Misuratore potenze\Firmware\Base.X\DLY.c
+[v _DLYDelay_ms DLYDelay_ms `(v  1 e 0 0 ]
+{
+"19
+[v DLYDelay_ms@i i `us  1 a 2 5 ]
+"17
+[v DLYDelay_ms@val val `us  1 p 2 1 ]
+"26
+} 0
+"138 D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+[v _CC1Write CC1Write `(v  1 e 0 0 ]
+{
+[v CC1Write@addr addr `uc  1 a 1 wreg ]
+"140
+[v CC1Write@cc1Addr cc1Addr `uc  1 a 1 11 ]
+"138
+[v CC1Write@addr addr `uc  1 a 1 wreg ]
+[v CC1Write@src src `*.5uc  1 p 1 7 ]
+[v CC1Write@len len `uc  1 p 1 8 ]
+"143
+[v CC1Write@addr addr `uc  1 a 1 10 ]
+"154
+} 0
+"105
+[v _CC1Strobe CC1Strobe `(v  1 e 0 0 ]
+{
+[v CC1Strobe@e_stb e_stb `E1838  1 a 1 wreg ]
+"107
+[v CC1Strobe@cc1Stb cc1Stb `uc  1 a 1 9 ]
+"105
+[v CC1Strobe@e_stb e_stb `E1838  1 a 1 wreg ]
+"110
+[v CC1Strobe@e_stb e_stb `E1838  1 a 1 8 ]
+"118
+} 0
+"39 D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+[v _SPIWrite SPIWrite `(v  1 e 0 0 ]
+{
+"41
+[v SPIWrite@i i `uc  1 a 1 6 ]
+"39
+[v SPIWrite@srcPtr srcPtr `*.39uc  1 p 2 1 ]
+[v SPIWrite@len len `uc  1 p 1 3 ]
+"50
+} 0
+"37 D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+[v _INTIsr INTIsr `II(v  1 e 0 0 ]
+{
+"48
+} 0
+"32 D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+[v _SYSInt SYSInt `(v  1 e 0 0 ]
+{
+"39
+} 0

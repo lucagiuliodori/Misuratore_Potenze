@@ -1,0 +1,2247 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Luca\AppData\Local\Temp\s7fg.obj
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 11 11 2 2
+config CONFIG 0 8007 8007 2 2
+$dist/default/debug\Base.X.debug.obj
+cinit CODE 0 13 13 38 2
+text1 CODE 0 1E3D 1E3D 1B 2
+text2 CODE 0 113F 113F 30 2
+text3 CODE 0 1F07 1F07 1E 2
+text4 CODE 0 1EAE 1EAE 1D 2
+text5 CODE 0 1FD9 1FD9 27 2
+text6 CODE 0 1F47 1F47 23 2
+text7 CODE 0 1EE9 1EE9 1E 2
+text8 CODE 0 1CDF 1CDF 6 2
+text9 CODE 0 9F2 9F2 1BC 2
+text10 CODE 0 108D 108D 2B 2
+text11 CODE 0 1039 1039 29 2
+text12 CODE 0 1010 1010 29 2
+text13 CODE 0 1360 1360 52 2
+text14 CODE 0 1D27 1D27 E 2
+text15 CODE 0 1F25 1F25 22 2
+text16 CODE 0 1F8E 1F8E 24 2
+text17 CODE 0 145B 145B 5A 2
+text18 CODE 0 4B 4B 794 2
+text19 CODE 0 1F6A 1F6A 24 2
+text20 CODE 0 14B5 14B5 62 2
+text21 CODE 0 10E4 10E4 2C 2
+text22 CODE 0 11A1 11A1 34 2
+text23 CODE 0 16A5 16A5 A7 2
+text24 CODE 0 1602 1602 A3 2
+text25 CODE 0 BAE BAE 1E3 2
+text26 CODE 0 1D19 1D19 E 2
+text27 CODE 0 1E22 1E22 1B 2
+text28 CODE 0 1289 1289 43 2
+text29 CODE 0 13B2 13B2 53 2
+text30 CODE 0 1062 1062 2B 2
+text31 CODE 0 157B 157B 87 2
+text32 CODE 0 1ECB 1ECB 1E 2
+text33 CODE 0 8FC 8FC F6 2
+text34 CODE 0 1CF1 1CF1 8 2
+text35 CODE 0 174C 174C B4 2
+text36 CODE 0 1517 1517 64 2
+text37 CODE 0 120E 120E 3B 2
+text38 CODE 0 12CC 12CC 46 2
+text39 CODE 0 1DC6 1DC6 15 2
+text40 CODE 0 1CF9 1CF9 9 2
+text41 CODE 0 1249 1249 40 2
+text42 CODE 0 1DB1 1DB1 15 2
+text43 CODE 0 1001 1001 F 2
+text44 CODE 0 1FB2 1FB2 27 2
+text45 CODE 0 1D0D 1D0D C 2
+text46 CODE 0 1D78 1D78 12 2
+text47 CODE 0 1D35 1D35 F 2
+text48 CODE 0 83F 83F BD 2
+text49 CODE 0 1DF2 1DF2 17 2
+text50 CODE 0 1D02 1D02 B 2
+text51 CODE 0 1DDB 1DDB 17 2
+text52 CODE 0 1D8A 1D8A 13 2
+text53 CODE 0 801 801 3E 2
+text54 CODE 0 116F 116F 32 2
+text55 CODE 0 10B8 10B8 2C 2
+text56 CODE 0 1405 1405 56 2
+text57 CODE 0 1E58 1E58 1C 2
+text58 CODE 0 1D44 1D44 11 2
+text59 CODE 0 1E91 1E91 1D 2
+text60 CODE 0 1D66 1D66 12 2
+text61 CODE 0 11D5 11D5 39 2
+text62 CODE 0 1E09 1E09 19 2
+text63 CODE 0 7DF 7DF 1F 2
+text64 CODE 0 1D9D 1D9D 14 2
+text65 CODE 0 1E74 1E74 1D 2
+text67 CODE 0 1CD9 1CD9 6 2
+text18_split_1 CODE 0 D91 D91 26F 2
+_nvm_pgm_cfg_text CODE 0 3820 3820 20 2
+maintext CODE 0 1312 1312 4E 2
+cstackCOMMON COMMON 1 70 70 C 1
+cstackBANK0 BANK0 1 20 20 49 1
+cstackBANK1 BANK1 1 A0 A0 4C 1
+inittext CODE 0 1CE5 1CE5 6 2
+intentry CODE 0 4 4 D 2
+bssBANK0 BANK0 1 69 69 7 1
+bssBANK1 BANK1 1 EC EC 4 1
+bssBANK2 BANK2 1 120 120 3C 1
+bssBANK3 BANK3 1 1CF 1CF 11 1
+stringtext STRCODE 0 3900 3900 33 2
+idataBANK2 CODE 0 1D55 1D55 11 2
+idataBANK3 CODE 0 1110 1110 2F 2
+dataBANK2 BANK2 1 15C 15C 11 1
+dataBANK3 BANK3 1 1A0 1A0 2F 1
+clrtext CODE 0 1CEB 1CEB 6 2
+bssCOMMON COMMON 1 7C 7C 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 16D-16F 1
+RAM 1E0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-64F 1
+BANK2 16D-16F 1
+BANK3 1E0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 3-3 2
+CONST 7FE-800 2
+CONST 1000-1000 2
+CONST 1800-1CD8 2
+CONST 2000-381F 2
+CONST 3840-38FF 2
+CONST 3933-3FFF 2
+ENTRY 3-3 2
+ENTRY 7FE-800 2
+ENTRY 1000-1000 2
+ENTRY 1800-1CD8 2
+ENTRY 2000-381F 2
+ENTRY 3840-38FF 2
+ENTRY 3933-3FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 2130-23EF 1
+CODE 3-3 2
+CODE 7FE-800 2
+CODE 1000-1000 2
+CODE 1800-1CD8 2
+CODE 2000-381F 2
+CODE 3840-38FF 2
+CODE 3933-3FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-64F 1
+BIGRAM 2000-23EF 1
+COMMON 7D-7D 1
+STRCODE 3-3 2
+STRCODE 7FE-800 2
+STRCODE 1000-1000 2
+STRCODE 1800-1CD8 2
+STRCODE 2000-381F 2
+STRCODE 3840-38FF 2
+STRCODE 3933-3FFF 2
+STRING 3-3 2
+STRING 7FE-800 2
+STRING 1000-1000 2
+STRING 1800-1CD8 2
+STRING 2000-381F 2
+STRING 3840-38FF 2
+STRING 3933-3FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\Base.X.debug.obj
+4 intentry CODE >37:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+4 intentry CODE >50:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+8 intentry CODE >40:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+A intentry CODE >43:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+B intentry CODE >46:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+D intentry CODE >48:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+13 cinit CODE >3161:C:\Users\Luca\AppData\Local\Temp\s7fg.
+13 cinit CODE >3164:C:\Users\Luca\AppData\Local\Temp\s7fg.
+13 cinit CODE >3303:C:\Users\Luca\AppData\Local\Temp\s7fg.
+14 cinit CODE >3307:C:\Users\Luca\AppData\Local\Temp\s7fg.
+15 cinit CODE >3308:C:\Users\Luca\AppData\Local\Temp\s7fg.
+16 cinit CODE >3309:C:\Users\Luca\AppData\Local\Temp\s7fg.
+17 cinit CODE >3310:C:\Users\Luca\AppData\Local\Temp\s7fg.
+18 cinit CODE >3311:C:\Users\Luca\AppData\Local\Temp\s7fg.
+19 cinit CODE >3312:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1C cinit CODE >3316:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1D cinit CODE >3317:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1E cinit CODE >3318:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1F cinit CODE >3319:C:\Users\Luca\AppData\Local\Temp\s7fg.
+20 cinit CODE >3320:C:\Users\Luca\AppData\Local\Temp\s7fg.
+21 cinit CODE >3324:C:\Users\Luca\AppData\Local\Temp\s7fg.
+22 cinit CODE >3325:C:\Users\Luca\AppData\Local\Temp\s7fg.
+23 cinit CODE >3326:C:\Users\Luca\AppData\Local\Temp\s7fg.
+24 cinit CODE >3327:C:\Users\Luca\AppData\Local\Temp\s7fg.
+25 cinit CODE >3328:C:\Users\Luca\AppData\Local\Temp\s7fg.
+26 cinit CODE >3329:C:\Users\Luca\AppData\Local\Temp\s7fg.
+29 cinit CODE >3333:C:\Users\Luca\AppData\Local\Temp\s7fg.
+2A cinit CODE >3334:C:\Users\Luca\AppData\Local\Temp\s7fg.
+2B cinit CODE >3335:C:\Users\Luca\AppData\Local\Temp\s7fg.
+2C cinit CODE >3336:C:\Users\Luca\AppData\Local\Temp\s7fg.
+2D cinit CODE >3337:C:\Users\Luca\AppData\Local\Temp\s7fg.
+2E cinit CODE >3338:C:\Users\Luca\AppData\Local\Temp\s7fg.
+31 cinit CODE >3353:C:\Users\Luca\AppData\Local\Temp\s7fg.
+32 cinit CODE >3354:C:\Users\Luca\AppData\Local\Temp\s7fg.
+33 cinit CODE >3355:C:\Users\Luca\AppData\Local\Temp\s7fg.
+34 cinit CODE >3356:C:\Users\Luca\AppData\Local\Temp\s7fg.
+35 cinit CODE >3357:C:\Users\Luca\AppData\Local\Temp\s7fg.
+36 cinit CODE >3358:C:\Users\Luca\AppData\Local\Temp\s7fg.
+37 cinit CODE >3359:C:\Users\Luca\AppData\Local\Temp\s7fg.
+38 cinit CODE >3360:C:\Users\Luca\AppData\Local\Temp\s7fg.
+39 cinit CODE >3361:C:\Users\Luca\AppData\Local\Temp\s7fg.
+3A cinit CODE >3362:C:\Users\Luca\AppData\Local\Temp\s7fg.
+3D cinit CODE >3366:C:\Users\Luca\AppData\Local\Temp\s7fg.
+3E cinit CODE >3367:C:\Users\Luca\AppData\Local\Temp\s7fg.
+3F cinit CODE >3368:C:\Users\Luca\AppData\Local\Temp\s7fg.
+40 cinit CODE >3369:C:\Users\Luca\AppData\Local\Temp\s7fg.
+41 cinit CODE >3370:C:\Users\Luca\AppData\Local\Temp\s7fg.
+42 cinit CODE >3371:C:\Users\Luca\AppData\Local\Temp\s7fg.
+43 cinit CODE >3372:C:\Users\Luca\AppData\Local\Temp\s7fg.
+44 cinit CODE >3373:C:\Users\Luca\AppData\Local\Temp\s7fg.
+45 cinit CODE >3374:C:\Users\Luca\AppData\Local\Temp\s7fg.
+46 cinit CODE >3375:C:\Users\Luca\AppData\Local\Temp\s7fg.
+48 cinit CODE >3381:C:\Users\Luca\AppData\Local\Temp\s7fg.
+48 cinit CODE >3382:C:\Users\Luca\AppData\Local\Temp\s7fg.
+49 cinit CODE >3383:C:\Users\Luca\AppData\Local\Temp\s7fg.
+4B text18 CODE >146:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+4D text18 CODE >153:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+52 text18 CODE >154:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+5D text18 CODE >153:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+66 text18 CODE >155:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+6B text18 CODE >156:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+76 text18 CODE >155:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+7F text18 CODE >158:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+8F text18 CODE >160:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+90 text18 CODE >161:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A0 text18 CODE >162:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+B0 text18 CODE >163:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+C0 text18 CODE >164:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+D0 text18 CODE >165:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+E0 text18 CODE >166:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+F0 text18 CODE >167:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+100 text18 CODE >168:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+110 text18 CODE >169:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+120 text18 CODE >170:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+130 text18 CODE >171:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+140 text18 CODE >172:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+150 text18 CODE >173:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+160 text18 CODE >174:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+170 text18 CODE >175:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+180 text18 CODE >176:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+184 text18 CODE >178:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+18A text18 CODE >179:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+19A text18 CODE >180:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1AA text18 CODE >181:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1BA text18 CODE >182:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1CA text18 CODE >183:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1CC text18 CODE >187:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1D2 text18 CODE >188:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1E2 text18 CODE >189:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1F2 text18 CODE >190:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+202 text18 CODE >191:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+206 text18 CODE >192:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+209 text18 CODE >193:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+20E text18 CODE >194:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+211 text18 CODE >195:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+216 text18 CODE >196:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+227 text18 CODE >197:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+22D text18 CODE >199:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+234 text18 CODE >201:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+248 text18 CODE >197:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+24F text18 CODE >205:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+252 text18 CODE >207:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+253 text18 CODE >208:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+263 text18 CODE >209:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+273 text18 CODE >210:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+283 text18 CODE >211:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+293 text18 CODE >212:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+2A3 text18 CODE >213:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+2B3 text18 CODE >214:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+2C3 text18 CODE >215:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+2D3 text18 CODE >216:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+2E3 text18 CODE >217:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+2F3 text18 CODE >218:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+303 text18 CODE >219:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+313 text18 CODE >220:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+323 text18 CODE >223:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+324 text18 CODE >224:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+327 text18 CODE >226:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+34F text18 CODE >227:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+35F text18 CODE >228:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+36F text18 CODE >229:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+37F text18 CODE >230:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+38F text18 CODE >231:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+39A text18 CODE >232:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+3AA text18 CODE >233:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+3B5 text18 CODE >254:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+3B9 text18 CODE >256:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+3BA text18 CODE >257:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+3CA text18 CODE >258:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+3DA text18 CODE >259:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+3EA text18 CODE >260:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+3FA text18 CODE >261:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+40A text18 CODE >262:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+41A text18 CODE >263:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+42A text18 CODE >264:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+43A text18 CODE >265:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+44A text18 CODE >266:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+45A text18 CODE >267:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+46A text18 CODE >268:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+47A text18 CODE >269:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+48A text18 CODE >270:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+49A text18 CODE >273:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+49B text18 CODE >274:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+49E text18 CODE >276:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+4C6 text18 CODE >277:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+4D6 text18 CODE >278:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+4E6 text18 CODE >279:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+4F6 text18 CODE >280:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+506 text18 CODE >281:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+511 text18 CODE >282:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+521 text18 CODE >283:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+52C text18 CODE >288:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+53C text18 CODE >289:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+54C text18 CODE >290:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+55C text18 CODE >291:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+56C text18 CODE >292:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+56E text18 CODE >304:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+572 text18 CODE >306:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+573 text18 CODE >307:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+583 text18 CODE >308:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+593 text18 CODE >309:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+5A3 text18 CODE >310:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+5B3 text18 CODE >311:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+5C3 text18 CODE >312:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+5D3 text18 CODE >313:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+5E3 text18 CODE >314:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+5F3 text18 CODE >315:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+603 text18 CODE >316:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+613 text18 CODE >317:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+623 text18 CODE >318:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+633 text18 CODE >319:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+643 text18 CODE >320:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+653 text18 CODE >323:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+654 text18 CODE >324:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+657 text18 CODE >326:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+67F text18 CODE >327:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+68F text18 CODE >328:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+69F text18 CODE >329:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+6AF text18 CODE >330:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+6BF text18 CODE >331:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+6CA text18 CODE >332:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+6DA text18 CODE >333:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+700 text18 CODE >338:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+710 text18 CODE >339:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+720 text18 CODE >340:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+730 text18 CODE >341:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+740 text18 CODE >342:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+750 text18 CODE >343:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+760 text18 CODE >344:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+770 text18 CODE >345:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+780 text18 CODE >346:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+78B text18 CODE >347:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+79B text18 CODE >348:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+7AB text18 CODE >349:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+7BB text18 CODE >350:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+7CB text18 CODE >351:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+7DB text18 CODE >353:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+7DF text63 CODE >138:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+7E0 text63 CODE >143:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+7E2 text63 CODE >146:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+7E8 text63 CODE >147:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+7F1 text63 CODE >150:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+7FB text63 CODE >153:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+7FD text63 CODE >154:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+801 text53 CODE >63:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+801 text53 CODE >67:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+808 text53 CODE >68:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+80A text53 CODE >69:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+80B text53 CODE >72:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+813 text53 CODE >75:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+818 text53 CODE >80:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+819 text53 CODE >88:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+821 text53 CODE >91:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+829 text53 CODE >94:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+831 text53 CODE >97:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+837 text53 CODE >100:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+83E text53 CODE >101:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+83F text48 CODE >38:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+83F text48 CODE >43:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+840 text48 CODE >44:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+842 text48 CODE >45:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+843 text48 CODE >48:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+845 text48 CODE >50:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+84B text48 CODE >51:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+850 text48 CODE >52:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+850 text48 CODE >110:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+854 text48 CODE >54:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+855 text48 CODE >57:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+85B text48 CODE >58:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+85B text48 CODE >59:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+85C text48 CODE >60:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+869 text48 CODE >61:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+86A text48 CODE >62:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+86C text48 CODE >63:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+876 text48 CODE >57:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+87F text48 CODE >67:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+881 text48 CODE >68:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+889 text48 CODE >69:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+88B text48 CODE >70:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+88D text48 CODE >71:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+88E text48 CODE >72:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+890 text48 CODE >73:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+891 text48 CODE >74:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+892 text48 CODE >77:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+897 text48 CODE >78:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+897 text48 CODE >79:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+898 text48 CODE >81:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+89D text48 CODE >84:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8AF text48 CODE >85:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8B3 text48 CODE >77:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8BB text48 CODE >88:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8BC text48 CODE >91:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8C1 text48 CODE >94:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8CD text48 CODE >95:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8D7 text48 CODE >97:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8DC text48 CODE >98:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8DF text48 CODE >99:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8DF text48 CODE >100:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8E1 text48 CODE >101:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8E3 text48 CODE >102:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8E5 text48 CODE >103:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8E6 text48 CODE >104:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8E8 text48 CODE >105:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8E9 text48 CODE >106:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8EA text48 CODE >91:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8F3 text48 CODE >109:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8F7 text48 CODE >52:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8F8 text48 CODE >112:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8F9 text48 CODE >113:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8FB text48 CODE >114:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+8FC text33 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+8FC text33 CODE >90:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+909 text33 CODE >91:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+915 text33 CODE >92:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+924 text33 CODE >93:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+92B text33 CODE >94:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+93A text33 CODE >96:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+93E text33 CODE >97:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+93F text33 CODE >98:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+940 text33 CODE >99:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+941 text33 CODE >100:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+942 text33 CODE >101:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+943 text33 CODE >102:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+949 text33 CODE >103:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+94A text33 CODE >104:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+950 text33 CODE >106:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+954 text33 CODE >110:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+95A text33 CODE >111:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+95C text33 CODE >112:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+967 text33 CODE >114:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+96D text33 CODE >115:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+971 text33 CODE >113:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+976 text33 CODE >117:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+97A text33 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+980 text33 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+982 text33 CODE >123:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+98D text33 CODE >125:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+993 text33 CODE >126:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+997 text33 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+99B text33 CODE >129:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+99D text33 CODE >131:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+9A3 text33 CODE >132:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+9AD text33 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+9AF text33 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+9B5 text33 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+9BF text33 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+9C0 text33 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+9C6 text33 CODE >141:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+9C8 text33 CODE >142:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+9CE text33 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+9D8 text33 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+9DA text33 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+9F2 text9 CODE >512:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+9F2 text9 CODE >520:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+9FC text9 CODE >521:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A01 text9 CODE >523:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A02 text9 CODE >525:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A0B text9 CODE >527:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A0F text9 CODE >530:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A15 text9 CODE >533:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A1A text9 CODE >536:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A20 text9 CODE >537:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A22 text9 CODE >544:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A27 text9 CODE >547:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A2D text9 CODE >548:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A2F text9 CODE >555:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A35 text9 CODE >558:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A3B text9 CODE >559:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A3C text9 CODE >561:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A42 text9 CODE >562:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A49 text9 CODE >564:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A4A text9 CODE >567:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A4D text9 CODE >570:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A4E text9 CODE >572:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A51 text9 CODE >574:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A5C text9 CODE >576:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A61 text9 CODE >577:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A63 text9 CODE >578:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A67 text9 CODE >579:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A69 text9 CODE >580:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A6E text9 CODE >581:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A72 text9 CODE >583:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A7A text9 CODE >590:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A7E text9 CODE >592:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A85 text9 CODE >595:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A8B text9 CODE >596:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A92 text9 CODE >597:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+A99 text9 CODE >599:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+AA0 text9 CODE >600:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+AA7 text9 CODE >601:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+AAE text9 CODE >603:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+AB7 text9 CODE >605:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+AC3 text9 CODE >606:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+AD0 text9 CODE >613:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+ADA text9 CODE >615:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+AE6 text9 CODE >616:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+AF3 text9 CODE >623:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+AFD text9 CODE >625:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+B09 text9 CODE >626:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+B15 text9 CODE >628:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+B1B text9 CODE >629:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+B22 text9 CODE >631:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+B23 text9 CODE >635:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+B26 text9 CODE >638:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+B27 text9 CODE >640:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+B2D text9 CODE >641:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+B30 text9 CODE >642:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+B3B text9 CODE >644:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+B3E text9 CODE >645:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+B64 text9 CODE >646:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+B66 text9 CODE >647:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+B8C text9 CODE >649:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+B97 text9 CODE >651:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+B9C text9 CODE >652:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+BA0 text9 CODE >657:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+BAA text9 CODE >659:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+BAD text9 CODE >521:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+BAE text25 CODE >492:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+BB0 text25 CODE >533:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+BB4 text25 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+BC6 text25 CODE >538:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+BCA text25 CODE >541:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+BD6 text25 CODE >542:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+BD7 text25 CODE >546:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+BD9 text25 CODE >548:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+BDA text25 CODE >597:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+BE4 text25 CODE >598:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+BE7 text25 CODE >600:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+BF8 text25 CODE >601:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C0B text25 CODE >602:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C15 text25 CODE >611:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C1E text25 CODE >613:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C22 text25 CODE >621:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C24 text25 CODE >622:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C2E text25 CODE >623:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C52 text25 CODE >622:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C53 text25 CODE >626:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C56 text25 CODE >635:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C57 text25 CODE >641:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C57 text25 CODE >643:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C58 text25 CODE >644:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C59 text25 CODE >818:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C5D text25 CODE >822:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C5E text25 CODE >635:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C76 text25 CODE >822:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C76 text25 CODE >1281:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C78 text25 CODE >1282:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C85 text25 CODE >1286:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+C96 text25 CODE >1290:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+CA0 text25 CODE >1291:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+CA4 text25 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+CAA text25 CODE >1306:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+CCF text25 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+CD7 text25 CODE >1339:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+CE8 text25 CODE >1340:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+CEE text25 CODE >1341:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+D00 text25 CODE >1342:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+D06 text25 CODE >1381:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+D18 text25 CODE >1382:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+D23 text25 CODE >1384:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+D26 text25 CODE >1428:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+D2A text25 CODE >1430:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+D36 text25 CODE >1431:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+D3B text25 CODE >1489:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+D74 text25 CODE >1524:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+D80 text25 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+D8B text25 CODE >1538:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
+D91 text18_split_1 CODE >354:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+D94 text18_split_1 CODE >357:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+DC0 text18_split_1 CODE >359:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+DC1 text18_split_1 CODE >360:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+DD1 text18_split_1 CODE >361:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+DE1 text18_split_1 CODE >362:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+DF1 text18_split_1 CODE >363:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+E01 text18_split_1 CODE >364:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+E11 text18_split_1 CODE >365:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+E22 text18_split_1 CODE >367:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+E32 text18_split_1 CODE >368:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+E42 text18_split_1 CODE >369:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+E52 text18_split_1 CODE >370:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+E62 text18_split_1 CODE >371:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+E72 text18_split_1 CODE >372:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+E82 text18_split_1 CODE >373:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+E92 text18_split_1 CODE >374:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+EA2 text18_split_1 CODE >375:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+EB2 text18_split_1 CODE >376:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+EB3 text18_split_1 CODE >379:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+EC3 text18_split_1 CODE >380:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+ED3 text18_split_1 CODE >381:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+EE3 text18_split_1 CODE >382:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+EF3 text18_split_1 CODE >383:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+F03 text18_split_1 CODE >384:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+F13 text18_split_1 CODE >385:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+F23 text18_split_1 CODE >386:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+F33 text18_split_1 CODE >387:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+F43 text18_split_1 CODE >388:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+F53 text18_split_1 CODE >389:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+F63 text18_split_1 CODE >392:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+F64 text18_split_1 CODE >393:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+F86 text18_split_1 CODE >395:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+F96 text18_split_1 CODE >396:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+FA6 text18_split_1 CODE >398:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+FE2 text18_split_1 CODE >399:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+FE4 text18_split_1 CODE >401:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+FF2 text18_split_1 CODE >402:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+FFF text18_split_1 CODE >403:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1001 text43 CODE >36:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1001 text43 CODE >38:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+100F text43 CODE >39:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1010 text12 CODE >663:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1012 text12 CODE >666:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1017 text12 CODE >667:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+101D text12 CODE >668:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1023 text12 CODE >669:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1024 text12 CODE >670:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+102A text12 CODE >671:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+102B text12 CODE >672:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+102C text12 CODE >673:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+102D text12 CODE >674:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+102E text12 CODE >675:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+102F text12 CODE >676:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1030 text12 CODE >679:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1038 text12 CODE >680:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1039 text11 CODE >682:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+103B text11 CODE >685:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1040 text11 CODE >686:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1046 text11 CODE >687:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+104C text11 CODE >688:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+104D text11 CODE >689:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1053 text11 CODE >690:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1054 text11 CODE >691:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1055 text11 CODE >692:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1056 text11 CODE >693:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1057 text11 CODE >694:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1058 text11 CODE >695:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1059 text11 CODE >698:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1061 text11 CODE >699:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1062 text30 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lltoft.c
+1062 text30 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lltoft.c
+1066 text30 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lltoft.c
+106B text30 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lltoft.c
+1073 text30 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lltoft.c
+1077 text30 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lltoft.c
+1078 text30 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lltoft.c
+108D text10 CODE >446:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+108D text10 CODE >449:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1097 text10 CODE >452:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1098 text10 CODE >455:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+109B text10 CODE >456:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+109C text10 CODE >458:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+10A0 text10 CODE >459:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+10A3 text10 CODE >460:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+10A4 text10 CODE >462:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+10A8 text10 CODE >463:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+10AB text10 CODE >465:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+10AC text10 CODE >452:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+10B7 text10 CODE >466:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+10B8 text55 CODE >103:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+10BA text55 CODE >107:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+10BF text55 CODE >109:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+10C6 text55 CODE >110:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+10CE text55 CODE >111:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+10DE text55 CODE >107:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+10E4 text21 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+10E4 text21 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+10E8 text21 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+10EA text21 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+10EC text21 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+10F1 text21 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+10F5 text21 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+10F6 text21 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+10FE text21 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+1102 text21 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+1107 text21 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+110B text21 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
+113F text2 CODE >112:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+113F text2 CODE >115:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1142 text2 CODE >118:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1147 text2 CODE >119:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+114E text2 CODE >121:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1150 text2 CODE >122:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1154 text2 CODE >123:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1158 text2 CODE >124:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+115C text2 CODE >128:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1161 text2 CODE >130:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1165 text2 CODE >131:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1169 text2 CODE >133:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+116B text2 CODE >134:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+116E text2 CODE >135:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+116F text54 CODE >166:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1170 text54 CODE >171:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1172 text54 CODE >174:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1175 text54 CODE >175:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1177 text54 CODE >176:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+117A text54 CODE >177:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+117B text54 CODE >180:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+117C text54 CODE >183:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1183 text54 CODE >186:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1185 text54 CODE >188:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+118C text54 CODE >190:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1191 text54 CODE >192:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1198 text54 CODE >194:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+119A text54 CODE >196:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+11A0 text54 CODE >197:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+11A1 text22 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+11A1 text22 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+11A3 text22 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+11A7 text22 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+11A9 text22 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+11AB text22 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+11B0 text22 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+11B4 text22 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+11B5 text22 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+11BA text22 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+11C2 text22 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+11C6 text22 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+11C7 text22 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+11CC text22 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+11D0 text22 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
+11D5 text61 CODE >77:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+11D7 text61 CODE >80:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+11D8 text61 CODE >84:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+11DB text61 CODE >88:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+11DC text61 CODE >92:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+11E0 text61 CODE >94:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+11E7 text61 CODE >95:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+11F4 text61 CODE >96:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+1200 text61 CODE >102:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+1201 text61 CODE >80:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+120D text61 CODE >103:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+120E text37 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftge.c
+120E text37 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftge.c
+1210 text37 CODE >7:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftge.c
+1224 text37 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftge.c
+1226 text37 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftge.c
+123A text37 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftge.c
+123C text37 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftge.c
+123E text37 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftge.c
+1249 text41 CODE >311:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1249 text41 CODE >316:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+124E text41 CODE >319:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1250 text41 CODE >322:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1251 text41 CODE >325:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1252 text41 CODE >328:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1259 text41 CODE >331:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+125B text41 CODE >333:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+125C text41 CODE >334:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+125F text41 CODE >335:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1261 text41 CODE >337:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1268 text41 CODE >339:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+126A text41 CODE >341:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1271 text41 CODE >343:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1273 text41 CODE >345:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+127A text41 CODE >347:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+127C text41 CODE >349:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1282 text41 CODE >352:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1287 text41 CODE >354:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1289 text28 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\llmod.c
+1289 text28 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\llmod.c
+1290 text28 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\llmod.c
+1292 text28 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\llmod.c
+1294 text28 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\llmod.c
+129B text28 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\llmod.c
+129F text28 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\llmod.c
+12A0 text28 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\llmod.c
+12B0 text28 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\llmod.c
+12B8 text28 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\llmod.c
+12BF text28 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\llmod.c
+12C3 text28 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\llmod.c
+12CC text38 CODE >135:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+12CE text38 CODE >140:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+12D6 text38 CODE >142:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+12DC text38 CODE >145:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+12E6 text38 CODE >146:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+12EC text38 CODE >147:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+12ED text38 CODE >146:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+12EE text38 CODE >150:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+12F3 text38 CODE >151:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+12F7 text38 CODE >153:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+12F8 text38 CODE >154:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+12FD text38 CODE >157:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1302 text38 CODE >159:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1303 text38 CODE >160:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1304 text38 CODE >161:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+130C text38 CODE >142:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1312 maintext CODE >50:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+1312 maintext CODE >55:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+1318 maintext CODE >56:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+1318 maintext CODE >57:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+1319 maintext CODE >59:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+131E maintext CODE >60:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+1323 maintext CODE >61:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+1328 maintext CODE >62:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+132D maintext CODE >63:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+1332 maintext CODE >64:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+1337 maintext CODE >65:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+133C maintext CODE >66:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+1341 maintext CODE >67:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+1346 maintext CODE >68:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+134B maintext CODE >55:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+1354 maintext CODE >72:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+1355 maintext CODE >75:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+1355 maintext CODE >77:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+1356 maintext CODE >79:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+1359 maintext CODE >80:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+135C maintext CODE >81:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+135F maintext CODE >75:D:\Progetti\Misuratore potenze\Firmware\Base.X\Base.c
+1360 text13 CODE >484:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1362 text13 CODE >487:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1362 text13 CODE >489:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1363 text13 CODE >490:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+136D text13 CODE >492:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+137B text13 CODE >494:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+137F text13 CODE >495:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1389 text13 CODE >496:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1393 text13 CODE >498:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1397 text13 CODE >499:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+13A1 text13 CODE >501:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+13AE text13 CODE >503:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+13B1 text13 CODE >504:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+13B2 text29 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+13B2 text29 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+13BB text29 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+13C1 text29 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+13C3 text29 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+13C5 text29 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+13CC text29 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+13D0 text29 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+13D1 text29 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+13D8 text29 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+13E8 text29 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+13F0 text29 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+13F1 text29 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+13F8 text29 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+13FC text29 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lldiv.c
+1405 text56 CODE >199:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1406 text56 CODE >202:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1408 text56 CODE >205:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+140B text56 CODE >206:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+140D text56 CODE >207:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1410 text56 CODE >208:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1411 text56 CODE >211:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1412 text56 CODE >214:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1419 text56 CODE >217:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+141B text56 CODE >219:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1422 text56 CODE >221:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+142D text56 CODE >223:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1434 text56 CODE >225:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1436 text56 CODE >227:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+143D text56 CODE >229:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+143F text56 CODE >231:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1446 text56 CODE >233:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+144B text56 CODE >235:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1452 text56 CODE >237:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1454 text56 CODE >239:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+145A text56 CODE >240:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+145B text17 CODE >79:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+145D text17 CODE >81:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+145E text17 CODE >88:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1460 text17 CODE >89:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1463 text17 CODE >90:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1465 text17 CODE >91:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+146B text17 CODE >92:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1471 text17 CODE >93:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1477 text17 CODE >94:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+147D text17 CODE >95:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1483 text17 CODE >96:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1489 text17 CODE >97:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+148F text17 CODE >98:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1495 text17 CODE >99:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1497 text17 CODE >100:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1498 text17 CODE >103:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+149C text17 CODE >104:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+14A0 text17 CODE >105:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+14A4 text17 CODE >107:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+14A7 text17 CODE >109:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+14A8 text17 CODE >81:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+14B4 text17 CODE >110:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+14B5 text20 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+14B7 text20 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+14BB text20 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+14CB text20 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+14CF text20 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+14D3 text20 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+14D9 text20 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+14E9 text20 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+14F9 text20 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+14FD text20 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+1501 text20 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+1505 text20 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+150E text20 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+1512 text20 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+1517 text36 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+1517 text36 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+151F text36 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+1526 text36 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+152A text36 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+1530 text36 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+1535 text36 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+1539 text36 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+1543 text36 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+1549 text36 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+1549 text36 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+154E text36 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+1552 text36 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+1554 text36 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+155A text36 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+155C text36 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+155E text36 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+1564 text36 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+1566 text36 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+1576 text36 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+1579 text36 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+157A text36 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+157B text31 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+157B text31 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+158B text31 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+1594 text31 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+15A4 text31 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+15A5 text31 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+15AB text31 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+15B2 text31 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+15B4 text31 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+15B6 text31 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+15BB text31 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+15C4 text31 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+15CB text31 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+15D2 text31 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+15D6 text31 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+15DF text31 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+15E6 text31 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+15E8 text31 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+15E8 text31 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+15EB text31 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+15EE text31 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+15F9 text31 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\fttol.c
+1602 text24 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftoa.c
+1602 text24 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftoa.c
+1607 text24 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftoa.c
+1618 text24 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftoa.c
+1625 text24 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftoa.c
+1635 text24 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftoa.c
+1648 text24 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftoa.c
+166A text24 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftoa.c
+168C text24 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftoa.c
+16A3 text24 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftoa.c
+16A5 text23 CODE >405:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+16A5 text23 CODE >411:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+16B8 text23 CODE >413:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+16B9 text23 CODE >414:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+16BE text23 CODE >417:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+16CA text23 CODE >419:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+16CD text23 CODE >420:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+16D3 text23 CODE >423:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+16D7 text23 CODE >425:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+16F4 text23 CODE >429:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1700 text23 CODE >432:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1713 text23 CODE >414:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+171C text23 CODE >436:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1722 text23 CODE >437:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1729 text23 CODE >440:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+172E text23 CODE >441:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1742 text23 CODE >440:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1748 text23 CODE >443:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+174C text35 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+174C text35 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+175C text35 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+1763 text35 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+1772 text35 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+1779 text35 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+177E text35 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+178E text35 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+179E text35 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+17A2 text35 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+17A3 text35 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+17A4 text35 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+17AA text35 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+17B0 text35 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+17B4 text35 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+17B6 text35 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+17BC text35 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+17C2 text35 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+17C8 text35 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+17CC text35 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+17D0 text35 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+17D2 text35 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+17D8 text35 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+17DE text35 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+17E4 text35 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+17E8 text35 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftmul.c
+1CD9 text67 CODE >32:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1CD9 text67 CODE >35:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1CDB text67 CODE >38:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1CDE text67 CODE >39:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1CDF text8 CODE >139:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1CDF text8 CODE >142:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1CE2 text8 CODE >143:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1CE5 inittext CODE >3342:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1CE5 inittext CODE >3343:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1CE6 inittext CODE >3344:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1CE6 inittext CODE >3345:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1CE7 inittext CODE >3346:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1CE8 inittext CODE >3347:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1CE9 inittext CODE >3348:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1CEA inittext CODE >3349:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1CEB clrtext CODE >3292:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1CEB clrtext CODE >3293:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1CEC clrtext CODE >3294:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1CEC clrtext CODE >3295:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1CED clrtext CODE >3296:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1CEE clrtext CODE >3297:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1CEF clrtext CODE >3298:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1CF0 clrtext CODE >3299:C:\Users\Luca\AppData\Local\Temp\s7fg.
+1CF1 text34 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftneg.c
+1CF1 text34 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftneg.c
+1CF6 text34 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftneg.c
+1CF8 text34 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftneg.c
+1CF9 text40 CODE >129:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1CFA text40 CODE >132:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1D01 text40 CODE >133:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1D02 text50 CODE >6:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+1D03 text50 CODE >8:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+1D04 text50 CODE >12:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+1D06 text50 CODE >20:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+1D07 text50 CODE >8:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+1D0C text50 CODE >21:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+1D0D text45 CODE >46:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1D0D text45 CODE >48:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1D16 text45 CODE >49:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1D19 text26 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\isdigit.c
+1D1A text26 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\isdigit.c
+1D27 text14 CODE >506:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1D29 text14 CODE >509:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1D34 text14 CODE >510:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1D35 text47 CODE >41:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1D35 text47 CODE >43:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1D43 text47 CODE >44:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1D44 text58 CODE >6:D:\Progetti\Misuratore potenze\Firmware\Base.X\DLY.c
+1D44 text58 CODE >10:D:\Progetti\Misuratore potenze\Firmware\Base.X\DLY.c
+1D4E text58 CODE >12:D:\Progetti\Misuratore potenze\Firmware\Base.X\DLY.c
+1D4F text58 CODE >13:D:\Progetti\Misuratore potenze\Firmware\Base.X\DLY.c
+1D50 text58 CODE >10:D:\Progetti\Misuratore potenze\Firmware\Base.X\DLY.c
+1D66 text60 CODE >24:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1D67 text60 CODE >26:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1D68 text60 CODE >33:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1D6A text60 CODE >34:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1D6B text60 CODE >35:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1D6C text60 CODE >36:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1D6E text60 CODE >37:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1D70 text60 CODE >38:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1D71 text60 CODE >43:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1D72 text60 CODE >26:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1D77 text60 CODE >44:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1D78 text46 CODE >52:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1D78 text46 CODE >55:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1D7D text46 CODE >56:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1D81 text46 CODE >57:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1D82 text46 CODE >58:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1D83 text46 CODE >59:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1D84 text46 CODE >60:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1D85 text46 CODE >61:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1D86 text46 CODE >63:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1D88 text46 CODE >65:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1D89 text46 CODE >66:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1D8A text52 CODE >46:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1D8C text52 CODE >48:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1D8D text52 CODE >58:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1D8F text52 CODE >60:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1D90 text52 CODE >48:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1D9C text52 CODE >61:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1D9D text64 CODE >105:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+1D9E text64 CODE >110:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+1DA0 text64 CODE >113:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+1DA6 text64 CODE >114:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+1DAE text64 CODE >117:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+1DB0 text64 CODE >118:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+1DB1 text42 CODE >17:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1DB2 text42 CODE >19:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1DB3 text42 CODE >23:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1DB6 text42 CODE >24:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1DB7 text42 CODE >27:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1DBA text42 CODE >28:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1DBC text42 CODE >33:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1DBD text42 CODE >19:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1DC5 text42 CODE >34:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1DC6 text39 CODE >115:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1DC7 text39 CODE >120:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1DCB text39 CODE >122:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1DCE text39 CODE >123:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1DD2 text39 CODE >126:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1DDA text39 CODE >127:D:\Progetti\Misuratore potenze\Firmware\Base.X\DPY.c
+1DDB text51 CODE >6:D:\Progetti\Misuratore potenze\Firmware\Base.X\IN.c
+1DDC text51 CODE >8:D:\Progetti\Misuratore potenze\Firmware\Base.X\IN.c
+1DDD text51 CODE >12:D:\Progetti\Misuratore potenze\Firmware\Base.X\IN.c
+1DEB text51 CODE >20:D:\Progetti\Misuratore potenze\Firmware\Base.X\IN.c
+1DEC text51 CODE >8:D:\Progetti\Misuratore potenze\Firmware\Base.X\IN.c
+1DF1 text51 CODE >21:D:\Progetti\Misuratore potenze\Firmware\Base.X\IN.c
+1DF2 text49 CODE >6:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1DF3 text49 CODE >8:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1DF4 text49 CODE >12:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E02 text49 CODE >20:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E03 text49 CODE >8:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E08 text49 CODE >21:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E09 text62 CODE >17:D:\Progetti\Misuratore potenze\Firmware\Base.X\DLY.c
+1E09 text62 CODE >21:D:\Progetti\Misuratore potenze\Firmware\Base.X\DLY.c
+1E13 text62 CODE >23:D:\Progetti\Misuratore potenze\Firmware\Base.X\DLY.c
+1E14 text62 CODE >24:D:\Progetti\Misuratore potenze\Firmware\Base.X\DLY.c
+1E1D text62 CODE >21:D:\Progetti\Misuratore potenze\Firmware\Base.X\DLY.c
+1E22 text27 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+1E22 text27 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+1E24 text27 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+1E26 text27 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+1E2A text27 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+1E2F text27 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+1E34 text27 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+1E38 text27 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
+1E3D text1 CODE >41:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1E3D text1 CODE >44:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1E40 text1 CODE >47:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1E41 text1 CODE >50:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1E44 text1 CODE >51:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1E47 text1 CODE >54:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1E4A text1 CODE >57:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1E4B text1 CODE >58:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1E4E text1 CODE >60:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1E50 text1 CODE >63:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1E51 text1 CODE >65:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1E54 text1 CODE >68:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1E55 text1 CODE >69:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1E58 text57 CODE >23:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E59 text57 CODE >25:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E5A text57 CODE >27:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E5B text57 CODE >28:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E5C text57 CODE >29:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E5D text57 CODE >30:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E5E text57 CODE >31:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E5F text57 CODE >32:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E60 text57 CODE >33:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E61 text57 CODE >34:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E62 text57 CODE >36:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E66 text57 CODE >37:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E6B text57 CODE >38:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E6F text57 CODE >39:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E73 text57 CODE >40:D:\Progetti\Misuratore potenze\Firmware\Base.X\OUT.c
+1E74 text65 CODE >39:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1E74 text65 CODE >43:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1E79 text65 CODE >45:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1E7B text65 CODE >46:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1E87 text65 CODE >47:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1E87 text65 CODE >48:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1E8A text65 CODE >48:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1E8B text65 CODE >47:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1E8C text65 CODE >43:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1E91 text59 CODE >79:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1E91 text59 CODE >81:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1E93 text59 CODE >82:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1E94 text59 CODE >83:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1E95 text59 CODE >86:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1E9D text59 CODE >88:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1EA1 text59 CODE >89:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1EA3 text59 CODE >90:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1EA4 text59 CODE >94:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1EA6 text59 CODE >95:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1EA8 text59 CODE >98:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1EAB text59 CODE >99:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1EAE text4 CODE >68:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1EAE text4 CODE >71:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1EB5 text4 CODE >73:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1EB6 text4 CODE >74:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1EB7 text4 CODE >75:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1EB8 text4 CODE >77:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1EB9 text4 CODE >79:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1EBC text4 CODE >81:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1EC0 text4 CODE >83:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1EC7 text4 CODE >85:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1ECA text4 CODE >86:D:\Progetti\Misuratore potenze\Firmware\Base.X\PGM.c
+1ECB text32 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftsub.c
+1ECB text32 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftsub.c
+1ED1 text32 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftsub.c
+1ED3 text32 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftsub.c
+1EE9 text7 CODE >8:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1EEA text7 CODE >10:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1EEB text7 CODE >12:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1EEB text7 CODE >14:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1EFA text7 CODE >22:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1EFB text7 CODE >10:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1F06 text7 CODE >23:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1F07 text3 CODE >468:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1F07 text3 CODE >471:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1F0C text3 CODE >472:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1F0E text3 CODE >474:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1F14 text3 CODE >476:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1F17 text3 CODE >477:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1F1D text3 CODE >479:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1F20 text3 CODE >481:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1F24 text3 CODE >482:D:\Progetti\Misuratore potenze\Firmware\Base.X\RTX.c
+1F25 text15 CODE >120:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+1F27 text15 CODE >125:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+1F29 text15 CODE >128:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+1F30 text15 CODE >129:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+1F39 text15 CODE >132:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+1F44 text15 CODE >135:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+1F46 text15 CODE >136:D:\Progetti\Misuratore potenze\Firmware\Base.X\CC1.c
+1F47 text6 CODE >14:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1F48 text6 CODE >16:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1F49 text6 CODE >20:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1F5D text6 CODE >21:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1F5E text6 CODE >24:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1F60 text6 CODE >29:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1F61 text6 CODE >16:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1F69 text6 CODE >30:D:\Progetti\Misuratore potenze\Firmware\Base.X\SYS.c
+1F6A text19 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+1F6C text19 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+1F70 text19 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+1F72 text19 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+1F7D text19 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+1F82 text19 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\itoa.c
+1F8E text16 CODE >25:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1F8E text16 CODE >29:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1F93 text16 CODE >31:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1F95 text16 CODE >32:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1F98 text16 CODE >33:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1F98 text16 CODE >34:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1F9B text16 CODE >34:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1F9C text16 CODE >33:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1F9D text16 CODE >35:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1FAD text16 CODE >29:D:\Progetti\Misuratore potenze\Firmware\Base.X\SPI.c
+1FB2 text44 CODE >23:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+1FB2 text44 CODE >27:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+1FB4 text44 CODE >28:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+1FB9 text44 CODE >30:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+1FBA text44 CODE >31:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+1FC6 text44 CODE >32:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+1FC7 text44 CODE >33:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+1FC9 text44 CODE >34:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+1FD4 text44 CODE >28:D:\Progetti\Misuratore potenze\Firmware\Base.X\NVM.c
+1FD9 text5 CODE >46:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1FD9 text5 CODE >50:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1FDC text5 CODE >52:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1FE0 text5 CODE >53:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1FE4 text5 CODE >55:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1FE5 text5 CODE >56:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1FE6 text5 CODE >58:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1FE8 text5 CODE >59:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1FEA text5 CODE >60:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1FEA text5 CODE >61:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1FEC text5 CODE >63:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1FEC text5 CODE >66:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1FEF text5 CODE >68:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1FF4 text5 CODE >69:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1FFB text5 CODE >72:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1FFD text5 CODE >74:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+1FFF text5 CODE >75:D:\Progetti\Misuratore potenze\Firmware\Base.X\DIN.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 3 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+___lwmod@counter 76 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__LdataBANK2 0 0 ABS 0 dataBANK2 -
+__LdataBANK3 0 0 ABS 0 dataBANK3 -
+__Hspace_0 8009 0 ABS 0 - -
+__Hspace_1 1E0 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+RTXVisDec@i B6 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+RTXVisDec@j B5 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+RTXVisDec@p B4 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+__end_of_INInit 3BE4 0 CODE 0 text51 dist/default/debug\Base.X.debug.obj
+__end_of_INTIsr 22 0 CODE 0 intentry dist/default/debug\Base.X.debug.obj
+__HidataBANK2 0 0 ABS 0 idataBANK2 -
+__HidataBANK3 0 0 ABS 0 idataBANK3 -
+SYSInit@state 72 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+CC1Write@cc1Addr 7B 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+_PMCON1bits 195 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_DPYSetCur 3B8C 0 CODE 0 text39 dist/default/debug\Base.X.debug.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+CC1Strobe@cc1Stb 79 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+_u_in_sta_currTask 6D 0 BANK0 1 bssBANK0 dist/default/debug\Base.X.debug.obj
+__end_of_DPYDrawChar 21C8 0 CODE 0 text55 dist/default/debug\Base.X.debug.obj
+_RTXSelDown 3E0E 0 CODE 0 text3 dist/default/debug\Base.X.debug.obj
+ltemp0 7E 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+ltemp1 82 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+ltemp2 86 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+ltemp3 80 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__Lstringtext 0 0 ABS 0 stringtext -
+main@i 68 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__Hstrings 0 0 ABS 0 strings -
+__end_of_NVMInit 3A1A 0 CODE 0 text50 dist/default/debug\Base.X.debug.obj
+__end_of_NVMRead 3FB2 0 CODE 0 text44 dist/default/debug\Base.X.debug.obj
+__size_of_RTXInit 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_RTXTask 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_RTXTick 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+itoa@base 2A 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+DPYDrawChar@i 22 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+DPYDrawChar@p 78 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+_LATA 10C 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_PIE1 91 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_PIE2 92 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_PIR1 11 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_PIR2 12 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_TMR0 15 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_WPUB 20D 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+___sp 0 0 STACK 2 stack C:\Users\Luca\AppData\Local\Temp\s7fg.obj
+_ftoa 2C04 0 CODE 0 text24 dist/default/debug\Base.X.debug.obj
+_itoa 3ED4 0 CODE 0 text19 dist/default/debug\Base.X.debug.obj
+_main 2624 0 CODE 0 maintext dist/default/debug\Base.X.debug.obj
+_utoa 296A 0 CODE 0 text20 dist/default/debug\Base.X.debug.obj
+RTXRcvPkt@dst 25 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+RTXRcvPkt@len 23 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+btemp 7E 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+ltemp 7E 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+CC1Strobe@e_stb 78 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+___ftadd@f1 20 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+___ftadd@f2 23 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__end_of_DPYSendStr 2624 0 CODE 0 text38 dist/default/debug\Base.X.debug.obj
+start 22 0 CODE 0 init C:\Users\Luca\AppData\Local\Temp\s7fg.obj
+ttemp 7E 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+wtemp 7E 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_PGMCheckNvm 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of___ftadd 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of___ftmul 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of___ftneg 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of___ftsub 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of___fttol 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_ftoa 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_itoa 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_main 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_utoa 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of___lldiv 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of___llmod 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+OUTInit@sta 72 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__end_of_PGMSelLong 3D96 0 CODE 0 text4 dist/default/debug\Base.X.debug.obj
+?___wmul 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+SPIInit@state 72 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__size_of_PGMReadNvm 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__end_of_DPYSendChar 3A04 0 CODE 0 text40 dist/default/debug\Base.X.debug.obj
+__end_of_RTXSup 2170 0 CODE 0 text10 dist/default/debug\Base.X.debug.obj
+__LidataBANK2 0 0 ABS 0 idataBANK2 -
+__LidataBANK3 0 0 ABS 0 idataBANK3 -
+OUTSetHTCDataNibble@dataToSet 73 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__end_of_OUTSetHTCDataNibble 3CE8 0 CODE 0 text57 dist/default/debug\Base.X.debug.obj
+__Hpowerup 0 0 CODE 0 powerup -
+CC1Read@cc1Addr 22 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__end_of_SYSInt 39BE 0 CODE 0 text67 dist/default/debug\Base.X.debug.obj
+RTXVisDec@isDec B3 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+___ftge@ff1 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+___ftge@ff2 74 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+ttemp0 7E 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+ttemp1 81 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+ttemp2 84 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+ttemp3 87 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+ttemp4 7F 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+NVMWrite@source 73 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+RTXUpdateDisplay@diffPower BB 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+_con_curr_sens 129 0 BANK2 1 bssBANK2 dist/default/debug\Base.X.debug.obj
+utoa@c 26 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+utoa@v 24 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+intlevel0 0 0 CODE 0 functab C:\Users\Luca\AppData\Local\Temp\s7fg.obj
+intlevel1 0 0 CODE 0 functab C:\Users\Luca\AppData\Local\Temp\s7fg.obj
+intlevel2 0 0 CODE 0 functab C:\Users\Luca\AppData\Local\Temp\s7fg.obj
+intlevel3 0 0 CODE 0 functab C:\Users\Luca\AppData\Local\Temp\s7fg.obj
+intlevel4 0 0 CODE 0 functab C:\Users\Luca\AppData\Local\Temp\s7fg.obj
+intlevel5 0 0 CODE 0 functab C:\Users\Luca\AppData\Local\Temp\s7fg.obj
+NVMWrite@addr 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+CC1Read@dst 79 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+CC1Read@len 7B 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+CC1Init@state 22 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+wtemp0 7E 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+wtemp1 80 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+wtemp2 82 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+wtemp3 84 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+wtemp4 86 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+wtemp5 88 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+wtemp6 7F 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+___llmod@divisor 25 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__Hfunctab 0 0 CODE 0 functab -
+_u_in_sta_tmpTask 6E 0 BANK0 1 bssBANK0 dist/default/debug\Base.X.debug.obj
+__size_of_OUTInit 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+RTXReadPkt@volt4Calc E1 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__end_of_DLYDelay_ms 3C44 0 CODE 0 text62 dist/default/debug\Base.X.debug.obj
+__end_of_DLYDelay_us 3AAA 0 CODE 0 text58 dist/default/debug\Base.X.debug.obj
+_con_power 12C 0 BANK2 1 bssBANK2 dist/default/debug\Base.X.debug.obj
+___ftmul@f1 20 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+___ftmul@f2 23 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__end_of_RTXSelDown 3E4A 0 CODE 0 text3 dist/default/debug\Base.X.debug.obj
+___ftneg@f1 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+___wmul@multiplicand 73 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+NVMWrite@bufTmpRow 20 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__size_of_RTXReadPkt 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_ANSELA 18C 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_ANSELB 18D 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_ANSELC 18E 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+RTXUpdateDisplay@i BE 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+_cc1PaTable 165 0 BANK2 1 dataBANK2 dist/default/debug\Base.X.debug.obj
+_SSPCONbits 215 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_batt_con_curr_sens 120 0 BANK2 1 bssBANK2 dist/default/debug\Base.X.debug.obj
+__end_of___ftge 2492 0 CODE 0 text37 dist/default/debug\Base.X.debug.obj
+__end_of___wmul 3C7A 0 CODE 0 text27 dist/default/debug\Base.X.debug.obj
+_cc1InitVal 1A0 0 BANK3 1 dataBANK3 dist/default/debug\Base.X.debug.obj
+__end_of_PGMNvmReset 3B14 0 CODE 0 text46 dist/default/debug\Base.X.debug.obj
+__CFG_CP$ON 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+___ftsub@f1 2D 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+___ftsub@f2 2A 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+___fttol@f1 30 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+ftoa@status 4C 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__Lmaintext 0 0 ABS 0 maintext -
+__size_of_sprintf 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__end_of_RTXInit 296A 0 CODE 0 text17 dist/default/debug\Base.X.debug.obj
+__end_of_RTXTask 39CA 0 CODE 0 text8 dist/default/debug\Base.X.debug.obj
+__end_of_RTXTick 22DE 0 CODE 0 text2 dist/default/debug\Base.X.debug.obj
+DPYWriteByte@val 75 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+pnum$text18_split_1 57 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_nvm_pgm_cfg_absaddr 3820 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+___lwmod@divisor 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__size_of___ftpack 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__end_of___ftadd 13E4 0 CODE 0 text33 dist/default/debug\Base.X.debug.obj
+__end_of___ftmul 3000 0 CODE 0 text35 dist/default/debug\Base.X.debug.obj
+__end_of___ftneg 39F2 0 CODE 0 text34 dist/default/debug\Base.X.debug.obj
+__end_of___ftsub 3DD2 0 CODE 0 text32 dist/default/debug\Base.X.debug.obj
+__end_of___fttol 2C04 0 CODE 0 text31 dist/default/debug\Base.X.debug.obj
+__end_of___lldiv 280A 0 CODE 0 text29 dist/default/debug\Base.X.debug.obj
+__end_of___llmod 2598 0 CODE 0 text28 dist/default/debug\Base.X.debug.obj
+__end_of___lwdiv 23AA 0 CODE 0 text22 dist/default/debug\Base.X.debug.obj
+__end_of___lwmod 2220 0 CODE 0 text21 dist/default/debug\Base.X.debug.obj
+__size_of_isdigit 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_RTXSendRPgm 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_INInit 3BB6 0 CODE 0 text51 dist/default/debug\Base.X.debug.obj
+_INTCON B 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_INTIsr 8 0 CODE 0 intentry dist/default/debug\Base.X.debug.obj
+SPIRead@i 78 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+_OPTION_REG 95 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_dpowers 7200 0 STRCODE 0 stringtext dist/default/debug\Base.X.debug.obj
+CC1Write@len 78 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+CC1Write@src 77 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+INInit@sta 72 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+___lwdiv@quotient 76 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+_DINInit 3ACC 0 CODE 0 text60 dist/default/debug\Base.X.debug.obj
+_DINTask 3D22 0 CODE 0 text59 dist/default/debug\Base.X.debug.obj
+_DINTick 3FB2 0 CODE 0 text5 dist/default/debug\Base.X.debug.obj
+_numRxByte EF 0 BANK1 1 bssBANK1 dist/default/debug\Base.X.debug.obj
+DPYDrawChar@tmpAddr 21 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+DPYSetCur@addr 7B 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__end_of_PGMWriteNvm 3A88 0 CODE 0 text47 dist/default/debug\Base.X.debug.obj
+__size_of___lltoft 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+itoa@buf 2D 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+itoa@val 28 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+_u_flg_din 6A 0 BANK0 1 bssBANK0 dist/default/debug\Base.X.debug.obj
+___lwmod@dividend 73 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+___lldiv@counter 24 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_numTxByte 6F 0 BANK0 1 bssBANK0 dist/default/debug\Base.X.debug.obj
+__size_of_SPIInit 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_SPIRead 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+start_initialization 26 0 CODE 0 cinit dist/default/debug\Base.X.debug.obj
+__size_of_DPYDrawChar 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_OSCCON 99 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_PMCON1 195 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_PMCON2 196 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_PGMInit 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_DPYInitDisplay 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+___lldiv@dividend 75 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+DPYSendStr@data 21 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__end_of_OUTInit 3C12 0 CODE 0 text49 dist/default/debug\Base.X.debug.obj
+_RTXSup 211A 0 CODE 0 text10 dist/default/debug\Base.X.debug.obj
+_u_in_ev_up ED 0 BANK1 1 bssBANK1 dist/default/debug\Base.X.debug.obj
+_DPYInit 3B14 0 CODE 0 text52 dist/default/debug\Base.X.debug.obj
+RTXInit@state 66 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+clear_ram0 39D6 0 CODE 0 clrtext dist/default/debug\Base.X.debug.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+_SSPBUF 211 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+___fttol@exp1 3D 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+___fttol@lval 39 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+_SYSInt 39B2 0 CODE 0 text67 dist/default/debug\Base.X.debug.obj
+__size_of_DPYSendChar 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_DPYWriteNibble 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+___lltoft@c 20 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__size_of_INInit 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_INTIsr 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_DPYSendStr 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+___ftpack 2A2E 0 CODE 0 text36 dist/default/debug\Base.X.debug.obj
+__size_of_CC1Init 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_CC1Read 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+utoa@buf 27 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+utoa@val 20 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+NVMInit@sta 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+RTXSendRData@id 29 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+___ftpack@arg 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+___ftpack@exp 74 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+_WDTCON 97 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_PGMSelLong 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_SPIWrite 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_PGMCheckNvm 3A1A 0 CODE 0 text45 dist/default/debug\Base.X.debug.obj
+__size_of_SYSInit 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_SYSTask 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Luca\AppData\Local\Temp\s7fg.obj
+_volt_sens 135 0 BANK2 1 bssBANK2 dist/default/debug\Base.X.debug.obj
+__end_of___ftpack 2AF6 0 CODE 0 text36 dist/default/debug\Base.X.debug.obj
+DLYDelay_ms@i 75 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+DLYDelay_us@i 73 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit 96 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+___lwdiv@counter 78 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+_u_SYS_STA 13E 0 BANK2 1 bssBANK2 dist/default/debug\Base.X.debug.obj
+RTXVisDec@val 57 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+_NVMInit 3A04 0 CODE 0 text50 dist/default/debug\Base.X.debug.obj
+_NVMRead 3F64 0 CODE 0 text44 dist/default/debug\Base.X.debug.obj
+_DPYWriteByte 280A 0 CODE 0 text56 dist/default/debug\Base.X.debug.obj
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+_tmrDbncSel 69 0 BANK0 1 bssBANK0 dist/default/debug\Base.X.debug.obj
+DPYSendStr@i 24 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+DPYWriteNibble@rs 76 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+DINInit@sta 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__L_nvm_pgm_cfg_text 7040 0 CODE 0 _nvm_pgm_cfg_text -
+__end_of_sprintf 1B22 0 CODE 0 text25 dist/default/debug\Base.X.debug.obj
+___lltoft 20C4 0 CODE 0 text30 dist/default/debug\Base.X.debug.obj
+__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10012 0 CONFIG 0 config -
+__size_of_DLYDelay_ms 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_DLYDelay_us 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__end_of_isdigit 3A4E 0 CODE 0 text26 dist/default/debug\Base.X.debug.obj
+__Lcinit 26 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+___ftadd@exp1 7B 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+___ftadd@exp2 7A 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+___ftadd@sign 79 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+init_ram 39CA 0 CODE 0 inittext dist/default/debug\Base.X.debug.obj
+CC1Read@addr 21 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__end_of___lltoft 211A 0 CODE 0 text30 dist/default/debug\Base.X.debug.obj
+_gen_curr_sens 12F 0 BANK2 1 bssBANK2 dist/default/debug\Base.X.debug.obj
+__size_of_RTXSup 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__Linittext 0 0 ABS 0 inittext -
+_PORTAbits C 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_PORTBbits D 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_INTCONbits B 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_SYSInt 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 22 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 22 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+RTXSndPkt@len 23 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+RTXSndPkt@src 26 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+___ftge 241C 0 CODE 0 text37 dist/default/debug\Base.X.debug.obj
+___wmul 3C44 0 CODE 0 text27 dist/default/debug\Base.X.debug.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+psplit$0 250057 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+RTXSendRPgm@id 29 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__S0 8009 0 ABS 0 - -
+__S1 1E0 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+_sta 7C 0 COMMON 1 bssCOMMON dist/default/debug\Base.X.debug.obj
+__size_of_RTXSelDown 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+RTXReadPkt@valBatt E9 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+__end_of_CC1Strobe 3B62 0 CODE 0 text64 dist/default/debug\Base.X.debug.obj
+__size_of_PGMNvmReset 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+SPIWrite@len 73 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__size_of_CC1Write 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__end_of_SPIInit 3E0E 0 CODE 0 text7 dist/default/debug\Base.X.debug.obj
+__end_of_SPIRead 3F64 0 CODE 0 text16 dist/default/debug\Base.X.debug.obj
+CC1Write@addr 7A 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__size_of_CC1Strobe 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_DPYWriteByte 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+utoa@base 22 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+_SPIWrite 3CE8 0 CODE 0 text65 dist/default/debug\Base.X.debug.obj
+__end_of_PGMInit 3B8C 0 CODE 0 text42 dist/default/debug\Base.X.debug.obj
+SPIWrite@i 76 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+PGMInit@state 7B 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+_rtx_flg EC 0 BANK1 1 bssBANK1 dist/default/debug\Base.X.debug.obj
+sprintf@val 3F 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+ftoa@buf 1CF 0 BANK3 1 bssBANK3 dist/default/debug\Base.X.debug.obj
+ftoa@rem 4E 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+DPYInit@sta 24 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+_batt_gen_curr_sens 123 0 BANK2 1 bssBANK2 dist/default/debug\Base.X.debug.obj
+__end_of_SPIWrite 3D22 0 CODE 0 text65 dist/default/debug\Base.X.debug.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_CC1Strobe 3B3A 0 CODE 0 text64 dist/default/debug\Base.X.debug.obj
+__Lintentry 8 0 CODE 0 intentry -
+___lldiv@divisor 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Luca\AppData\Local\Temp\s7fg.obj
+__end_of_CC1Init 241C 0 CODE 0 text61 dist/default/debug\Base.X.debug.obj
+__end_of_CC1Read 3E8E 0 CODE 0 text15 dist/default/debug\Base.X.debug.obj
+_visTypeDpy EE 0 BANK1 1 bssBANK1 dist/default/debug\Base.X.debug.obj
+__size_of_PGMWriteNvm 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__pdataBANK2 15C 0 BANK2 1 dataBANK2 dist/default/debug\Base.X.debug.obj
+__pdataBANK3 1A0 0 BANK3 1 dataBANK3 dist/default/debug\Base.X.debug.obj
+__end_of_DPYWriteByte 28B6 0 CODE 0 text56 dist/default/debug\Base.X.debug.obj
+__size_of___ftge 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__LbssBANK2 0 0 ABS 0 bssBANK2 -
+__LbssBANK3 0 0 ABS 0 bssBANK3 -
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__end_of_SYSInit 3ED4 0 CODE 0 text6 dist/default/debug\Base.X.debug.obj
+__end_of_SYSTask 3CB0 0 CODE 0 text1 dist/default/debug\Base.X.debug.obj
+DPYDrawChar@addr 20 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+SPIRead@len 73 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+_nvm_pgm_cfg 7040 0 CODE 0 _nvm_pgm_cfg_text dist/default/debug\Base.X.debug.obj
+_RTXSendRPgm 2072 0 CODE 0 text11 dist/default/debug\Base.X.debug.obj
+_u_in_ev_down 6B 0 BANK0 1 bssBANK0 dist/default/debug\Base.X.debug.obj
+_u_in_ev_long 6C 0 BANK0 1 bssBANK0 dist/default/debug\Base.X.debug.obj
+_RTXInit 28B6 0 CODE 0 text17 dist/default/debug\Base.X.debug.obj
+sprintf@flag 3D 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+_RTXTask 39BE 0 CODE 0 text8 dist/default/debug\Base.X.debug.obj
+_RTXTick 227E 0 CODE 0 text2 dist/default/debug\Base.X.debug.obj
+sprintf@prec 46 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+RTXUpdateDisplay@charIdSens B7 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+__ptext10 211A 0 CODE 0 text10 dist/default/debug\Base.X.debug.obj
+__ptext11 2072 0 CODE 0 text11 dist/default/debug\Base.X.debug.obj
+__ptext12 2020 0 CODE 0 text12 dist/default/debug\Base.X.debug.obj
+__ptext13 26C0 0 CODE 0 text13 dist/default/debug\Base.X.debug.obj
+__ptext14 3A4E 0 CODE 0 text14 dist/default/debug\Base.X.debug.obj
+__ptext15 3E4A 0 CODE 0 text15 dist/default/debug\Base.X.debug.obj
+__ptext16 3F1C 0 CODE 0 text16 dist/default/debug\Base.X.debug.obj
+__ptext17 28B6 0 CODE 0 text17 dist/default/debug\Base.X.debug.obj
+__ptext18 96 0 CODE 0 text18 dist/default/debug\Base.X.debug.obj
+__ptext19 3ED4 0 CODE 0 text19 dist/default/debug\Base.X.debug.obj
+__ptext20 296A 0 CODE 0 text20 dist/default/debug\Base.X.debug.obj
+__ptext21 21C8 0 CODE 0 text21 dist/default/debug\Base.X.debug.obj
+__ptext22 2342 0 CODE 0 text22 dist/default/debug\Base.X.debug.obj
+__ptext23 2D4A 0 CODE 0 text23 dist/default/debug\Base.X.debug.obj
+__ptext24 2C04 0 CODE 0 text24 dist/default/debug\Base.X.debug.obj
+__ptext25 175C 0 CODE 0 text25 dist/default/debug\Base.X.debug.obj
+__ptext26 3A32 0 CODE 0 text26 dist/default/debug\Base.X.debug.obj
+__ptext27 3C44 0 CODE 0 text27 dist/default/debug\Base.X.debug.obj
+__ptext28 2512 0 CODE 0 text28 dist/default/debug\Base.X.debug.obj
+__ptext29 2764 0 CODE 0 text29 dist/default/debug\Base.X.debug.obj
+__ptext30 20C4 0 CODE 0 text30 dist/default/debug\Base.X.debug.obj
+__ptext31 2AF6 0 CODE 0 text31 dist/default/debug\Base.X.debug.obj
+__ptext32 3D96 0 CODE 0 text32 dist/default/debug\Base.X.debug.obj
+__ptext33 11F8 0 CODE 0 text33 dist/default/debug\Base.X.debug.obj
+__ptext34 39E2 0 CODE 0 text34 dist/default/debug\Base.X.debug.obj
+__ptext35 2E98 0 CODE 0 text35 dist/default/debug\Base.X.debug.obj
+__ptext36 2A2E 0 CODE 0 text36 dist/default/debug\Base.X.debug.obj
+__ptext37 241C 0 CODE 0 text37 dist/default/debug\Base.X.debug.obj
+__ptext38 2598 0 CODE 0 text38 dist/default/debug\Base.X.debug.obj
+__ptext39 3B8C 0 CODE 0 text39 dist/default/debug\Base.X.debug.obj
+__ptext40 39F2 0 CODE 0 text40 dist/default/debug\Base.X.debug.obj
+__ptext41 2492 0 CODE 0 text41 dist/default/debug\Base.X.debug.obj
+__ptext42 3B62 0 CODE 0 text42 dist/default/debug\Base.X.debug.obj
+__ptext43 2002 0 CODE 0 text43 dist/default/debug\Base.X.debug.obj
+__ptext44 3F64 0 CODE 0 text44 dist/default/debug\Base.X.debug.obj
+__ptext45 3A1A 0 CODE 0 text45 dist/default/debug\Base.X.debug.obj
+__ptext46 3AF0 0 CODE 0 text46 dist/default/debug\Base.X.debug.obj
+__ptext47 3A6A 0 CODE 0 text47 dist/default/debug\Base.X.debug.obj
+__ptext48 107E 0 CODE 0 text48 dist/default/debug\Base.X.debug.obj
+__ptext49 3BE4 0 CODE 0 text49 dist/default/debug\Base.X.debug.obj
+__ptext50 3A04 0 CODE 0 text50 dist/default/debug\Base.X.debug.obj
+__ptext51 3BB6 0 CODE 0 text51 dist/default/debug\Base.X.debug.obj
+__ptext52 3B14 0 CODE 0 text52 dist/default/debug\Base.X.debug.obj
+__ptext53 1002 0 CODE 0 text53 dist/default/debug\Base.X.debug.obj
+__ptext54 22DE 0 CODE 0 text54 dist/default/debug\Base.X.debug.obj
+__ptext55 2170 0 CODE 0 text55 dist/default/debug\Base.X.debug.obj
+__ptext56 280A 0 CODE 0 text56 dist/default/debug\Base.X.debug.obj
+__ptext57 3CB0 0 CODE 0 text57 dist/default/debug\Base.X.debug.obj
+__ptext58 3A88 0 CODE 0 text58 dist/default/debug\Base.X.debug.obj
+__ptext59 3D22 0 CODE 0 text59 dist/default/debug\Base.X.debug.obj
+__ptext60 3ACC 0 CODE 0 text60 dist/default/debug\Base.X.debug.obj
+__ptext61 23AA 0 CODE 0 text61 dist/default/debug\Base.X.debug.obj
+__ptext62 3C12 0 CODE 0 text62 dist/default/debug\Base.X.debug.obj
+__ptext63 FBE 0 CODE 0 text63 dist/default/debug\Base.X.debug.obj
+__ptext64 3B3A 0 CODE 0 text64 dist/default/debug\Base.X.debug.obj
+__ptext65 3CE8 0 CODE 0 text65 dist/default/debug\Base.X.debug.obj
+__ptext67 39B2 0 CODE 0 text67 dist/default/debug\Base.X.debug.obj
+___ftadd 11F8 0 CODE 0 text33 dist/default/debug\Base.X.debug.obj
+___ftmul 2E98 0 CODE 0 text35 dist/default/debug\Base.X.debug.obj
+___ftneg 39E2 0 CODE 0 text34 dist/default/debug\Base.X.debug.obj
+___ftsub 3D96 0 CODE 0 text32 dist/default/debug\Base.X.debug.obj
+___fttol 2AF6 0 CODE 0 text31 dist/default/debug\Base.X.debug.obj
+___lldiv 2764 0 CODE 0 text29 dist/default/debug\Base.X.debug.obj
+___llmod 2512 0 CODE 0 text28 dist/default/debug\Base.X.debug.obj
+___lwdiv 2342 0 CODE 0 text22 dist/default/debug\Base.X.debug.obj
+___lwmod 21C8 0 CODE 0 text21 dist/default/debug\Base.X.debug.obj
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 2624 0 CODE 0 maintext dist/default/debug\Base.X.debug.obj
+__size_of_NVMWrite 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__Lbigram 0 0 ABS 0 bigram -
+__CFG_BORV$LO 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_CC1Write FBE 0 CODE 0 text63 dist/default/debug\Base.X.debug.obj
+NVMWrite@latchAddr 63 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+RTXUpdateDisplay@iR E0 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 1000E 0 CONFIG 0 config -
+?___ftpack 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__Hinittext 0 0 ABS 0 inittext -
+___wmul@multiplier 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+_RTXUpdateDisplay 96 0 CODE 0 text18 dist/default/debug\Base.X.debug.obj
+_LATAbits 10C 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_tmrCalibration 138 0 BANK2 1 bssBANK2 dist/default/debug\Base.X.debug.obj
+_PGMReadNvm 2002 0 CODE 0 text43 dist/default/debug\Base.X.debug.obj
+_DPYDrawChar 2170 0 CODE 0 text55 dist/default/debug\Base.X.debug.obj
+RTXSendRPgm@type 27 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__end_of_CC1Write FFC 0 CODE 0 text63 dist/default/debug\Base.X.debug.obj
+___lwdiv@divisor 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+DPYSendChar@c 79 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+DPYInitDisplay@tmp 23 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+_tmrVis 13C 0 BANK2 1 bssBANK2 dist/default/debug\Base.X.debug.obj
+itoa@cp 2C 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__CFG_VCAPEN$OFF 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+stackhi 23EF 0 ABS 0 - C:\Users\Luca\AppData\Local\Temp\s7fg.obj
+stacklo 2130 0 ABS 0 - C:\Users\Luca\AppData\Local\Temp\s7fg.obj
+SPIWrite@srcPtr 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+?___lltoft 20 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+RTXUpdateDisplay@val DF 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_DPYSendChar 39F2 0 CODE 0 text40 dist/default/debug\Base.X.debug.obj
+_RTXSendRData 2020 0 CODE 0 text12 dist/default/debug\Base.X.debug.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+RTXReadPkt@valVoltCurr E6 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+___ftmul@cntr 2E 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__pbssCOMMON 7C 0 COMMON 1 bssCOMMON dist/default/debug\Base.X.debug.obj
+___ftmul@sign 2F 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__H_nvm_pgm_cfg_text 7080 0 CODE 0 _nvm_pgm_cfg_text -
+_OUTInit 3BE4 0 CODE 0 text49 dist/default/debug\Base.X.debug.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+_PIR1bits 11 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__Lend_init 22 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+DPYIsBusy@bf 76 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__end_of_RTXRcvPkt 3A6A 0 CODE 0 text14 dist/default/debug\Base.X.debug.obj
+end_of_initialization 90 0 CODE 0 cinit dist/default/debug\Base.X.debug.obj
+RTXVisDec@buff 5A 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+NVMWrite@len 74 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__size_of_RTXRcvPkt 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+NVMRead@i 77 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+DPYWriteByte@rs 77 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__end_of_RTXSndPkt 2764 0 CODE 0 text13 dist/default/debug\Base.X.debug.obj
+__Hintentry 22 0 CODE 0 intentry -
+DPYSetCur@col 78 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+DPYSetCur@row 7A 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_DINInit 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_DINTask 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_DINTick 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_NVMWrite 107E 0 CODE 0 text48 dist/default/debug\Base.X.debug.obj
+_RTXReadPkt 13E4 0 CODE 0 text9 dist/default/debug\Base.X.debug.obj
+pnum$text18 25 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__Lstrings 0 0 ABS 0 strings -
+__size_of_RTXSndPkt 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+___lwdiv@dividend 73 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+?___ftadd 20 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+?___ftmul 20 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+?___ftneg 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+?___ftsub 2A 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+?___fttol 30 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+_batt_volt_sens 126 0 BANK2 1 bssBANK2 dist/default/debug\Base.X.debug.obj
+?___lldiv 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+?___llmod 25 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+?___lwdiv 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+?___lwmod 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__HbssBANK2 0 0 ABS 0 bssBANK2 -
+__HbssBANK3 0 0 ABS 0 bssBANK3 -
+RTXReadPkt@dev_id E4 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+__end_of_RTXVisDec 2E98 0 CODE 0 text23 dist/default/debug\Base.X.debug.obj
+_gen_power 132 0 BANK2 1 bssBANK2 dist/default/debug\Base.X.debug.obj
+_DLYDelay_ms 3C12 0 CODE 0 text62 dist/default/debug\Base.X.debug.obj
+_DLYDelay_us 3A88 0 CODE 0 text58 dist/default/debug\Base.X.debug.obj
+__size_of_RTXVisDec 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__end_of_NVMWrite 11F8 0 CODE 0 text48 dist/default/debug\Base.X.debug.obj
+ftoa@cp 56 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+___lltoft@exp 7A 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__ptext1 3C7A 0 CODE 0 text1 dist/default/debug\Base.X.debug.obj
+__ptext2 227E 0 CODE 0 text2 dist/default/debug\Base.X.debug.obj
+__ptext3 3E0E 0 CODE 0 text3 dist/default/debug\Base.X.debug.obj
+__ptext4 3D5C 0 CODE 0 text4 dist/default/debug\Base.X.debug.obj
+__ptext5 3FB2 0 CODE 0 text5 dist/default/debug\Base.X.debug.obj
+__ptext6 3E8E 0 CODE 0 text6 dist/default/debug\Base.X.debug.obj
+__ptext7 3DD2 0 CODE 0 text7 dist/default/debug\Base.X.debug.obj
+__ptext8 39BE 0 CODE 0 text8 dist/default/debug\Base.X.debug.obj
+__ptext9 13E4 0 CODE 0 text9 dist/default/debug\Base.X.debug.obj
+__end_of_PGMReadNvm 2020 0 CODE 0 text43 dist/default/debug\Base.X.debug.obj
+_RTXRcvPkt 3A4E 0 CODE 0 text14 dist/default/debug\Base.X.debug.obj
+NVMWrite@rowAddr 60 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+_DPYInitDisplay 1002 0 CODE 0 text53 dist/default/debug\Base.X.debug.obj
+_sprintf 175C 0 CODE 0 text25 dist/default/debug\Base.X.debug.obj
+_RTXSndPkt 26C0 0 CODE 0 text13 dist/default/debug\Base.X.debug.obj
+__size_of_RTXSendRData 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__end_of_PGMCheckNvm 3A32 0 CODE 0 text45 dist/default/debug\Base.X.debug.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__size_of_OUTSetHTCDataNibble 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__pstringtext 7200 0 STRCODE 0 stringtext dist/default/debug\Base.X.debug.obj
+_pgm_cfg 155 0 BANK2 1 bssBANK2 dist/default/debug\Base.X.debug.obj
+sprintf@ap 3E 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+sprintf@sp 43 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+_isdigit 3A32 0 CODE 0 text26 dist/default/debug\Base.X.debug.obj
+__size_of_DPYInit 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_DPYWriteNibble 22DE 0 CODE 0 text54 dist/default/debug\Base.X.debug.obj
+__end_of_RTXUpdateDisplay 2000 0 CODE 0 text18_split_1 dist/default/debug\Base.X.debug.obj
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_RTXVisDec 2D4A 0 CODE 0 text23 dist/default/debug\Base.X.debug.obj
+_picBatt 15C 0 BANK2 1 dataBANK2 dist/default/debug\Base.X.debug.obj
+RTXSendRData@type 27 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+_PGMNvmReset 3AF0 0 CODE 0 text46 dist/default/debug\Base.X.debug.obj
+DPYSendStr@col 20 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+DPYSendStr@len 22 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+DPYSendStr@row 25 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+___ftmul@exp 2A 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__end_of__initialization 90 0 CODE 0 cinit dist/default/debug\Base.X.debug.obj
+__size_of_RTXUpdateDisplay 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__Lfunctab 0 0 CODE 0 functab -
+__pidataBANK2 3AAA 0 CODE 0 idataBANK2 dist/default/debug\Base.X.debug.obj
+__pidataBANK3 2220 0 CODE 0 idataBANK3 dist/default/debug\Base.X.debug.obj
+__end_of_RTXSendRData 2072 0 CODE 0 text12 dist/default/debug\Base.X.debug.obj
+__Lclrtext 0 0 ABS 0 clrtext -
+NVMWrite@i 62 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+NVMWrite@j 64 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+_SPIInit 3DD2 0 CODE 0 text7 dist/default/debug\Base.X.debug.obj
+_SPIRead 3F1C 0 CODE 0 text16 dist/default/debug\Base.X.debug.obj
+__size_of_NVMInit 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_NVMRead 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+___ftpack@sign 75 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+DLYDelay_ms@val 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__end_of_RTXReadPkt 175C 0 CODE 0 text9 dist/default/debug\Base.X.debug.obj
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+___lldiv@quotient 20 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+_PGMInit 3B62 0 CODE 0 text42 dist/default/debug\Base.X.debug.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__end_of_DPYIsBusy 2512 0 CODE 0 text41 dist/default/debug\Base.X.debug.obj
+_SSPCON1 215 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_SSPCON2 216 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_SSPSTAT 214 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__size_of_DPYIsBusy 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__Hend_init 26 0 CODE 0 end_init -
+NVMRead@addr 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+NVMRead@dest 73 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+___llmod@dividend 29 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__end_of_DPYInitDisplay 107E 0 CODE 0 text53 dist/default/debug\Base.X.debug.obj
+___llmod@counter 7B 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+sprintf@c 48 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+sprintf@f 2D 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+DPYWriteNibble@val 75 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+_PGMWriteNvm 3A6A 0 CODE 0 text47 dist/default/debug\Base.X.debug.obj
+NVMRead@len 74 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__end_of_ftoa 2D4A 0 CODE 0 text24 dist/default/debug\Base.X.debug.obj
+__end_of_itoa 3F1C 0 CODE 0 text19 dist/default/debug\Base.X.debug.obj
+__end_of_main 26C0 0 CODE 0 maintext dist/default/debug\Base.X.debug.obj
+__end_of_utoa 2A2E 0 CODE 0 text20 dist/default/debug\Base.X.debug.obj
+_OUTSetHTCDataNibble 3CB0 0 CODE 0 text57 dist/default/debug\Base.X.debug.obj
+__p_nvm_pgm_cfg_text 7040 0 CODE 0 _nvm_pgm_cfg_text dist/default/debug\Base.X.debug.obj
+isdigit@c 72 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__end_of_dpowers 7250 0 STRCODE 0 stringtext dist/default/debug\Base.X.debug.obj
+_IOCBN 395 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_IOCBP 394 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+?_sprintf 2D 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+_isdigit$1177 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+_PMADR 191 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_PMDAT 193 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_T1CON 18 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_TMR1H 17 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_TMR1L 16 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_TRISA 8C 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_TRISB 8D 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+_TRISC 8E 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+RTXVisDec@offset 5C 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+_CC1Init 23AA 0 CODE 0 text61 dist/default/debug\Base.X.debug.obj
+_CC1Read 3E4A 0 CODE 0 text15 dist/default/debug\Base.X.debug.obj
+_pktRx 13F 0 BANK2 1 bssBANK2 dist/default/debug\Base.X.debug.obj
+_pktTx 14A 0 BANK2 1 bssBANK2 dist/default/debug\Base.X.debug.obj
+__end_of_DINInit 3AF0 0 CODE 0 text60 dist/default/debug\Base.X.debug.obj
+__end_of_DINTask 3D5C 0 CODE 0 text59 dist/default/debug\Base.X.debug.obj
+__end_of_DINTick 4000 0 CODE 0 text5 dist/default/debug\Base.X.debug.obj
+_DPYSendStr 2598 0 CODE 0 text38 dist/default/debug\Base.X.debug.obj
+__end_of_DPYWriteNibble 2342 0 CODE 0 text54 dist/default/debug\Base.X.debug.obj
+__CFG_LPBOR$ON 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+__pintentry 8 0 CODE 0 intentry dist/default/debug\Base.X.debug.obj
+___fttol@sign1 38 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+sprintf@width 44 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+RTXVisDec@posDec B2 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+_DPYIsBusy 2492 0 CODE 0 text41 dist/default/debug\Base.X.debug.obj
+_tmrLongSel 13A 0 BANK2 1 bssBANK2 dist/default/debug\Base.X.debug.obj
+__HdataBANK2 0 0 ABS 0 dataBANK2 -
+__HdataBANK3 0 0 ABS 0 dataBANK3 -
+DLYDelay_us@val 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+SPIRead@dstPtr 71 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+_SYSInit 3E8E 0 CODE 0 text6 dist/default/debug\Base.X.debug.obj
+_SYSTask 3C7A 0 CODE 0 text1 dist/default/debug\Base.X.debug.obj
+_PGMSelLong 3D5C 0 CODE 0 text4 dist/default/debug\Base.X.debug.obj
+__initialization 26 0 CODE 0 cinit dist/default/debug\Base.X.debug.obj
+RTXUpdateDisplay@strRow1 CF 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+RTXUpdateDisplay@strRow2 BF 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+__pbssBANK0 69 0 BANK0 1 bssBANK0 dist/default/debug\Base.X.debug.obj
+__pbssBANK1 EC 0 BANK1 1 bssBANK1 dist/default/debug\Base.X.debug.obj
+__pbssBANK2 120 0 BANK2 1 bssBANK2 dist/default/debug\Base.X.debug.obj
+__pbssBANK3 1CF 0 BANK3 1 bssBANK3 dist/default/debug\Base.X.debug.obj
+__Hstringtext 0 0 ABS 0 stringtext -
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+RTXVisDec@status B0 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+RTXVisDec@strTmp A0 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+___wmul@product 75 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+__end_of_DPYSetCur 3BB6 0 CODE 0 text39 dist/default/debug\Base.X.debug.obj
+__size_of_DPYSetCur 0 0 ABS 0 - dist/default/debug\Base.X.debug.obj
+RTXReadPkt@dev_type E5 0 BANK1 1 cstackBANK1 dist/default/debug\Base.X.debug.obj
+OUTSetHTCDataNibble@val 72 0 COMMON 1 cstackCOMMON dist/default/debug\Base.X.debug.obj
+ftoa@f 49 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+ftoa@l 52 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+__end_of_DPYInit 3B3A 0 CODE 0 text52 dist/default/debug\Base.X.debug.obj
+__end_of_nvm_pgm_cfg 7080 0 CODE 0 _nvm_pgm_cfg_text dist/default/debug\Base.X.debug.obj
+__end_of_RTXSendRPgm 20C4 0 CODE 0 text11 dist/default/debug\Base.X.debug.obj
+___ftmul@f3_as_product 2B 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+RTXVisDec@maxDigit 5B 0 BANK0 1 cstackBANK0 dist/default/debug\Base.X.debug.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+text18 text18_split_1
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 1E3D 3C7A 1B 2
+text2 0 113F 227E 30 2
+text3 0 1F07 3E0E 1E 2
+text4 0 1EAE 3D5C 1D 2
+text5 0 1FD9 3FB2 27 2
+text6 0 1F47 3E8E 23 2
+text7 0 1EE9 3DD2 1E 2
+text8 0 1CDF 39BE 6 2
+text9 0 9F2 13E4 1BC 2
+text10 0 108D 211A 2B 2
+text11 0 1039 2072 29 2
+text12 0 1010 2020 29 2
+text13 0 1360 26C0 52 2
+text14 0 1D27 3A4E E 2
+text15 0 1F25 3E4A 22 2
+text16 0 1F8E 3F1C 24 2
+text17 0 145B 28B6 5A 2
+text19 0 1F6A 3ED4 24 2
+text20 0 14B5 296A 62 2
+text21 0 10E4 21C8 2C 2
+text22 0 11A1 2342 34 2
+text23 0 16A5 2D4A A7 2
+text24 0 1602 2C04 A3 2
+text25 0 BAE 175C 1E3 2
+text26 0 1D19 3A32 E 2
+text27 0 1E22 3C44 1B 2
+text28 0 1289 2512 43 2
+text29 0 13B2 2764 53 2
+text30 0 1062 20C4 2B 2
+text31 0 157B 2AF6 87 2
+text32 0 1ECB 3D96 1E 2
+text33 0 8FC 11F8 F6 2
+text34 0 1CF1 39E2 8 2
+text35 0 174C 2E98 B4 2
+text36 0 1517 2A2E 64 2
+text37 0 120E 241C 3B 2
+text38 0 12CC 2598 46 2
+text39 0 1DC6 3B8C 15 2
+text40 0 1CF9 39F2 9 2
+text41 0 1249 2492 40 2
+text42 0 1DB1 3B62 15 2
+text43 0 1001 2002 F 2
+text44 0 1FB2 3F64 27 2
+text45 0 1D0D 3A1A C 2
+text46 0 1D78 3AF0 12 2
+text47 0 1D35 3A6A F 2
+text48 0 83F 107E BD 2
+text49 0 1DF2 3BE4 17 2
+text50 0 1D02 3A04 B 2
+text51 0 1DDB 3BB6 17 2
+text52 0 1D8A 3B14 13 2
+text53 0 801 1002 3E 2
+text54 0 116F 22DE 32 2
+text55 0 10B8 2170 2C 2
+text56 0 1405 280A 56 2
+text57 0 1E58 3CB0 1C 2
+text58 0 1D44 3A88 11 2
+text59 0 1E91 3D22 1D 2
+text60 0 1D66 3ACC 12 2
+text61 0 11D5 23AA 39 2
+text62 0 1E09 3C12 19 2
+text64 0 1D9D 3B3A 14 2
+text65 0 1E74 3CE8 1D 2
+text67 0 1CD9 39B2 6 2
+text18_split_1 0 D91 1B22 26F 2
+_nvm_pgm_cfg_text 0 3820 7040 20 2
+maintext 0 1312 2624 4E 2
+cstackCOMMON 1 70 70 D 1
+cstackBANK0 1 20 20 50 1
+cstackBANK1 1 A0 A0 50 1
+inittext 0 1CE5 39CA 6 2
+intentry 0 4 8 7FA 2
+reset_vec 0 0 0 3 2
+bssBANK2 1 120 120 4D 1
+stringtext 0 3900 7200 33 2
+idataBANK2 0 1D55 3AAA 11 2
+idataBANK3 0 1110 2220 2F 2
+dataBANK3 1 1A0 1A0 40 1
+clrtext 0 1CEB 39D6 6 2
+config 0 8007 1000E 2 2
