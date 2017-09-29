@@ -1,4 +1,4 @@
-update=16/12/2015 10:37:58
+update=16/09/2017 22:31:39
 last_client=eeschema
 [eeschema]
 version=1
@@ -39,3 +39,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
+LibName31=D:/Progetti/Librerie KiCad/myOpAmp
