@@ -2103,7 +2103,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 "4
 [v _battV `f ~T0 @X0 1 e ]
 [v _rmsCurr `f ~T0 @X0 1 e ]
-[; ;ADC.h: 4: float battV,rmsCurr;
+[v _realRmsCurr `f ~T0 @X0 1 e ]
+[; ;ADC.h: 4: float battV,rmsCurr,realRmsCurr;
 [; ;ADC.h: 6: void ADCInit(unsigned char state);
 [; ;ADC.h: 7: void ADCConv(void);
 "16 Sensore.c
@@ -2136,9 +2137,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [p x VCAPEN=OFF ]
 "30
 [p x WRT=OFF ]
-[v F2015 `(v ~T0 @X0 1 tf ]
+[v F2016 `(v ~T0 @X0 1 tf ]
 "37
-[v _INTIsr `IF2015 ~T0 @X0 1 e ]
+[v _INTIsr `IF2016 ~T0 @X0 1 e ]
 "38
 {
 [; ;Sensore.c: 37: void interrupt INTIsr(void)

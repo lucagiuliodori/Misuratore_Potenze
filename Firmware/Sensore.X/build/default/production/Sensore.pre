@@ -2682,7 +2682,7 @@ void PGMPgmOff(void);
 
 # 3 "ADC.h"
 unsigned short batt;
-float battV,rmsCurr;
+float battV,rmsCurr,realRmsCurr;
 
 void ADCInit(unsigned char state);
 void ADCConv(void);

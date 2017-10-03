@@ -2683,12 +2683,12 @@ void SYSInt(void);
 
 # 3 "ADC.h"
 unsigned short batt;
-float battV,rmsCurr;
+float battV,rmsCurr,realRmsCurr;
 
 void ADCInit(unsigned char state);
 void ADCConv(void);
 
-# 17 "SYS.c"
+# 18 "SYS.c"
 void SYSInit(unsigned char state)
 {
 switch(state)
@@ -2730,6 +2730,8 @@ DINTick();
 PGMTick();
 }
 
+ADCConv();
+
 if(u_in_ev_down.sel)
 {
 
@@ -2754,8 +2756,8 @@ if(flg_slp.goSleep)
 
 flg_slp.goSleep=0;
 
-if(!(!PORTBbits.RB2))
-SLPSleep();
+
+
 }
 
 

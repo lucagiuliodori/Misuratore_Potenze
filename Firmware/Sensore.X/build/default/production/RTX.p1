@@ -67,10 +67,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 "51
 [v _CC1Write `(v ~T0 @X0 0 ef3`uc`*uc`uc ]
 "173 RTX.c
-[c E1987 0 1 2 3 4 5 8 .. ]
-[n E1987 _POS_PKT ID_DEST TYPE_DEST ID_SOURCE TYPE_SOURCE OP VAL BAT  ]
-[c E1995 0 1 128 129 .. ]
-[n E1995 _RTX_OP DAT PGM rDAT rPGM  ]
+[c E1988 0 1 2 3 4 5 8 .. ]
+[n E1988 _POS_PKT ID_DEST TYPE_DEST ID_SOURCE TYPE_SOURCE OP VAL BAT  ]
+[c E1996 0 1 128 129 .. ]
+[n E1996 _RTX_OP DAT PGM rDAT rPGM  ]
 "59 PGM.h
 [v _PGMWriteNvm `(v ~T0 @X0 0 ef ]
 "60
@@ -83,8 +83,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [u S243 `f 1 `uc -> 3 `i ]
 [n S243 _RTX_DATA val val_byte ]
 "238
-[c E2001 0 1 2 3 .. ]
-[n E2001 _DEV_TYPE BASE SENS_CURRGEN SENS_CURRCON SENS_VOLT  ]
+[c E2002 0 1 2 3 .. ]
+[n E2002 _DEV_TYPE BASE SENS_CURRGEN SENS_CURRCON SENS_VOLT  ]
 "4 LED.h
 [v _LEDFastFlash `(v ~T0 @X0 0 ef1`uc ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
@@ -2044,7 +2044,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 "4
 [v _battV `f ~T0 @X0 1 e ]
 [v _rmsCurr `f ~T0 @X0 1 e ]
-[; ;ADC.h: 4: float battV,rmsCurr;
+[v _realRmsCurr `f ~T0 @X0 1 e ]
+[; ;ADC.h: 4: float battV,rmsCurr,realRmsCurr;
 [; ;ADC.h: 6: void ADCInit(unsigned char state);
 [; ;ADC.h: 7: void ADCConv(void);
 [; ;OUT.h: 38: void OUTInit(unsigned char);
@@ -2411,19 +2412,19 @@ Version 3.2 HI-TECH Software Intermediate Code
 {
 [; ;RTX.c: 173: if(pktRx[OP]==rPGM)
 "173
-[e $ ! == -> *U + &U _pktRx * -> . `E1987 4 `ux -> -> # *U &U _pktRx `ui `ux `i -> . `E1995 3 `i 268  ]
+[e $ ! == -> *U + &U _pktRx * -> . `E1988 4 `ux -> -> # *U &U _pktRx `ui `ux `i -> . `E1996 3 `i 268  ]
 [; ;RTX.c: 174: {
 "174
 {
 [; ;RTX.c: 175: if(pktRx[ID_DEST]==pgm_cfg.sensId)
 "175
-[e $ ! == -> *U + &U _pktRx * -> . `E1987 0 `ux -> -> # *U &U _pktRx `ui `ux `i -> . _pgm_cfg 3 `i 269  ]
+[e $ ! == -> *U + &U _pktRx * -> . `E1988 0 `ux -> -> # *U &U _pktRx `ui `ux `i -> . _pgm_cfg 3 `i 269  ]
 [; ;RTX.c: 176: {
 "176
 {
 [; ;RTX.c: 178: pgm_cfg.baseId=pktRx[ID_SOURCE];
 "178
-[e = . _pgm_cfg 4 *U + &U _pktRx * -> . `E1987 2 `ux -> -> # *U &U _pktRx `ui `ux ]
+[e = . _pgm_cfg 4 *U + &U _pktRx * -> . `E1988 2 `ux -> -> # *U &U _pktRx `ui `ux ]
 [; ;RTX.c: 180: pgm_cfg.menu.baseIdProg=1;
 "180
 [e = . . . _pgm_cfg 2 1 0 -> -> 1 `i `uc ]
@@ -2462,13 +2463,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 {
 [; ;RTX.c: 196: if(pktRx[OP]==rDAT)
 "196
-[e $ ! == -> *U + &U _pktRx * -> . `E1987 4 `ux -> -> # *U &U _pktRx `ui `ux `i -> . `E1995 2 `i 271  ]
+[e $ ! == -> *U + &U _pktRx * -> . `E1988 4 `ux -> -> # *U &U _pktRx `ui `ux `i -> . `E1996 2 `i 271  ]
 [; ;RTX.c: 197: {
 "197
 {
 [; ;RTX.c: 198: if((pktRx[ID_DEST]==pgm_cfg.sensId) && (pktRx[ID_SOURCE]==pgm_cfg.baseId))
 "198
-[e $ ! && == -> *U + &U _pktRx * -> . `E1987 0 `ux -> -> # *U &U _pktRx `ui `ux `i -> . _pgm_cfg 3 `i == -> *U + &U _pktRx * -> . `E1987 2 `ux -> -> # *U &U _pktRx `ui `ux `i -> . _pgm_cfg 4 `i 272  ]
+[e $ ! && == -> *U + &U _pktRx * -> . `E1988 0 `ux -> -> # *U &U _pktRx `ui `ux `i -> . _pgm_cfg 3 `i == -> *U + &U _pktRx * -> . `E1988 2 `ux -> -> # *U &U _pktRx `ui `ux `i -> . _pgm_cfg 4 `i 272  ]
 [; ;RTX.c: 199: {
 "199
 {
@@ -2557,54 +2558,54 @@ Version 3.2 HI-TECH Software Intermediate Code
 {
 [; ;RTX.c: 237: pktTx[ID_DEST]=pgm_cfg.baseId;
 "237
-[e = *U + &U _pktTx * -> . `E1987 0 `ux -> -> # *U &U _pktTx `ui `ux . _pgm_cfg 4 ]
+[e = *U + &U _pktTx * -> . `E1988 0 `ux -> -> # *U &U _pktTx `ui `ux . _pgm_cfg 4 ]
 [; ;RTX.c: 238: pktTx[TYPE_DEST]=BASE;
 "238
-[e = *U + &U _pktTx * -> . `E1987 1 `ux -> -> # *U &U _pktTx `ui `ux -> . `E2001 0 `uc ]
+[e = *U + &U _pktTx * -> . `E1988 1 `ux -> -> # *U &U _pktTx `ui `ux -> . `E2002 0 `uc ]
 [; ;RTX.c: 239: pktTx[ID_SOURCE]=pgm_cfg.sensId;
 "239
-[e = *U + &U _pktTx * -> . `E1987 2 `ux -> -> # *U &U _pktTx `ui `ux . _pgm_cfg 3 ]
+[e = *U + &U _pktTx * -> . `E1988 2 `ux -> -> # *U &U _pktTx `ui `ux . _pgm_cfg 3 ]
 [; ;RTX.c: 241: if(PORTBbits.RB5)
 "241
 [e $ ! != -> . . _PORTBbits 0 5 `i -> -> -> 0 `i `Vuc `i 277  ]
 [; ;RTX.c: 242: pktTx[TYPE_SOURCE]=SENS_CURRGEN;
 "242
-[e = *U + &U _pktTx * -> . `E1987 3 `ux -> -> # *U &U _pktTx `ui `ux -> . `E2001 1 `uc ]
+[e = *U + &U _pktTx * -> . `E1988 3 `ux -> -> # *U &U _pktTx `ui `ux -> . `E2002 1 `uc ]
 [e $U 278  ]
 "243
 [e :U 277 ]
 [; ;RTX.c: 243: else
 [; ;RTX.c: 244: pktTx[TYPE_SOURCE]=SENS_CURRCON;
 "244
-[e = *U + &U _pktTx * -> . `E1987 3 `ux -> -> # *U &U _pktTx `ui `ux -> . `E2001 2 `uc ]
+[e = *U + &U _pktTx * -> . `E1988 3 `ux -> -> # *U &U _pktTx `ui `ux -> . `E2002 2 `uc ]
 [e :U 278 ]
 [; ;RTX.c: 245: pktTx[OP]=DAT;
 "245
-[e = *U + &U _pktTx * -> . `E1987 4 `ux -> -> # *U &U _pktTx `ui `ux -> . `E1995 0 `uc ]
+[e = *U + &U _pktTx * -> . `E1988 4 `ux -> -> # *U &U _pktTx `ui `ux -> . `E1996 0 `uc ]
 [; ;RTX.c: 246: valTemp.val=rmsCurr+0;
 "246
 [e = . _valTemp 0 + _rmsCurr -> -> 0 `i `f ]
 [; ;RTX.c: 247: pktTx[VAL]=valTemp.val_byte[0];
 "247
-[e = *U + &U _pktTx * -> . `E1987 5 `ux -> -> # *U &U _pktTx `ui `ux *U + &U . _valTemp 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _valTemp 1 `ui `ux ]
+[e = *U + &U _pktTx * -> . `E1988 5 `ux -> -> # *U &U _pktTx `ui `ux *U + &U . _valTemp 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _valTemp 1 `ui `ux ]
 [; ;RTX.c: 248: pktTx[VAL+1]=valTemp.val_byte[1];
 "248
-[e = *U + &U _pktTx * -> -> + -> . `E1987 5 `i -> 1 `i `ui `ux -> -> # *U &U _pktTx `ui `ux *U + &U . _valTemp 1 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _valTemp 1 `ui `ux ]
+[e = *U + &U _pktTx * -> -> + -> . `E1988 5 `i -> 1 `i `ui `ux -> -> # *U &U _pktTx `ui `ux *U + &U . _valTemp 1 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _valTemp 1 `ui `ux ]
 [; ;RTX.c: 249: pktTx[VAL+2]=valTemp.val_byte[2];
 "249
-[e = *U + &U _pktTx * -> -> + -> . `E1987 5 `i -> 2 `i `ui `ux -> -> # *U &U _pktTx `ui `ux *U + &U . _valTemp 1 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _valTemp 1 `ui `ux ]
+[e = *U + &U _pktTx * -> -> + -> . `E1988 5 `i -> 2 `i `ui `ux -> -> # *U &U _pktTx `ui `ux *U + &U . _valTemp 1 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _valTemp 1 `ui `ux ]
 [; ;RTX.c: 250: valBatt.val=battV;
 "250
 [e = . _valBatt 0 _battV ]
 [; ;RTX.c: 251: pktTx[BAT]=valBatt.val_byte[0];
 "251
-[e = *U + &U _pktTx * -> . `E1987 6 `ux -> -> # *U &U _pktTx `ui `ux *U + &U . _valBatt 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _valBatt 1 `ui `ux ]
+[e = *U + &U _pktTx * -> . `E1988 6 `ux -> -> # *U &U _pktTx `ui `ux *U + &U . _valBatt 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _valBatt 1 `ui `ux ]
 [; ;RTX.c: 252: pktTx[BAT+1]=valBatt.val_byte[1];
 "252
-[e = *U + &U _pktTx * -> -> + -> . `E1987 6 `i -> 1 `i `ui `ux -> -> # *U &U _pktTx `ui `ux *U + &U . _valBatt 1 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _valBatt 1 `ui `ux ]
+[e = *U + &U _pktTx * -> -> + -> . `E1988 6 `i -> 1 `i `ui `ux -> -> # *U &U _pktTx `ui `ux *U + &U . _valBatt 1 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _valBatt 1 `ui `ux ]
 [; ;RTX.c: 253: pktTx[BAT+2]=valBatt.val_byte[2];
 "253
-[e = *U + &U _pktTx * -> -> + -> . `E1987 6 `i -> 2 `i `ui `ux -> -> # *U &U _pktTx `ui `ux *U + &U . _valBatt 1 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _valBatt 1 `ui `ux ]
+[e = *U + &U _pktTx * -> -> + -> . `E1988 6 `i -> 2 `i `ui `ux -> -> # *U &U _pktTx `ui `ux *U + &U . _valBatt 1 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _valBatt 1 `ui `ux ]
 [; ;RTX.c: 256: RTXSndPkt(pktTx,0x0B);
 "256
 [e ( _RTXSndPkt (2 , &U _pktTx -> -> 11 `i `uc ]
@@ -2676,48 +2677,48 @@ Version 3.2 HI-TECH Software Intermediate Code
 {
 [; ;RTX.c: 291: pktTx[ID_DEST]=0x00;
 "291
-[e = *U + &U _pktTx * -> . `E1987 0 `ux -> -> # *U &U _pktTx `ui `ux -> -> 0 `i `uc ]
+[e = *U + &U _pktTx * -> . `E1988 0 `ux -> -> # *U &U _pktTx `ui `ux -> -> 0 `i `uc ]
 [; ;RTX.c: 292: pktTx[TYPE_DEST]=BASE;
 "292
-[e = *U + &U _pktTx * -> . `E1987 1 `ux -> -> # *U &U _pktTx `ui `ux -> . `E2001 0 `uc ]
+[e = *U + &U _pktTx * -> . `E1988 1 `ux -> -> # *U &U _pktTx `ui `ux -> . `E2002 0 `uc ]
 [; ;RTX.c: 293: pktTx[ID_SOURCE]=pgm_cfg.sensId;
 "293
-[e = *U + &U _pktTx * -> . `E1987 2 `ux -> -> # *U &U _pktTx `ui `ux . _pgm_cfg 3 ]
+[e = *U + &U _pktTx * -> . `E1988 2 `ux -> -> # *U &U _pktTx `ui `ux . _pgm_cfg 3 ]
 [; ;RTX.c: 295: if(PORTBbits.RB5)
 "295
 [e $ ! != -> . . _PORTBbits 0 5 `i -> -> -> 0 `i `Vuc `i 283  ]
 [; ;RTX.c: 296: pktTx[TYPE_SOURCE]=SENS_CURRGEN;
 "296
-[e = *U + &U _pktTx * -> . `E1987 3 `ux -> -> # *U &U _pktTx `ui `ux -> . `E2001 1 `uc ]
+[e = *U + &U _pktTx * -> . `E1988 3 `ux -> -> # *U &U _pktTx `ui `ux -> . `E2002 1 `uc ]
 [e $U 284  ]
 "297
 [e :U 283 ]
 [; ;RTX.c: 297: else
 [; ;RTX.c: 298: pktTx[TYPE_SOURCE]=SENS_CURRCON;
 "298
-[e = *U + &U _pktTx * -> . `E1987 3 `ux -> -> # *U &U _pktTx `ui `ux -> . `E2001 2 `uc ]
+[e = *U + &U _pktTx * -> . `E1988 3 `ux -> -> # *U &U _pktTx `ui `ux -> . `E2002 2 `uc ]
 [e :U 284 ]
 [; ;RTX.c: 299: pktTx[OP]=PGM;
 "299
-[e = *U + &U _pktTx * -> . `E1987 4 `ux -> -> # *U &U _pktTx `ui `ux -> . `E1995 1 `uc ]
+[e = *U + &U _pktTx * -> . `E1988 4 `ux -> -> # *U &U _pktTx `ui `ux -> . `E1996 1 `uc ]
 [; ;RTX.c: 300: pktTx[VAL]=0x00;
 "300
-[e = *U + &U _pktTx * -> . `E1987 5 `ux -> -> # *U &U _pktTx `ui `ux -> -> 0 `i `uc ]
+[e = *U + &U _pktTx * -> . `E1988 5 `ux -> -> # *U &U _pktTx `ui `ux -> -> 0 `i `uc ]
 [; ;RTX.c: 301: pktTx[VAL+1]=0x00;
 "301
-[e = *U + &U _pktTx * -> -> + -> . `E1987 5 `i -> 1 `i `ui `ux -> -> # *U &U _pktTx `ui `ux -> -> 0 `i `uc ]
+[e = *U + &U _pktTx * -> -> + -> . `E1988 5 `i -> 1 `i `ui `ux -> -> # *U &U _pktTx `ui `ux -> -> 0 `i `uc ]
 [; ;RTX.c: 302: pktTx[VAL+2]=0x00;
 "302
-[e = *U + &U _pktTx * -> -> + -> . `E1987 5 `i -> 2 `i `ui `ux -> -> # *U &U _pktTx `ui `ux -> -> 0 `i `uc ]
+[e = *U + &U _pktTx * -> -> + -> . `E1988 5 `i -> 2 `i `ui `ux -> -> # *U &U _pktTx `ui `ux -> -> 0 `i `uc ]
 [; ;RTX.c: 303: pktTx[BAT]=0x00;
 "303
-[e = *U + &U _pktTx * -> . `E1987 6 `ux -> -> # *U &U _pktTx `ui `ux -> -> 0 `i `uc ]
+[e = *U + &U _pktTx * -> . `E1988 6 `ux -> -> # *U &U _pktTx `ui `ux -> -> 0 `i `uc ]
 [; ;RTX.c: 304: pktTx[BAT+1]=0x00;
 "304
-[e = *U + &U _pktTx * -> -> + -> . `E1987 6 `i -> 1 `i `ui `ux -> -> # *U &U _pktTx `ui `ux -> -> 0 `i `uc ]
+[e = *U + &U _pktTx * -> -> + -> . `E1988 6 `i -> 1 `i `ui `ux -> -> # *U &U _pktTx `ui `ux -> -> 0 `i `uc ]
 [; ;RTX.c: 305: pktTx[BAT+2]=0x00;
 "305
-[e = *U + &U _pktTx * -> -> + -> . `E1987 6 `i -> 2 `i `ui `ux -> -> # *U &U _pktTx `ui `ux -> -> 0 `i `uc ]
+[e = *U + &U _pktTx * -> -> + -> . `E1988 6 `i -> 2 `i `ui `ux -> -> # *U &U _pktTx `ui `ux -> -> 0 `i `uc ]
 [; ;RTX.c: 308: RTXSndPkt(pktTx,0x0B);
 "308
 [e ( _RTXSndPkt (2 , &U _pktTx -> -> 11 `i `uc ]

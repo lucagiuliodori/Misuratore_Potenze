@@ -2529,22 +2529,23 @@ void DLYDelay_ms(unsigned short);
 
 # 3 "ADC.h"
 unsigned short batt;
-float battV,rmsCurr;
+float battV,rmsCurr,realRmsCurr;
 
 void ADCInit(unsigned char state);
 void ADCConv(void);
 
-# 20 "ADC.c"
-typedef enum _ADC_CH
+# 61 "ADC.c"
+typedef union _ADC_VAL
 {
-ADC_CH_OFF,
-ADC_CH_BATT,
-ADC_CH_CURR
-}te_ADC_CH;
+unsigned short val;
+struct
+{
+unsigned char lVal;
+unsigned char hVal;
+};
+}tu_ADC_VAL;
 
-
-
-te_ADC_CH adc_ch;
+tu_ADC_VAL adc_vals[(100)];
 
 void ADCInit(unsigned char state)
 {
@@ -2552,14 +2553,14 @@ switch(state)
 {
 case 0:
 
-ADCON0=0b00000101; ADCON1=0b10000011; FVRCON=0b10000001; ANSELA|=0b00000110;;
+ADCON0=0b00000101; ADCON1=0b10010011; FVRCON=0b10000001; ANSELA|=0b00000110;;
 break;
 case 1:
 
-adc_ch=ADC_CH_OFF;
 batt=0;
 battV=0;
 rmsCurr=0;
+realRmsCurr=0;
 break;
 
 
@@ -2569,88 +2570,96 @@ break;
 
 void ADCConv(void)
 {
-unsigned char cntSum;
+unsigned char i,j;
 unsigned short sumBatt;
 unsigned long sumCurr;
+unsigned long sumEavCurr;
+unsigned long maxCurr;
 
-while(1)
-{
 
-switch(adc_ch)
-{
-case ADC_CH_OFF:
 
 LATAbits.LATA0=1;
 
-sumBatt=0;
-
-cntSum=0;
-
-ADCON1=0b10000011;
+ADCON1=0b10010011;
 ADCON0=0b00000101;
-adc_ch=ADC_CH_BATT;
-break;
-case ADC_CH_BATT:
-
-if(cntSum==10)
-{
-
-batt=sumBatt/10;
-
-# 84
-battV=batt*1.024/1024*11;
-
-sumCurr=0;
-
-cntSum=0;
-
-LATAbits.LATA0=0;
-
-ADCON1=0b10000011;
-ADCON0=0b00001001;
-adc_ch=ADC_CH_CURR;
-}
-else
-{
-
-sumBatt+=(ADRESH<<8|ADRESL);
-
-cntSum++;
-}
-break;
-case ADC_CH_CURR:
-
-if(cntSum==20)
-{
-
-# 114
-rmsCurr=sumCurr*(1.024*1.024)/(1024*1024);
-rmsCurr/=(33*33);
-rmsCurr*=(2000*2000);
-rmsCurr/=20;
-rmsCurr=sqrt(rmsCurr);
-
-adc_ch=ADC_CH_OFF;
-return;
-}
-else
-{
-
-sumCurr+=((ADRESH<<8|ADRESL)*(ADRESH<<8|ADRESL));
-
-cntSum++;
-}
-break;
-}
 
 _delay((unsigned long)((10)*(8000000/4000000.0)));
+for(i=0;i<(10);i++)
+{
 
 ADCON0bits.GO=1;
 
 while(ADCON0bits.GO)
 asm("clrwdt");
 
-if(adc_ch==ADC_CH_CURR)
-DLYDelay_ms(8);
+adc_vals[i].lVal=ADRESL;
+adc_vals[i].hVal=ADRESH;
+
+DLYDelay_ms((20));
 }
+
+sumBatt=0;
+for(i=0;i<(10);i++)
+sumBatt+=adc_vals[i].val;
+batt=sumBatt/(10);
+
+# 131
+battV=batt*1.024/1024*11;
+
+LATAbits.LATA0=0;
+
+
+
+ADCON1=0b10010011;
+ADCON0=0b00001001;
+
+_delay((unsigned long)((10)*(8000000/4000000.0)));
+for(i=0;i<(100);i++)
+{
+
+ADCON0bits.GO=1;
+
+while(ADCON0bits.GO)
+asm("clrwdt");
+
+adc_vals[i].lVal=ADRESL;
+adc_vals[i].hVal=ADRESH;
+
+DLYDelay_ms((200-17));
+}
+
+maxCurr=0;
+for(i=0;i<(100);i++)
+{
+if(adc_vals[i].val>maxCurr)
+maxCurr=adc_vals[i].val;
+}
+
+rmsCurr=(float)maxCurr/sqrt(2);
+
+
+sumCurr=0;
+for(i=0;i<(100);)
+{
+
+# 174
+sumEavCurr=0;
+for(j=0;j<((100)/(20));j++,i++)
+sumEavCurr+=adc_vals[i].val;
+sumEavCurr/=((100)/(20));
+sumCurr+=sumEavCurr*sumEavCurr;
+}
+
+# 186
+realRmsCurr=(float)sumCurr*2;
+realRmsCurr*=(float)1.024;
+realRmsCurr*=(float)1.024;
+realRmsCurr*=(float)2000;
+realRmsCurr*=(float)2000;
+realRmsCurr/=(float)1024;
+realRmsCurr/=(float)1024;
+realRmsCurr/=(float)33.2;
+realRmsCurr/=(float)33.2;
+realRmsCurr/=(float)(20);
+realRmsCurr=sqrt(realRmsCurr);
 }

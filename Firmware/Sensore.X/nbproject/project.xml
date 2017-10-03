@@ -13,5 +13,10 @@
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
         </data>
+        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>applicazione</word>
+            <word>Inizializzazione</word>
+            <word>variabili</word>
+        </spellchecker-wordlist>
     </configuration>
 </project>

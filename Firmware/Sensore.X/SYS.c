@@ -12,6 +12,7 @@
 
 //Definizione macro.
 #define mTMR0Reset() TMR0=255-156
+//Frequenza Fosc=8MHz
 #define mSysInit() OPTION_REG=0b00000110; OSCCON=0b01110011; WDTCON=0b00001001; IOCBP=0b00000000; IOCBN=0b00000000; mTMR0Reset(); INTCON|=0b00100000; INTCON&=0b11111011; PIR1=0b00000000; PIR2=0b00000000; PIE1=0b00000000; PIE2=0b00000000	//prescaler timer0 1:128, frequenza 8MHz
 
 void SYSInit(unsigned char state)

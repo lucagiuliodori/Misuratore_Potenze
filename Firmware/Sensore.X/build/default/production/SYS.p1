@@ -69,21 +69,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _DINTick `(v ~T0 @X0 0 ef ]
 "56 PGM.h
 [v _PGMTick `(v ~T0 @X0 0 ef ]
-"57
+"7 ADC.h
+[v _ADCConv `(v ~T0 @X0 0 ef ]
+"57 PGM.h
 [v _PGMSelUp `(v ~T0 @X0 0 ef ]
 "58
 [v _PGMSelLong `(v ~T0 @X0 0 ef ]
-"481 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic16f1518.h
-[s S32 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S32 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
-"480
-[u S31 `S32 1 ]
-[n S31 . . ]
-"492
-[v _PORTBbits `VS31 ~T0 @X0 0 e@13 ]
-"14 SLP.h
-[v _SLPSleep `(v ~T0 @X0 0 ef ]
-"60 PGM.h
+"60
 [v _PGMPgmOff `(v ~T0 @X0 0 ef ]
 "57 RTX.h
 [v _RTXAwake `(v ~T0 @X0 0 ef ]
@@ -2107,31 +2099,32 @@ Version 3.2 HI-TECH Software Intermediate Code
 "4
 [v _battV `f ~T0 @X0 1 e ]
 [v _rmsCurr `f ~T0 @X0 1 e ]
-[; ;ADC.h: 4: float battV,rmsCurr;
+[v _realRmsCurr `f ~T0 @X0 1 e ]
+[; ;ADC.h: 4: float battV,rmsCurr,realRmsCurr;
 [; ;ADC.h: 6: void ADCInit(unsigned char state);
 [; ;ADC.h: 7: void ADCConv(void);
-"17 SYS.c
+"18 SYS.c
 [v _SYSInit `(v ~T0 @X0 1 ef1`uc ]
-"18
-{
-[; ;SYS.c: 17: void SYSInit(unsigned char state)
-[; ;SYS.c: 18: {
-[e :U _SYSInit ]
-"17
-[v _state `uc ~T0 @X0 1 r1 ]
-"18
-[f ]
-[; ;SYS.c: 19: switch(state)
 "19
-[e $U 249  ]
-[; ;SYS.c: 20: {
-"20
 {
-[; ;SYS.c: 21: case 0:
+[; ;SYS.c: 18: void SYSInit(unsigned char state)
+[; ;SYS.c: 19: {
+[e :U _SYSInit ]
+"18
+[v _state `uc ~T0 @X0 1 r1 ]
+"19
+[f ]
+[; ;SYS.c: 20: switch(state)
+"20
+[e $U 249  ]
+[; ;SYS.c: 21: {
 "21
+{
+[; ;SYS.c: 22: case 0:
+"22
 [e :U 250 ]
-[; ;SYS.c: 23: OPTION_REG=0b00000110; OSCCON=0b01110011; WDTCON=0b00001001; IOCBP=0b00000000; IOCBN=0b00000000; TMR0=255-156; INTCON|=0b00100000; INTCON&=0b11111011; PIR1=0b00000000; PIR2=0b00000000; PIE1=0b00000000; PIE2=0b00000000;
-"23
+[; ;SYS.c: 24: OPTION_REG=0b00000110; OSCCON=0b01110011; WDTCON=0b00001001; IOCBP=0b00000000; IOCBN=0b00000000; TMR0=255-156; INTCON|=0b00100000; INTCON&=0b11111011; PIR1=0b00000000; PIR2=0b00000000; PIE1=0b00000000; PIE2=0b00000000;
+"24
 [e = _OPTION_REG -> -> 6 `i `uc ]
 [e = _OSCCON -> -> 115 `i `uc ]
 [e = _WDTCON -> -> 9 `i `uc ]
@@ -2144,179 +2137,175 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _PIR2 -> -> 0 `i `uc ]
 [e = _PIE1 -> -> 0 `i `uc ]
 [e = _PIE2 -> -> 0 `i `uc ]
-[; ;SYS.c: 24: break;
-"24
-[e $U 248  ]
-[; ;SYS.c: 25: case 1:
+[; ;SYS.c: 25: break;
 "25
+[e $U 248  ]
+[; ;SYS.c: 26: case 1:
+"26
 [e :U 251 ]
-[; ;SYS.c: 27: u_SYS_STA.VAL=0;
-"27
-[e = . _u_SYS_STA 0 -> -> 0 `i `uc ]
-[; ;SYS.c: 28: break;
+[; ;SYS.c: 28: u_SYS_STA.VAL=0;
 "28
+[e = . _u_SYS_STA 0 -> -> 0 `i `uc ]
+[; ;SYS.c: 29: break;
+"29
 [e $U 248  ]
-"32
+"33
 }
-[; ;SYS.c: 32: }
+[; ;SYS.c: 33: }
 [e $U 248  ]
-"19
+"20
 [e :U 249 ]
 [e [\ _state , $ -> -> 0 `i `uc 250
  , $ -> -> 1 `i `uc 251
  248 ]
-"32
-[e :U 248 ]
-[; ;SYS.c: 33: }
 "33
+[e :U 248 ]
+[; ;SYS.c: 34: }
+"34
 [e :UE 247 ]
 }
-"35
-[v _SYSInt `(v ~T0 @X0 1 ef ]
 "36
+[v _SYSInt `(v ~T0 @X0 1 ef ]
+"37
 {
-[; ;SYS.c: 35: void SYSInt(void)
-[; ;SYS.c: 36: {
+[; ;SYS.c: 36: void SYSInt(void)
+[; ;SYS.c: 37: {
 [e :U _SYSInt ]
 [f ]
-[; ;SYS.c: 38: u_SYS_STA.TICK=1;
-"38
+[; ;SYS.c: 39: u_SYS_STA.TICK=1;
+"39
 [e = . . _u_SYS_STA 1 0 -> -> 1 `i `uc ]
-[; ;SYS.c: 41: TMR0=255-156;
-"41
-[e = _TMR0 -> - -> 255 `i -> 156 `i `uc ]
-[; ;SYS.c: 42: }
+[; ;SYS.c: 42: TMR0=255-156;
 "42
+[e = _TMR0 -> - -> 255 `i -> 156 `i `uc ]
+[; ;SYS.c: 43: }
+"43
 [e :UE 252 ]
 }
-"44
-[v _SYSTask `(v ~T0 @X0 1 ef ]
 "45
+[v _SYSTask `(v ~T0 @X0 1 ef ]
+"46
 {
-[; ;SYS.c: 44: void SYSTask(void)
-[; ;SYS.c: 45: {
+[; ;SYS.c: 45: void SYSTask(void)
+[; ;SYS.c: 46: {
 [e :U _SYSTask ]
 [f ]
-[; ;SYS.c: 47: if(u_SYS_STA.TICK)
-"47
-[e $ ! != -> . . _u_SYS_STA 1 0 `i -> -> -> 0 `i `uc `i 254  ]
-[; ;SYS.c: 48: {
+[; ;SYS.c: 48: if(u_SYS_STA.TICK)
 "48
+[e $ ! != -> . . _u_SYS_STA 1 0 `i -> -> -> 0 `i `uc `i 254  ]
+[; ;SYS.c: 49: {
+"49
 {
-[; ;SYS.c: 50: u_SYS_STA.TICK=0;
-"50
+[; ;SYS.c: 51: u_SYS_STA.TICK=0;
+"51
 [e = . . _u_SYS_STA 1 0 -> -> 0 `i `uc ]
-[; ;SYS.c: 53: RTXTick();
-"53
-[e ( _RTXTick ..  ]
-[; ;SYS.c: 54: DINTick();
+[; ;SYS.c: 54: RTXTick();
 "54
-[e ( _DINTick ..  ]
-[; ;SYS.c: 55: PGMTick();
+[e ( _RTXTick ..  ]
+[; ;SYS.c: 55: DINTick();
 "55
-[e ( _PGMTick ..  ]
+[e ( _DINTick ..  ]
+[; ;SYS.c: 56: PGMTick();
 "56
+[e ( _PGMTick ..  ]
+"57
 }
 [e :U 254 ]
-[; ;SYS.c: 56: }
-[; ;SYS.c: 58: if(u_in_ev_down.sel)
-"58
-[e $ ! != -> . . _u_in_ev_down 1 0 `i -> -> -> 0 `i `uc `i 255  ]
-[; ;SYS.c: 59: {
+[; ;SYS.c: 57: }
+[; ;SYS.c: 59: ADCConv();
 "59
-{
-[; ;SYS.c: 61: u_in_ev_down.sel=0;
+[e ( _ADCConv ..  ]
+[; ;SYS.c: 61: if(u_in_ev_down.sel)
 "61
-[e = . . _u_in_ev_down 1 0 -> -> 0 `i `uc ]
+[e $ ! != -> . . _u_in_ev_down 1 0 `i -> -> -> 0 `i `uc `i 255  ]
+[; ;SYS.c: 62: {
 "62
+{
+[; ;SYS.c: 64: u_in_ev_down.sel=0;
+"64
+[e = . . _u_in_ev_down 1 0 -> -> 0 `i `uc ]
+"65
 }
 [e :U 255 ]
-[; ;SYS.c: 62: }
-[; ;SYS.c: 63: if(u_in_ev_up.sel)
-"63
-[e $ ! != -> . . _u_in_ev_up 1 0 `i -> -> -> 0 `i `uc `i 256  ]
-[; ;SYS.c: 64: {
-"64
-{
-[; ;SYS.c: 66: u_in_ev_up.sel=0;
+[; ;SYS.c: 65: }
+[; ;SYS.c: 66: if(u_in_ev_up.sel)
 "66
-[e = . . _u_in_ev_up 1 0 -> -> 0 `i `uc ]
-[; ;SYS.c: 67: PGMSelUp();
+[e $ ! != -> . . _u_in_ev_up 1 0 `i -> -> -> 0 `i `uc `i 256  ]
+[; ;SYS.c: 67: {
 "67
+{
+[; ;SYS.c: 69: u_in_ev_up.sel=0;
+"69
+[e = . . _u_in_ev_up 1 0 -> -> 0 `i `uc ]
+[; ;SYS.c: 70: PGMSelUp();
+"70
 [e ( _PGMSelUp ..  ]
-"68
+"71
 }
 [e :U 256 ]
-[; ;SYS.c: 68: }
-[; ;SYS.c: 69: if(u_in_ev_long.sel)
-"69
-[e $ ! != -> . . _u_in_ev_long 1 0 `i -> -> -> 0 `i `uc `i 257  ]
-[; ;SYS.c: 70: {
-"70
-{
-[; ;SYS.c: 72: u_in_ev_long.sel=0;
+[; ;SYS.c: 71: }
+[; ;SYS.c: 72: if(u_in_ev_long.sel)
 "72
-[e = . . _u_in_ev_long 1 0 -> -> 0 `i `uc ]
-[; ;SYS.c: 73: PGMSelLong();
+[e $ ! != -> . . _u_in_ev_long 1 0 `i -> -> -> 0 `i `uc `i 257  ]
+[; ;SYS.c: 73: {
 "73
+{
+[; ;SYS.c: 75: u_in_ev_long.sel=0;
+"75
+[e = . . _u_in_ev_long 1 0 -> -> 0 `i `uc ]
+[; ;SYS.c: 76: PGMSelLong();
+"76
 [e ( _PGMSelLong ..  ]
-"74
+"77
 }
 [e :U 257 ]
-[; ;SYS.c: 74: }
-[; ;SYS.c: 77: if(flg_slp.goSleep)
-"77
-[e $ ! != -> . . _flg_slp 1 0 `i -> -> -> 0 `i `uc `i 258  ]
-[; ;SYS.c: 78: {
-"78
-{
-[; ;SYS.c: 80: flg_slp.goSleep=0;
+[; ;SYS.c: 77: }
+[; ;SYS.c: 80: if(flg_slp.goSleep)
 "80
-[e = . . _flg_slp 1 0 -> -> 0 `i `uc ]
-[; ;SYS.c: 82: if(!(!PORTBbits.RB2))
-"82
-[e $ ! ! ! != -> . . _PORTBbits 0 2 `i -> -> -> 0 `i `Vuc `i 259  ]
-[; ;SYS.c: 83: SLPSleep();
+[e $ ! != -> . . _flg_slp 1 0 `i -> -> -> 0 `i `uc `i 258  ]
+[; ;SYS.c: 81: {
+"81
+{
+[; ;SYS.c: 83: flg_slp.goSleep=0;
 "83
-[e ( _SLPSleep ..  ]
-[e :U 259 ]
-"84
+[e = . . _flg_slp 1 0 -> -> 0 `i `uc ]
+"87
 }
 [e :U 258 ]
-[; ;SYS.c: 84: }
-[; ;SYS.c: 87: if(rtx_flg.pgmDone)
-"87
-[e $ ! != -> . . _rtx_flg 1 0 `i -> -> -> 0 `i `uc `i 260  ]
-[; ;SYS.c: 88: {
-"88
-{
-[; ;SYS.c: 90: rtx_flg.pgmDone=0;
+[; ;SYS.c: 87: }
+[; ;SYS.c: 90: if(rtx_flg.pgmDone)
 "90
-[e = . . _rtx_flg 1 0 -> -> 0 `i `uc ]
-[; ;SYS.c: 92: PGMPgmOff();
-"92
-[e ( _PGMPgmOff ..  ]
+[e $ ! != -> . . _rtx_flg 1 0 `i -> -> -> 0 `i `uc `i 259  ]
+[; ;SYS.c: 91: {
+"91
+{
+[; ;SYS.c: 93: rtx_flg.pgmDone=0;
 "93
+[e = . . _rtx_flg 1 0 -> -> 0 `i `uc ]
+[; ;SYS.c: 95: PGMPgmOff();
+"95
+[e ( _PGMPgmOff ..  ]
+"96
+}
+[e :U 259 ]
+[; ;SYS.c: 96: }
+[; ;SYS.c: 99: if(flg_slp.exitSleep)
+"99
+[e $ ! != -> . . _flg_slp 1 1 `i -> -> -> 0 `i `uc `i 260  ]
+[; ;SYS.c: 100: {
+"100
+{
+[; ;SYS.c: 102: flg_slp.exitSleep=0;
+"102
+[e = . . _flg_slp 1 1 -> -> 0 `i `uc ]
+[; ;SYS.c: 104: RTXAwake();
+"104
+[e ( _RTXAwake ..  ]
+"105
 }
 [e :U 260 ]
-[; ;SYS.c: 93: }
-[; ;SYS.c: 96: if(flg_slp.exitSleep)
-"96
-[e $ ! != -> . . _flg_slp 1 1 `i -> -> -> 0 `i `uc `i 261  ]
-[; ;SYS.c: 97: {
-"97
-{
-[; ;SYS.c: 99: flg_slp.exitSleep=0;
-"99
-[e = . . _flg_slp 1 1 -> -> 0 `i `uc ]
-[; ;SYS.c: 101: RTXAwake();
-"101
-[e ( _RTXAwake ..  ]
-"102
-}
-[e :U 261 ]
-[; ;SYS.c: 102: }
-[; ;SYS.c: 103: }
-"103
+[; ;SYS.c: 105: }
+[; ;SYS.c: 106: }
+"106
 [e :UE 253 ]
 }

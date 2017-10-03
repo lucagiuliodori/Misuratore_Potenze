@@ -2611,7 +2611,7 @@ void NVMWrite(unsigned short,char*,unsigned char);
 
 # 3 "ADC.h"
 unsigned short batt;
-float battV,rmsCurr;
+float battV,rmsCurr,realRmsCurr;
 
 void ADCInit(unsigned char state);
 void ADCConv(void);

@@ -26,6 +26,13 @@
       <logicalFolder name="f4" displayName="3 - " projectFiles="true">
         <itemPath>SYS.h</itemPath>
       </logicalFolder>
+      <logicalFolder name="MCC Generated Files"
+                     displayName="MCC Generated Files"
+                     projectFiles="true">
+        <itemPath>mcc_generated_files/adc.h</itemPath>
+        <itemPath>mcc_generated_files/mcc.h</itemPath>
+        <itemPath>mcc_generated_files/pin_manager.h</itemPath>
+      </logicalFolder>
       <itemPath>Sensore.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
@@ -62,6 +69,7 @@
                    displayName="Important Files"
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
+      <itemPath>MyConfig.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

@@ -1,7 +1,10 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"29 ADC.c
-[c E1891 0 1 2 .. ]
-[n E1891 _ADC_CH ADC_CH_OFF ADC_CH_BATT ADC_CH_CURR  ]
+"65 ADC.c
+[s S234 `uc 1 `uc 1 ]
+[n S234 . lVal hVal ]
+"61
+[u S233 `us 1 `S234 1 ]
+[n S233 _ADC_VAL val . ]
 "1664 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic16f1518.h
 [v _ADCON0 `Vuc ~T0 @X0 0 e@157 ]
 "1743
@@ -18,12 +21,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S95 . . ]
 "1825
 [v _LATAbits `VS95 ~T0 @X0 0 e@268 ]
-"1645
-[v _ADRESH `Vuc ~T0 @X0 0 e@156 ]
-"1626
-[v _ADRESL `Vuc ~T0 @X0 0 e@155 ]
-"34 C:\Program Files (x86)\Microchip\xc8\v1.34\include\math.h
-[v _sqrt `(d ~T0 @X0 0 ef1`d ]
 [v F1814 `(v ~T0 @X0 1 tf1`ul ]
 "150 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic.h
 [v __delay `JF1814 ~T0 @X0 0 e ]
@@ -42,8 +39,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S88 . . . . ]
 "1689
 [v _ADCON0bits `VS88 ~T0 @X0 0 e@157 ]
+"1626
+[v _ADRESL `Vuc ~T0 @X0 0 e@155 ]
+"1645
+[v _ADRESH `Vuc ~T0 @X0 0 e@156 ]
 "3 DLY.h
 [v _DLYDelay_ms `(v ~T0 @X0 0 ef1`us ]
+"34 C:\Program Files (x86)\Microchip\xc8\v1.34\include\math.h
+[v _sqrt `(d ~T0 @X0 0 ef1`d ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic16f1518.h: 49: extern volatile unsigned char INDF0 @ 0x000;
@@ -1899,286 +1902,353 @@ Version 3.2 HI-TECH Software Intermediate Code
 "4
 [v _battV `f ~T0 @X0 1 e ]
 [v _rmsCurr `f ~T0 @X0 1 e ]
-[; ;ADC.h: 4: float battV,rmsCurr;
+[v _realRmsCurr `f ~T0 @X0 1 e ]
+[; ;ADC.h: 4: float battV,rmsCurr,realRmsCurr;
 [; ;ADC.h: 6: void ADCInit(unsigned char state);
 [; ;ADC.h: 7: void ADCConv(void);
-[; ;ADC.c: 20: typedef enum _ADC_CH
-[; ;ADC.c: 21: {
-[; ;ADC.c: 22: ADC_CH_OFF,
-[; ;ADC.c: 23: ADC_CH_BATT,
-[; ;ADC.c: 24: ADC_CH_CURR
-[; ;ADC.c: 25: }te_ADC_CH;
-"29 ADC.c
-[v _adc_ch `E1891 ~T0 @X0 1 e ]
-[; ;ADC.c: 29: te_ADC_CH adc_ch;
-"31
+[; ;ADC.c: 61: typedef union _ADC_VAL
+[; ;ADC.c: 62: {
+[; ;ADC.c: 63: unsigned short val;
+[; ;ADC.c: 64: struct
+[; ;ADC.c: 65: {
+[; ;ADC.c: 66: unsigned char lVal;
+[; ;ADC.c: 67: unsigned char hVal;
+[; ;ADC.c: 68: };
+[; ;ADC.c: 69: }tu_ADC_VAL;
+"71 ADC.c
+[v _adc_vals `S233 ~T0 @X0 -> 100 `i e ]
+[; ;ADC.c: 71: tu_ADC_VAL adc_vals[(100)];
+"73
 [v _ADCInit `(v ~T0 @X0 1 ef1`uc ]
-"32
+"74
 {
-[; ;ADC.c: 31: void ADCInit(unsigned char state)
-[; ;ADC.c: 32: {
+[; ;ADC.c: 73: void ADCInit(unsigned char state)
+[; ;ADC.c: 74: {
 [e :U _ADCInit ]
-"31
+"73
 [v _state `uc ~T0 @X0 1 r1 ]
-"32
+"74
 [f ]
-[; ;ADC.c: 33: switch(state)
-"33
-[e $U 235  ]
-[; ;ADC.c: 34: {
-"34
+[; ;ADC.c: 75: switch(state)
+"75
+[e $U 237  ]
+[; ;ADC.c: 76: {
+"76
 {
-[; ;ADC.c: 35: case 0:
-"35
-[e :U 236 ]
-[; ;ADC.c: 37: ADCON0=0b00000101; ADCON1=0b10000011; FVRCON=0b10000001; ANSELA|=0b00000110;;
-"37
+[; ;ADC.c: 77: case 0:
+"77
+[e :U 238 ]
+[; ;ADC.c: 79: ADCON0=0b00000101; ADCON1=0b10010011; FVRCON=0b10000001; ANSELA|=0b00000110;;
+"79
 [e = _ADCON0 -> -> 5 `i `uc ]
-[e = _ADCON1 -> -> 131 `i `uc ]
+[e = _ADCON1 -> -> 147 `i `uc ]
 [e = _FVRCON -> -> 129 `i `uc ]
 [e =| _ANSELA -> -> 6 `i `uc ]
-[; ;ADC.c: 38: break;
-"38
-[e $U 234  ]
-[; ;ADC.c: 39: case 1:
-"39
-[e :U 237 ]
-[; ;ADC.c: 41: adc_ch=ADC_CH_OFF;
-"41
-[e = _adc_ch . `E1891 0 ]
-[; ;ADC.c: 42: batt=0;
-"42
+[; ;ADC.c: 80: break;
+"80
+[e $U 236  ]
+[; ;ADC.c: 81: case 1:
+"81
+[e :U 239 ]
+[; ;ADC.c: 83: batt=0;
+"83
 [e = _batt -> -> 0 `i `us ]
-[; ;ADC.c: 43: battV=0;
-"43
+[; ;ADC.c: 84: battV=0;
+"84
 [e = _battV -> -> 0 `i `f ]
-[; ;ADC.c: 44: rmsCurr=0;
-"44
+[; ;ADC.c: 85: rmsCurr=0;
+"85
 [e = _rmsCurr -> -> 0 `i `f ]
-[; ;ADC.c: 45: break;
-"45
-[e $U 234  ]
-"49
+[; ;ADC.c: 86: realRmsCurr=0;
+"86
+[e = _realRmsCurr -> -> 0 `i `f ]
+[; ;ADC.c: 87: break;
+"87
+[e $U 236  ]
+"91
 }
-[; ;ADC.c: 49: }
-[e $U 234  ]
-"33
-[e :U 235 ]
-[e [\ _state , $ -> -> 0 `i `uc 236
- , $ -> -> 1 `i `uc 237
- 234 ]
-"49
-[e :U 234 ]
-[; ;ADC.c: 50: }
-"50
-[e :UE 233 ]
+[; ;ADC.c: 91: }
+[e $U 236  ]
+"75
+[e :U 237 ]
+[e [\ _state , $ -> -> 0 `i `uc 238
+ , $ -> -> 1 `i `uc 239
+ 236 ]
+"91
+[e :U 236 ]
+[; ;ADC.c: 92: }
+"92
+[e :UE 235 ]
 }
-"52
+"94
 [v _ADCConv `(v ~T0 @X0 1 ef ]
-"53
+"95
 {
-[; ;ADC.c: 52: void ADCConv(void)
-[; ;ADC.c: 53: {
+[; ;ADC.c: 94: void ADCConv(void)
+[; ;ADC.c: 95: {
 [e :U _ADCConv ]
 [f ]
-"54
-[v _cntSum `uc ~T0 @X0 1 a ]
-"55
-[v _sumBatt `us ~T0 @X0 1 a ]
-"56
-[v _sumCurr `ul ~T0 @X0 1 a ]
-[; ;ADC.c: 54: unsigned char cntSum;
-[; ;ADC.c: 55: unsigned short sumBatt;
-[; ;ADC.c: 56: unsigned long sumCurr;
-[; ;ADC.c: 58: while(1)
-"58
-[e :U 240 ]
-[; ;ADC.c: 59: {
-"59
-{
-[; ;ADC.c: 61: switch(adc_ch)
-"61
-[e $U 243  ]
-[; ;ADC.c: 62: {
-"62
-{
-[; ;ADC.c: 63: case ADC_CH_OFF:
-"63
-[e :U 244 ]
-[; ;ADC.c: 65: LATAbits.LATA0=1;
-"65
-[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
-[; ;ADC.c: 67: sumBatt=0;
-"67
-[e = _sumBatt -> -> 0 `i `us ]
-[; ;ADC.c: 69: cntSum=0;
-"69
-[e = _cntSum -> -> 0 `i `uc ]
-[; ;ADC.c: 71: ADCON1=0b10000011;
-"71
-[e = _ADCON1 -> -> 131 `i `uc ]
-[; ;ADC.c: 72: ADCON0=0b00000101;
-"72
-[e = _ADCON0 -> -> 5 `i `uc ]
-[; ;ADC.c: 73: adc_ch=ADC_CH_BATT;
-"73
-[e = _adc_ch . `E1891 1 ]
-[; ;ADC.c: 74: break;
-"74
-[e $U 242  ]
-[; ;ADC.c: 75: case ADC_CH_BATT:
-"75
-[e :U 245 ]
-[; ;ADC.c: 77: if(cntSum==10)
-"77
-[e $ ! == -> _cntSum `i -> 10 `i 246  ]
-[; ;ADC.c: 78: {
-"78
-{
-[; ;ADC.c: 80: batt=sumBatt/10;
-"80
-[e = _batt -> / -> _sumBatt `ui -> -> 10 `i `ui `us ]
-[; ;ADC.c: 84: battV=batt*1.024/1024*11;
-"84
-[e = _battV -> * / * -> _batt `d .1.024 -> -> 1024 `i `d -> -> 11 `i `d `f ]
-[; ;ADC.c: 86: sumCurr=0;
-"86
-[e = _sumCurr -> -> -> 0 `i `l `ul ]
-[; ;ADC.c: 88: cntSum=0;
-"88
-[e = _cntSum -> -> 0 `i `uc ]
-[; ;ADC.c: 90: LATAbits.LATA0=0;
-"90
-[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
-[; ;ADC.c: 92: ADCON1=0b10000011;
-"92
-[e = _ADCON1 -> -> 131 `i `uc ]
-[; ;ADC.c: 93: ADCON0=0b00001001;
-"93
-[e = _ADCON0 -> -> 9 `i `uc ]
-[; ;ADC.c: 94: adc_ch=ADC_CH_CURR;
-"94
-[e = _adc_ch . `E1891 2 ]
-"95
-}
-[; ;ADC.c: 95: }
-[e $U 247  ]
 "96
-[e :U 246 ]
-[; ;ADC.c: 96: else
-[; ;ADC.c: 97: {
+[v _i `uc ~T0 @X0 1 a ]
+[v _j `uc ~T0 @X0 1 a ]
 "97
-{
-[; ;ADC.c: 99: sumBatt+=(ADRESH<<8|ADRESL);
+[v _sumBatt `us ~T0 @X0 1 a ]
+"98
+[v _sumCurr `ul ~T0 @X0 1 a ]
 "99
-[e =+ _sumBatt -> | << -> _ADRESH `i -> 8 `i -> _ADRESL `i `us ]
-[; ;ADC.c: 101: cntSum++;
-"101
-[e ++ _cntSum -> -> 1 `i `uc ]
-"102
-}
-[e :U 247 ]
-[; ;ADC.c: 102: }
-[; ;ADC.c: 103: break;
-"103
-[e $U 242  ]
-[; ;ADC.c: 104: case ADC_CH_CURR:
+[v _sumEavCurr `ul ~T0 @X0 1 a ]
+"100
+[v _maxCurr `ul ~T0 @X0 1 a ]
+[; ;ADC.c: 96: unsigned char i,j;
+[; ;ADC.c: 97: unsigned short sumBatt;
+[; ;ADC.c: 98: unsigned long sumCurr;
+[; ;ADC.c: 99: unsigned long sumEavCurr;
+[; ;ADC.c: 100: unsigned long maxCurr;
+[; ;ADC.c: 104: LATAbits.LATA0=1;
 "104
-[e :U 248 ]
-[; ;ADC.c: 106: if(cntSum==20)
+[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
+[; ;ADC.c: 106: ADCON1=0b10010011;
 "106
-[e $ ! == -> _cntSum `i -> 20 `i 249  ]
-[; ;ADC.c: 107: {
+[e = _ADCON1 -> -> 147 `i `uc ]
+[; ;ADC.c: 107: ADCON0=0b00000101;
 "107
+[e = _ADCON0 -> -> 5 `i `uc ]
+[; ;ADC.c: 109: _delay((unsigned long)((10)*(8000000/4000000.0)));
+"109
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+[; ;ADC.c: 110: for(i=0;i<(10);i++)
+"110
 {
-[; ;ADC.c: 114: rmsCurr=sumCurr*(1.024*1.024)/(1024*1024);
-"114
-[e = _rmsCurr -> / * -> _sumCurr `d * .1.024 .1.024 -> * -> 1024 `i -> 1024 `i `d `f ]
-[; ;ADC.c: 115: rmsCurr/=(33*33);
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 10 `i 241  ]
+[e $U 242  ]
+"111
+[e :U 241 ]
+[; ;ADC.c: 111: {
+{
+[; ;ADC.c: 113: ADCON0bits.GO=1;
+"113
+[e = . . _ADCON0bits 2 1 -> -> 1 `i `uc ]
+[; ;ADC.c: 115: while(ADCON0bits.GO)
 "115
-[e =/ _rmsCurr -> * -> 33 `i -> 33 `i `f ]
-[; ;ADC.c: 116: rmsCurr*=(2000*2000);
+[e $U 244  ]
+[e :U 245 ]
+[; ;ADC.c: 116: asm("clrwdt");
 "116
-[e =* _rmsCurr -> * -> 2000 `i -> 2000 `i `f ]
-[; ;ADC.c: 117: rmsCurr/=20;
-"117
-[e =/ _rmsCurr -> -> 20 `uc `f ]
-[; ;ADC.c: 118: rmsCurr=sqrt(rmsCurr);
+[; <" clrwdt ;# ">
+[e :U 244 ]
+"115
+[e $ != -> . . _ADCON0bits 2 1 `i -> -> -> 0 `i `Vuc `i 245  ]
+[e :U 246 ]
+[; ;ADC.c: 118: adc_vals[i].lVal=ADRESL;
 "118
-[e = _rmsCurr -> ( _sqrt (1 -> _rmsCurr `d `f ]
-[; ;ADC.c: 120: adc_ch=ADC_CH_OFF;
-"120
-[e = _adc_ch . `E1891 0 ]
-[; ;ADC.c: 121: return;
+[e = . . *U + &U _adc_vals * -> _i `ux -> -> # *U &U _adc_vals `ui `ux 1 0 _ADRESL ]
+[; ;ADC.c: 119: adc_vals[i].hVal=ADRESH;
+"119
+[e = . . *U + &U _adc_vals * -> _i `ux -> -> # *U &U _adc_vals `ui `ux 1 1 _ADRESH ]
+[; ;ADC.c: 121: DLYDelay_ms((20));
 "121
-[e $UE 238  ]
+[e ( _DLYDelay_ms (1 -> -> 20 `i `us ]
+"122
+}
+"110
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 10 `i 241  ]
+[e :U 242 ]
 "122
 }
 [; ;ADC.c: 122: }
-[e $U 250  ]
-"123
-[e :U 249 ]
-[; ;ADC.c: 123: else
-[; ;ADC.c: 124: {
+[; ;ADC.c: 124: sumBatt=0;
 "124
+[e = _sumBatt -> -> 0 `i `us ]
+[; ;ADC.c: 125: for(i=0;i<(10);i++)
+"125
 {
-[; ;ADC.c: 126: sumCurr+=((ADRESH<<8|ADRESL)*(ADRESH<<8|ADRESL));
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 10 `i 247  ]
+[e $U 248  ]
 "126
-[e =+ _sumCurr -> -> * | << -> _ADRESH `i -> 8 `i -> _ADRESL `i | << -> _ADRESH `i -> 8 `i -> _ADRESL `i `l `ul ]
-[; ;ADC.c: 128: cntSum++;
-"128
-[e ++ _cntSum -> -> 1 `i `uc ]
-"129
+[e :U 247 ]
+[; ;ADC.c: 126: sumBatt+=adc_vals[i].val;
+[e =+ _sumBatt . *U + &U _adc_vals * -> _i `ux -> -> # *U &U _adc_vals `ui `ux 0 ]
+"125
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 10 `i 247  ]
+[e :U 248 ]
+"126
 }
-[e :U 250 ]
-[; ;ADC.c: 129: }
-[; ;ADC.c: 130: break;
-"130
-[e $U 242  ]
+[; ;ADC.c: 127: batt=sumBatt/(10);
+"127
+[e = _batt -> / -> _sumBatt `ui -> -> 10 `i `ui `us ]
+[; ;ADC.c: 131: battV=batt*1.024/1024*11;
 "131
-}
-[; ;ADC.c: 131: }
-[e $U 242  ]
-"61
-[e :U 243 ]
-[e [\ _adc_ch , $ . `E1891 0 244
- , $ . `E1891 1 245
- , $ . `E1891 2 248
- 242 ]
-"131
-[e :U 242 ]
-[; ;ADC.c: 133: _delay((unsigned long)((10)*(8000000/4000000.0)));
+[e = _battV -> * / * -> _batt `d .1.024 -> -> 1024 `i `d -> -> 11 `i `d `f ]
+[; ;ADC.c: 133: LATAbits.LATA0=0;
 "133
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
-[; ;ADC.c: 135: ADCON0bits.GO=1;
-"135
-[e = . . _ADCON0bits 2 1 -> -> 1 `i `uc ]
-[; ;ADC.c: 137: while(ADCON0bits.GO)
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
+[; ;ADC.c: 137: ADCON1=0b10010011;
 "137
-[e $U 251  ]
-[e :U 252 ]
-[; ;ADC.c: 138: asm("clrwdt");
+[e = _ADCON1 -> -> 147 `i `uc ]
+[; ;ADC.c: 138: ADCON0=0b00001001;
 "138
-[; <" clrwdt ;# ">
-[e :U 251 ]
-"137
-[e $ != -> . . _ADCON0bits 2 1 `i -> -> -> 0 `i `Vuc `i 252  ]
-[e :U 253 ]
-[; ;ADC.c: 140: if(adc_ch==ADC_CH_CURR)
+[e = _ADCON0 -> -> 9 `i `uc ]
+[; ;ADC.c: 140: _delay((unsigned long)((10)*(8000000/4000000.0)));
 "140
-[e $ ! == -> _adc_ch `i -> . `E1891 2 `i 254  ]
-[; ;ADC.c: 141: DLYDelay_ms(8);
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+[; ;ADC.c: 141: for(i=0;i<(100);i++)
 "141
-[e ( _DLYDelay_ms (1 -> -> 8 `i `us ]
-[e :U 254 ]
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 100 `i 250  ]
+[e $U 251  ]
 "142
+[e :U 250 ]
+[; ;ADC.c: 142: {
+{
+[; ;ADC.c: 144: ADCON0bits.GO=1;
+"144
+[e = . . _ADCON0bits 2 1 -> -> 1 `i `uc ]
+[; ;ADC.c: 146: while(ADCON0bits.GO)
+"146
+[e $U 253  ]
+[e :U 254 ]
+[; ;ADC.c: 147: asm("clrwdt");
+"147
+[; <" clrwdt ;# ">
+[e :U 253 ]
+"146
+[e $ != -> . . _ADCON0bits 2 1 `i -> -> -> 0 `i `Vuc `i 254  ]
+[e :U 255 ]
+[; ;ADC.c: 149: adc_vals[i].lVal=ADRESL;
+"149
+[e = . . *U + &U _adc_vals * -> _i `ux -> -> # *U &U _adc_vals `ui `ux 1 0 _ADRESL ]
+[; ;ADC.c: 150: adc_vals[i].hVal=ADRESH;
+"150
+[e = . . *U + &U _adc_vals * -> _i `ux -> -> # *U &U _adc_vals `ui `ux 1 1 _ADRESH ]
+[; ;ADC.c: 152: DLYDelay_ms((200-17));
+"152
+[e ( _DLYDelay_ms (1 -> - -> 200 `i -> 17 `i `us ]
+"153
 }
-[e :U 239 ]
-"58
-[e $U 240  ]
-[e :U 241 ]
-[; ;ADC.c: 142: }
-[; ;ADC.c: 143: }
-"143
-[e :UE 238 ]
+"141
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 100 `i 250  ]
+[e :U 251 ]
+"153
+}
+[; ;ADC.c: 153: }
+[; ;ADC.c: 155: maxCurr=0;
+"155
+[e = _maxCurr -> -> -> 0 `i `l `ul ]
+[; ;ADC.c: 156: for(i=0;i<(100);i++)
+"156
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 100 `i 256  ]
+[e $U 257  ]
+"157
+[e :U 256 ]
+[; ;ADC.c: 157: {
+{
+[; ;ADC.c: 158: if(adc_vals[i].val>maxCurr)
+"158
+[e $ ! > -> . *U + &U _adc_vals * -> _i `ux -> -> # *U &U _adc_vals `ui `ux 0 `ul _maxCurr 259  ]
+[; ;ADC.c: 159: maxCurr=adc_vals[i].val;
+"159
+[e = _maxCurr -> . *U + &U _adc_vals * -> _i `ux -> -> # *U &U _adc_vals `ui `ux 0 `ul ]
+[e :U 259 ]
+"160
+}
+"156
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 100 `i 256  ]
+[e :U 257 ]
+"160
+}
+[; ;ADC.c: 160: }
+[; ;ADC.c: 162: rmsCurr=(float)maxCurr/sqrt(2);
+"162
+[e = _rmsCurr -> / -> -> _maxCurr `f `d ( _sqrt (1 -> -> 2 `i `d `f ]
+[; ;ADC.c: 165: sumCurr=0;
+"165
+[e = _sumCurr -> -> -> 0 `i `l `ul ]
+[; ;ADC.c: 166: for(i=0;i<(100);)
+"166
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 100 `i 260  ]
+[e $U 261  ]
+"167
+[e :U 260 ]
+[; ;ADC.c: 167: {
+{
+[; ;ADC.c: 174: sumEavCurr=0;
+"174
+[e = _sumEavCurr -> -> -> 0 `i `l `ul ]
+[; ;ADC.c: 175: for(j=0;j<((100)/(20));j++,i++)
+"175
+{
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i / -> 100 `i -> 20 `i 263  ]
+[e $U 264  ]
+"176
+[e :U 263 ]
+[; ;ADC.c: 176: sumEavCurr+=adc_vals[i].val;
+[e =+ _sumEavCurr -> . *U + &U _adc_vals * -> _i `ux -> -> # *U &U _adc_vals `ui `ux 0 `ul ]
+"175
+[e ; ++ _j -> -> 1 `i `uc ++ _i -> -> 1 `i `uc ]
+[e $ < -> _j `i / -> 100 `i -> 20 `i 263  ]
+[e :U 264 ]
+"176
+}
+[; ;ADC.c: 177: sumEavCurr/=((100)/(20));
+"177
+[e =/ _sumEavCurr -> / -> 100 `i -> 20 `i `ul ]
+[; ;ADC.c: 178: sumCurr+=sumEavCurr*sumEavCurr;
+"178
+[e =+ _sumCurr * _sumEavCurr _sumEavCurr ]
+"179
+}
+"166
+[e $ < -> _i `i -> 100 `i 260  ]
+[e :U 261 ]
+"179
+}
+[; ;ADC.c: 179: }
+[; ;ADC.c: 186: realRmsCurr=(float)sumCurr*2;
+"186
+[e = _realRmsCurr * -> _sumCurr `f -> -> 2 `i `f ]
+[; ;ADC.c: 187: realRmsCurr*=(float)1.024;
+"187
+[e =* _realRmsCurr -> .1.024 `f ]
+[; ;ADC.c: 188: realRmsCurr*=(float)1.024;
+"188
+[e =* _realRmsCurr -> .1.024 `f ]
+[; ;ADC.c: 189: realRmsCurr*=(float)2000;
+"189
+[e =* _realRmsCurr -> -> 2000 `i `f ]
+[; ;ADC.c: 190: realRmsCurr*=(float)2000;
+"190
+[e =* _realRmsCurr -> -> 2000 `i `f ]
+[; ;ADC.c: 191: realRmsCurr/=(float)1024;
+"191
+[e =/ _realRmsCurr -> -> -> 1024 `i `f `f ]
+[; ;ADC.c: 192: realRmsCurr/=(float)1024;
+"192
+[e =/ _realRmsCurr -> -> -> 1024 `i `f `f ]
+[; ;ADC.c: 193: realRmsCurr/=(float)33.2;
+"193
+[e =/ _realRmsCurr -> .33.2 `f ]
+[; ;ADC.c: 194: realRmsCurr/=(float)33.2;
+"194
+[e =/ _realRmsCurr -> .33.2 `f ]
+[; ;ADC.c: 195: realRmsCurr/=(float)(20);
+"195
+[e =/ _realRmsCurr -> -> -> 20 `i `f `f ]
+[; ;ADC.c: 196: realRmsCurr=sqrt(realRmsCurr);
+"196
+[e = _realRmsCurr -> ( _sqrt (1 -> _realRmsCurr `d `f ]
+[; ;ADC.c: 197: }
+"197
+[e :UE 240 ]
 }
