@@ -123,7 +123,10 @@ void ADCConv(void)
     //Calcola la media dei valori.
     sumBatt=0;
     for(i=0;i<NUM_ADCSAMPLES_BATT;i++)
+    {
+        CLRWDT();
         sumBatt+=adc_vals[i].val;
+    }
     batt=sumBatt/NUM_ADCSAMPLES_BATT;
     //Calcola la tensione in volt.
     /*"*1.024/1024" per ottenere i mV corrispondenti;
@@ -140,6 +143,7 @@ void ADCConv(void)
     __delay_us(10);
     for(i=0;i<MAX_ADCSAMPLES;i++)
     {
+        CLRWDT();
         //Attivazione della conversione.
         ADCON0bits.GO=1;
         //Attende il completamento della conversione.
@@ -149,12 +153,13 @@ void ADCConv(void)
         adc_vals[i].lVal=ADRESL;
         adc_vals[i].hVal=ADRESH;
         //Ritardo per l'avvio della prossima conversione.
-        DLYDelay_ms(T_DELAYUS_ADCCONV_CURR);
+        __delay_us(T_DELAYUS_ADCCONV_CURR);
     }
     //Calcola il valore massimo per il calcolo dell'RMS.
     maxCurr=0;
     for(i=0;i<MAX_ADCSAMPLES;i++)
     {
+        CLRWDT();
         if(adc_vals[i].val>maxCurr)
             maxCurr=adc_vals[i].val;
     }
@@ -173,7 +178,10 @@ void ADCConv(void)
          i soli NUM_ADCSAMPLES_CURR campioni.*/
         sumEavCurr=0;
         for(j=0;j<(MAX_ADCSAMPLES/NUM_ADCSAMPLES_USEFULL_CURR);j++,i++)
+        {
+            CLRWDT();
             sumEavCurr+=adc_vals[i].val;
+        }
         sumEavCurr/=(MAX_ADCSAMPLES/NUM_ADCSAMPLES_USEFULL_CURR);
         sumCurr+=sumEavCurr*sumEavCurr;                     //Non viene usata la funzione "pow" per ottimizzare lo spazio usato e per velocizzare le operazioni.
     }
