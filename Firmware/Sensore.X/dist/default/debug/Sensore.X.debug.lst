@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC LITE Macro Assembler V1.34 build -361300703 
-                                                                                               Wed Oct 04 23:57:53 2017
+                                                                                               Sat Dec 02 18:23:34 2017
 
 Microchip Technology Omniscient Code Generator (Lite mode) build 201502162209
      1                           	processor	16F1518
@@ -5372,11 +5372,11 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 201502162209
   5286  03BC  0021               	movlb	1	; select bank1
   5287  03BD  00A5               	movwf	(_realRmsCurr+2)^(0+128)
   5288                           
-  5289                           ;ADC.c: 201: realRmsCurr/=(float)33.2;
+  5289                           ;ADC.c: 201: realRmsCurr/=(float)33.2*2;
   5290  03BE  30CD               	movlw	205
   5291  03BF  0020               	movlb	0	; select bank0
   5292  03C0  00C7               	movwf	___ftdiv@f2
-  5293  03C1  3004               	movlw	4
+  5293  03C1  3084               	movlw	132
   5294  03C2  00C8               	movwf	___ftdiv@f2+1
   5295  03C3  3042               	movlw	66
   5296  03C4  00C9               	movwf	___ftdiv@f2+2
@@ -5406,11 +5406,11 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 201502162209
   5320  03DE  0021               	movlb	1	; select bank1
   5321  03DF  00A5               	movwf	(_realRmsCurr+2)^(0+128)
   5322                           
-  5323                           ;ADC.c: 202: realRmsCurr/=(float)33.2;
+  5323                           ;ADC.c: 202: realRmsCurr/=(float)33.2*2;
   5324  03E0  30CD               	movlw	205
   5325  03E1  0020               	movlb	0	; select bank0
   5326  03E2  00C7               	movwf	___ftdiv@f2
-  5327  03E3  3004               	movlw	4
+  5327  03E3  3084               	movlw	132
   5328  03E4  00C8               	movwf	___ftdiv@f2+1
   5329  03E5  3042               	movlw	66
   5330  03E6  00C9               	movwf	___ftdiv@f2+2
@@ -11277,7 +11277,7 @@ SFR31                0      0       0      32        0.0%
 
 
 Microchip Technology PIC Macro Assembler V1.34 build -361300703 
-Symbol Table                                                                                   Wed Oct 04 23:57:53 2017
+Symbol Table                                                                                   Sat Dec 02 18:23:34 2017
 
        __size_of_CC1Strobe 0014                 __CFG_CP$ON 0000                         l40 0BCF  
                        l18 0AD2                         l60 0A3D              ?_LEDFastFlash 0070  

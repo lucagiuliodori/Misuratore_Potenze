@@ -2666,8 +2666,8 @@ realRmsCurr*=(float)2000;
 realRmsCurr*=(float)2000;
 realRmsCurr/=(float)1024;
 realRmsCurr/=(float)1024;
-realRmsCurr/=(float)33.2;
-realRmsCurr/=(float)33.2;
+realRmsCurr/=(float)33.2*2;
+realRmsCurr/=(float)33.2*2;
 realRmsCurr/=(float)(20);
 realRmsCurr=sqrt(realRmsCurr);
 }

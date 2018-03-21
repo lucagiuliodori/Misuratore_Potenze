@@ -5,7 +5,7 @@ Linker command line:
 --edf=C:\Program Files (x86)\Microchip\xc8\v1.34\dat\en_msgs.txt -cs \
   -h+dist/default/debug\Sensore.X.debug.sym \
   --cmf=dist/default/debug\Sensore.X.debug.cmf -z -Q16F1518 \
-  -oC:\Users\Luca\AppData\Local\Temp\s6ok.6 \
+  -oC:\Users\Luca\AppData\Local\Temp\scog.6 \
   -Mdist/default/debug/Sensore.X.debug.map -E1 -ver=XC8 \
   -ASTACK=020E2h-02327h -pstack=STACK -p_nvm_pgm_cfg_text=3820h \
   -ACODE=00h-07FFhx8 -ASTRCODE=00h-03FFFh -ASTRING=00h-0FFhx64 \
@@ -31,7 +31,7 @@ Linker command line:
   -ppowerup=CODE -pcinit=CODE -pfunctab=CODE -ACONFIG=08007h-08008h \
   -pconfig=CONFIG -DCONFIG=2 -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 \
   -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\Luca\AppData\Local\Temp\s6ok.obj \
+  C:\Users\Luca\AppData\Local\Temp\scog.obj \
   dist/default/debug\Sensore.X.debug.obj 
 
 Object code version is 3.11
@@ -41,7 +41,7 @@ Machine type is 16F1518
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Luca\AppData\Local\Temp\s6ok.obj
+C:\Users\Luca\AppData\Local\Temp\scog.obj
                 end_init                             14       14        2        8       0
                 reset_vec                             0        0        3        0       0
                 config                             8007     8007        2    1000E       0

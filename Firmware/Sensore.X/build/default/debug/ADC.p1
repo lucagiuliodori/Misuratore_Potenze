@@ -2260,12 +2260,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;ADC.c: 200: realRmsCurr/=(float)1024;
 "200
 [e =/ _realRmsCurr -> -> -> 1024 `i `f `f ]
-[; ;ADC.c: 201: realRmsCurr/=(float)33.2;
+[; ;ADC.c: 201: realRmsCurr/=(float)33.2*2;
 "201
-[e =/ _realRmsCurr -> .33.2 `f ]
-[; ;ADC.c: 202: realRmsCurr/=(float)33.2;
+[e =/ _realRmsCurr * -> .33.2 `f -> -> 2 `i `f ]
+[; ;ADC.c: 202: realRmsCurr/=(float)33.2*2;
 "202
-[e =/ _realRmsCurr -> .33.2 `f ]
+[e =/ _realRmsCurr * -> .33.2 `f -> -> 2 `i `f ]
 [; ;ADC.c: 203: realRmsCurr/=(float)(20);
 "203
 [e =/ _realRmsCurr -> -> -> 20 `i `f `f ]

@@ -11,10 +11,6 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Luca\AppData\Local\Temp\s6ok.obj
-reset_vec CODE 0 0 0 3 2
-end_init CODE 0 14 14 2 2
-config CONFIG 0 8007 8007 2 2
 $dist/default/debug\Sensore.X.debug.obj
 cinit CODE 0 16 16 35 2
 text1 CODE 0 C89 C89 30 2
@@ -87,6 +83,10 @@ dataBANK1 BANK1 1 D6 D6 8 1
 dataBANK2 BANK2 1 120 120 2F 1
 clrtext CODE 0 8BD 8BD C 2
 bssCOMMON COMMON 1 7C 7C 1 1
+$C:\Users\Luca\AppData\Local\Temp\scog.obj
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 14 14 2 2
+config CONFIG 0 8007 8007 2 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -189,54 +189,54 @@ B intentry CODE >46:D:\Progetti\Misuratore_Potenze\Firmware\Sensore.X\Sensore.c
 D intentry CODE >50:D:\Progetti\Misuratore_Potenze\Firmware\Sensore.X\Sensore.c
 F intentry CODE >51:D:\Progetti\Misuratore_Potenze\Firmware\Sensore.X\Sensore.c
 10 intentry CODE >52:D:\Progetti\Misuratore_Potenze\Firmware\Sensore.X\Sensore.c
-16 cinit CODE >3519:C:\Users\Luca\AppData\Local\Temp\s6ok.
-16 cinit CODE >3522:C:\Users\Luca\AppData\Local\Temp\s6ok.
-16 cinit CODE >3635:C:\Users\Luca\AppData\Local\Temp\s6ok.
-17 cinit CODE >3636:C:\Users\Luca\AppData\Local\Temp\s6ok.
-18 cinit CODE >3637:C:\Users\Luca\AppData\Local\Temp\s6ok.
-19 cinit CODE >3638:C:\Users\Luca\AppData\Local\Temp\s6ok.
-1A cinit CODE >3639:C:\Users\Luca\AppData\Local\Temp\s6ok.
-1B cinit CODE >3640:C:\Users\Luca\AppData\Local\Temp\s6ok.
-1C cinit CODE >3641:C:\Users\Luca\AppData\Local\Temp\s6ok.
-1D cinit CODE >3642:C:\Users\Luca\AppData\Local\Temp\s6ok.
-1E cinit CODE >3643:C:\Users\Luca\AppData\Local\Temp\s6ok.
-21 cinit CODE >3647:C:\Users\Luca\AppData\Local\Temp\s6ok.
-22 cinit CODE >3651:C:\Users\Luca\AppData\Local\Temp\s6ok.
-23 cinit CODE >3652:C:\Users\Luca\AppData\Local\Temp\s6ok.
-24 cinit CODE >3653:C:\Users\Luca\AppData\Local\Temp\s6ok.
-25 cinit CODE >3654:C:\Users\Luca\AppData\Local\Temp\s6ok.
-26 cinit CODE >3655:C:\Users\Luca\AppData\Local\Temp\s6ok.
-27 cinit CODE >3656:C:\Users\Luca\AppData\Local\Temp\s6ok.
-28 cinit CODE >3657:C:\Users\Luca\AppData\Local\Temp\s6ok.
-29 cinit CODE >3658:C:\Users\Luca\AppData\Local\Temp\s6ok.
-2A cinit CODE >3659:C:\Users\Luca\AppData\Local\Temp\s6ok.
-2D cinit CODE >3680:C:\Users\Luca\AppData\Local\Temp\s6ok.
-2E cinit CODE >3681:C:\Users\Luca\AppData\Local\Temp\s6ok.
-2F cinit CODE >3682:C:\Users\Luca\AppData\Local\Temp\s6ok.
-30 cinit CODE >3683:C:\Users\Luca\AppData\Local\Temp\s6ok.
-31 cinit CODE >3684:C:\Users\Luca\AppData\Local\Temp\s6ok.
-32 cinit CODE >3685:C:\Users\Luca\AppData\Local\Temp\s6ok.
-33 cinit CODE >3686:C:\Users\Luca\AppData\Local\Temp\s6ok.
-34 cinit CODE >3687:C:\Users\Luca\AppData\Local\Temp\s6ok.
-35 cinit CODE >3688:C:\Users\Luca\AppData\Local\Temp\s6ok.
-36 cinit CODE >3689:C:\Users\Luca\AppData\Local\Temp\s6ok.
-37 cinit CODE >3690:C:\Users\Luca\AppData\Local\Temp\s6ok.
-38 cinit CODE >3691:C:\Users\Luca\AppData\Local\Temp\s6ok.
-3B cinit CODE >3695:C:\Users\Luca\AppData\Local\Temp\s6ok.
-3C cinit CODE >3696:C:\Users\Luca\AppData\Local\Temp\s6ok.
-3D cinit CODE >3697:C:\Users\Luca\AppData\Local\Temp\s6ok.
-3E cinit CODE >3698:C:\Users\Luca\AppData\Local\Temp\s6ok.
-3F cinit CODE >3699:C:\Users\Luca\AppData\Local\Temp\s6ok.
-40 cinit CODE >3700:C:\Users\Luca\AppData\Local\Temp\s6ok.
-41 cinit CODE >3701:C:\Users\Luca\AppData\Local\Temp\s6ok.
-42 cinit CODE >3702:C:\Users\Luca\AppData\Local\Temp\s6ok.
-43 cinit CODE >3703:C:\Users\Luca\AppData\Local\Temp\s6ok.
-44 cinit CODE >3704:C:\Users\Luca\AppData\Local\Temp\s6ok.
-45 cinit CODE >3705:C:\Users\Luca\AppData\Local\Temp\s6ok.
-46 cinit CODE >3706:C:\Users\Luca\AppData\Local\Temp\s6ok.
-48 cinit CODE >3712:C:\Users\Luca\AppData\Local\Temp\s6ok.
-48 cinit CODE >3713:C:\Users\Luca\AppData\Local\Temp\s6ok.
-49 cinit CODE >3714:C:\Users\Luca\AppData\Local\Temp\s6ok.
+16 cinit CODE >3519:C:\Users\Luca\AppData\Local\Temp\scog.
+16 cinit CODE >3522:C:\Users\Luca\AppData\Local\Temp\scog.
+16 cinit CODE >3635:C:\Users\Luca\AppData\Local\Temp\scog.
+17 cinit CODE >3636:C:\Users\Luca\AppData\Local\Temp\scog.
+18 cinit CODE >3637:C:\Users\Luca\AppData\Local\Temp\scog.
+19 cinit CODE >3638:C:\Users\Luca\AppData\Local\Temp\scog.
+1A cinit CODE >3639:C:\Users\Luca\AppData\Local\Temp\scog.
+1B cinit CODE >3640:C:\Users\Luca\AppData\Local\Temp\scog.
+1C cinit CODE >3641:C:\Users\Luca\AppData\Local\Temp\scog.
+1D cinit CODE >3642:C:\Users\Luca\AppData\Local\Temp\scog.
+1E cinit CODE >3643:C:\Users\Luca\AppData\Local\Temp\scog.
+21 cinit CODE >3647:C:\Users\Luca\AppData\Local\Temp\scog.
+22 cinit CODE >3651:C:\Users\Luca\AppData\Local\Temp\scog.
+23 cinit CODE >3652:C:\Users\Luca\AppData\Local\Temp\scog.
+24 cinit CODE >3653:C:\Users\Luca\AppData\Local\Temp\scog.
+25 cinit CODE >3654:C:\Users\Luca\AppData\Local\Temp\scog.
+26 cinit CODE >3655:C:\Users\Luca\AppData\Local\Temp\scog.
+27 cinit CODE >3656:C:\Users\Luca\AppData\Local\Temp\scog.
+28 cinit CODE >3657:C:\Users\Luca\AppData\Local\Temp\scog.
+29 cinit CODE >3658:C:\Users\Luca\AppData\Local\Temp\scog.
+2A cinit CODE >3659:C:\Users\Luca\AppData\Local\Temp\scog.
+2D cinit CODE >3680:C:\Users\Luca\AppData\Local\Temp\scog.
+2E cinit CODE >3681:C:\Users\Luca\AppData\Local\Temp\scog.
+2F cinit CODE >3682:C:\Users\Luca\AppData\Local\Temp\scog.
+30 cinit CODE >3683:C:\Users\Luca\AppData\Local\Temp\scog.
+31 cinit CODE >3684:C:\Users\Luca\AppData\Local\Temp\scog.
+32 cinit CODE >3685:C:\Users\Luca\AppData\Local\Temp\scog.
+33 cinit CODE >3686:C:\Users\Luca\AppData\Local\Temp\scog.
+34 cinit CODE >3687:C:\Users\Luca\AppData\Local\Temp\scog.
+35 cinit CODE >3688:C:\Users\Luca\AppData\Local\Temp\scog.
+36 cinit CODE >3689:C:\Users\Luca\AppData\Local\Temp\scog.
+37 cinit CODE >3690:C:\Users\Luca\AppData\Local\Temp\scog.
+38 cinit CODE >3691:C:\Users\Luca\AppData\Local\Temp\scog.
+3B cinit CODE >3695:C:\Users\Luca\AppData\Local\Temp\scog.
+3C cinit CODE >3696:C:\Users\Luca\AppData\Local\Temp\scog.
+3D cinit CODE >3697:C:\Users\Luca\AppData\Local\Temp\scog.
+3E cinit CODE >3698:C:\Users\Luca\AppData\Local\Temp\scog.
+3F cinit CODE >3699:C:\Users\Luca\AppData\Local\Temp\scog.
+40 cinit CODE >3700:C:\Users\Luca\AppData\Local\Temp\scog.
+41 cinit CODE >3701:C:\Users\Luca\AppData\Local\Temp\scog.
+42 cinit CODE >3702:C:\Users\Luca\AppData\Local\Temp\scog.
+43 cinit CODE >3703:C:\Users\Luca\AppData\Local\Temp\scog.
+44 cinit CODE >3704:C:\Users\Luca\AppData\Local\Temp\scog.
+45 cinit CODE >3705:C:\Users\Luca\AppData\Local\Temp\scog.
+46 cinit CODE >3706:C:\Users\Luca\AppData\Local\Temp\scog.
+48 cinit CODE >3712:C:\Users\Luca\AppData\Local\Temp\scog.
+48 cinit CODE >3713:C:\Users\Luca\AppData\Local\Temp\scog.
+49 cinit CODE >3714:C:\Users\Luca\AppData\Local\Temp\scog.
 4B text15 CODE >94:D:\Progetti\Misuratore_Potenze\Firmware\Sensore.X\ADC.c
 4B text15 CODE >104:D:\Progetti\Misuratore_Potenze\Firmware\Sensore.X\ADC.c
 4D text15 CODE >106:D:\Progetti\Misuratore_Potenze\Firmware\Sensore.X\ADC.c
@@ -497,34 +497,34 @@ EA text15 CODE >134:D:\Progetti\Misuratore_Potenze\Firmware\Sensore.X\ADC.c
 8A5 text45 CODE >51:D:\Progetti\Misuratore_Potenze\Firmware\Sensore.X\PGM.c
 8A5 text45 CODE >53:D:\Progetti\Misuratore_Potenze\Firmware\Sensore.X\PGM.c
 8AE text45 CODE >54:D:\Progetti\Misuratore_Potenze\Firmware\Sensore.X\PGM.c
-8B1 inittext CODE >3663:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8B1 inittext CODE >3664:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8B2 inittext CODE >3665:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8B2 inittext CODE >3666:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8B3 inittext CODE >3667:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8B4 inittext CODE >3668:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8B5 inittext CODE >3669:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8B6 inittext CODE >3670:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8B7 inittext CODE >3671:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8B8 inittext CODE >3672:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8B9 inittext CODE >3673:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8BA inittext CODE >3674:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8BB inittext CODE >3676:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8BC inittext CODE >3675:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8BD clrtext CODE >3618:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8BD clrtext CODE >3619:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8BE clrtext CODE >3620:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8BE clrtext CODE >3621:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8BF clrtext CODE >3622:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8C0 clrtext CODE >3623:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8C1 clrtext CODE >3624:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8C2 clrtext CODE >3625:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8C3 clrtext CODE >3626:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8C4 clrtext CODE >3627:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8C5 clrtext CODE >3628:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8C6 clrtext CODE >3629:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8C7 clrtext CODE >3631:C:\Users\Luca\AppData\Local\Temp\s6ok.
-8C8 clrtext CODE >3630:C:\Users\Luca\AppData\Local\Temp\s6ok.
+8B1 inittext CODE >3663:C:\Users\Luca\AppData\Local\Temp\scog.
+8B1 inittext CODE >3664:C:\Users\Luca\AppData\Local\Temp\scog.
+8B2 inittext CODE >3665:C:\Users\Luca\AppData\Local\Temp\scog.
+8B2 inittext CODE >3666:C:\Users\Luca\AppData\Local\Temp\scog.
+8B3 inittext CODE >3667:C:\Users\Luca\AppData\Local\Temp\scog.
+8B4 inittext CODE >3668:C:\Users\Luca\AppData\Local\Temp\scog.
+8B5 inittext CODE >3669:C:\Users\Luca\AppData\Local\Temp\scog.
+8B6 inittext CODE >3670:C:\Users\Luca\AppData\Local\Temp\scog.
+8B7 inittext CODE >3671:C:\Users\Luca\AppData\Local\Temp\scog.
+8B8 inittext CODE >3672:C:\Users\Luca\AppData\Local\Temp\scog.
+8B9 inittext CODE >3673:C:\Users\Luca\AppData\Local\Temp\scog.
+8BA inittext CODE >3674:C:\Users\Luca\AppData\Local\Temp\scog.
+8BB inittext CODE >3676:C:\Users\Luca\AppData\Local\Temp\scog.
+8BC inittext CODE >3675:C:\Users\Luca\AppData\Local\Temp\scog.
+8BD clrtext CODE >3618:C:\Users\Luca\AppData\Local\Temp\scog.
+8BD clrtext CODE >3619:C:\Users\Luca\AppData\Local\Temp\scog.
+8BE clrtext CODE >3620:C:\Users\Luca\AppData\Local\Temp\scog.
+8BE clrtext CODE >3621:C:\Users\Luca\AppData\Local\Temp\scog.
+8BF clrtext CODE >3622:C:\Users\Luca\AppData\Local\Temp\scog.
+8C0 clrtext CODE >3623:C:\Users\Luca\AppData\Local\Temp\scog.
+8C1 clrtext CODE >3624:C:\Users\Luca\AppData\Local\Temp\scog.
+8C2 clrtext CODE >3625:C:\Users\Luca\AppData\Local\Temp\scog.
+8C3 clrtext CODE >3626:C:\Users\Luca\AppData\Local\Temp\scog.
+8C4 clrtext CODE >3627:C:\Users\Luca\AppData\Local\Temp\scog.
+8C5 clrtext CODE >3628:C:\Users\Luca\AppData\Local\Temp\scog.
+8C6 clrtext CODE >3629:C:\Users\Luca\AppData\Local\Temp\scog.
+8C7 clrtext CODE >3631:C:\Users\Luca\AppData\Local\Temp\scog.
+8C8 clrtext CODE >3630:C:\Users\Luca\AppData\Local\Temp\scog.
 8C9 text34 CODE >152:D:\Progetti\Misuratore_Potenze\Firmware\Sensore.X\RTX.c
 8CB text34 CODE >155:D:\Progetti\Misuratore_Potenze\Firmware\Sensore.X\RTX.c
 8D6 text34 CODE >156:D:\Progetti\Misuratore_Potenze\Firmware\Sensore.X\RTX.c
@@ -1029,7 +1029,7 @@ _PIR1 11 0 ABS 0 - dist/default/debug\Sensore.X.debug.obj
 _PIR2 12 0 ABS 0 - dist/default/debug\Sensore.X.debug.obj
 _TMR0 15 0 ABS 0 - dist/default/debug\Sensore.X.debug.obj
 _WPUB 20D 0 ABS 0 - dist/default/debug\Sensore.X.debug.obj
-___sp 0 0 STACK 2 stack C:\Users\Luca\AppData\Local\Temp\s6ok.obj
+___sp 0 0 STACK 2 stack C:\Users\Luca\AppData\Local\Temp\scog.obj
 _batt A9 0 BANK1 1 bssBANK1 dist/default/debug\Sensore.X.debug.obj
 _main 1C70 0 CODE 0 maintext dist/default/debug\Sensore.X.debug.obj
 _sqrt A68 0 CODE 0 text16 dist/default/debug\Sensore.X.debug.obj
@@ -1040,7 +1040,7 @@ ltemp 7E 0 ABS 0 - dist/default/debug\Sensore.X.debug.obj
 CC1Strobe@e_stb 78 0 COMMON 1 cstackCOMMON dist/default/debug\Sensore.X.debug.obj
 ___ftadd@f1 20 0 BANK0 1 cstackBANK0 dist/default/debug\Sensore.X.debug.obj
 ___ftadd@f2 23 0 BANK0 1 cstackBANK0 dist/default/debug\Sensore.X.debug.obj
-start 28 0 CODE 0 init C:\Users\Luca\AppData\Local\Temp\s6ok.obj
+start 28 0 CODE 0 init C:\Users\Luca\AppData\Local\Temp\scog.obj
 ttemp 7E 0 ABS 0 - dist/default/debug\Sensore.X.debug.obj
 wtemp 7E 0 ABS 0 - dist/default/debug\Sensore.X.debug.obj
 ADCConv@i 161 0 BANK2 1 cstackBANK2 dist/default/debug\Sensore.X.debug.obj
@@ -1087,12 +1087,12 @@ ttemp2 84 0 ABS 0 - dist/default/debug\Sensore.X.debug.obj
 ttemp3 87 0 ABS 0 - dist/default/debug\Sensore.X.debug.obj
 ttemp4 7F 0 ABS 0 - dist/default/debug\Sensore.X.debug.obj
 NVMWrite@source 73 0 COMMON 1 cstackCOMMON dist/default/debug\Sensore.X.debug.obj
-intlevel0 0 0 CODE 0 functab C:\Users\Luca\AppData\Local\Temp\s6ok.obj
-intlevel1 0 0 CODE 0 functab C:\Users\Luca\AppData\Local\Temp\s6ok.obj
-intlevel2 0 0 CODE 0 functab C:\Users\Luca\AppData\Local\Temp\s6ok.obj
-intlevel3 0 0 CODE 0 functab C:\Users\Luca\AppData\Local\Temp\s6ok.obj
-intlevel4 0 0 CODE 0 functab C:\Users\Luca\AppData\Local\Temp\s6ok.obj
-intlevel5 0 0 CODE 0 functab C:\Users\Luca\AppData\Local\Temp\s6ok.obj
+intlevel0 0 0 CODE 0 functab C:\Users\Luca\AppData\Local\Temp\scog.obj
+intlevel1 0 0 CODE 0 functab C:\Users\Luca\AppData\Local\Temp\scog.obj
+intlevel2 0 0 CODE 0 functab C:\Users\Luca\AppData\Local\Temp\scog.obj
+intlevel3 0 0 CODE 0 functab C:\Users\Luca\AppData\Local\Temp\scog.obj
+intlevel4 0 0 CODE 0 functab C:\Users\Luca\AppData\Local\Temp\scog.obj
+intlevel5 0 0 CODE 0 functab C:\Users\Luca\AppData\Local\Temp\scog.obj
 NVMWrite@addr 71 0 COMMON 1 cstackCOMMON dist/default/debug\Sensore.X.debug.obj
 CC1Read@dst 77 0 COMMON 1 cstackCOMMON dist/default/debug\Sensore.X.debug.obj
 CC1Read@len 78 0 COMMON 1 cstackCOMMON dist/default/debug\Sensore.X.debug.obj
@@ -1207,7 +1207,7 @@ __size_of_SPIWrite 0 0 ABS 0 - dist/default/debug\Sensore.X.debug.obj
 _PGMCheckNvm 114A 0 CODE 0 text45 dist/default/debug\Sensore.X.debug.obj
 __size_of_SYSInit 0 0 ABS 0 - dist/default/debug\Sensore.X.debug.obj
 __size_of_SYSTask 0 0 ABS 0 - dist/default/debug\Sensore.X.debug.obj
-___int_sp 0 0 STACK 2 stack C:\Users\Luca\AppData\Local\Temp\s6ok.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Luca\AppData\Local\Temp\scog.obj
 __end_of___ftpack FF0 0 CODE 0 text27 dist/default/debug\Sensore.X.debug.obj
 DLYDelay_ms@i 75 0 COMMON 1 cstackCOMMON dist/default/debug\Sensore.X.debug.obj
 __Hbank0 0 0 ABS 0 bank0 -
@@ -1396,7 +1396,7 @@ _CC1Strobe 1288 0 CODE 0 text40 dist/default/debug\Sensore.X.debug.obj
 __Lintentry 8 0 CODE 0 intentry -
 ___lldiv@divisor 71 0 COMMON 1 cstackCOMMON dist/default/debug\Sensore.X.debug.obj
 __size_of_LEDFastFlash 0 0 ABS 0 - dist/default/debug\Sensore.X.debug.obj
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Luca\AppData\Local\Temp\s6ok.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Luca\AppData\Local\Temp\scog.obj
 __end_of_CC1Init 1912 0 CODE 0 text8 dist/default/debug\Sensore.X.debug.obj
 __end_of_CC1Read 1400 0 CODE 0 text35 dist/default/debug\Sensore.X.debug.obj
 __size_of_PGMWriteNvm 0 0 ABS 0 - dist/default/debug\Sensore.X.debug.obj
@@ -1514,8 +1514,8 @@ _LEDInit 111E 0 CODE 0 text51 dist/default/debug\Sensore.X.debug.obj
 ___lwdiv@divisor 71 0 COMMON 1 cstackCOMMON dist/default/debug\Sensore.X.debug.obj
 __CFG_VCAPEN$OFF 0 0 ABS 0 - dist/default/debug\Sensore.X.debug.obj
 ___lwtoft@c 79 0 COMMON 1 cstackCOMMON dist/default/debug\Sensore.X.debug.obj
-stackhi 2327 0 ABS 0 - C:\Users\Luca\AppData\Local\Temp\s6ok.obj
-stacklo 20E2 0 ABS 0 - C:\Users\Luca\AppData\Local\Temp\s6ok.obj
+stackhi 2327 0 ABS 0 - C:\Users\Luca\AppData\Local\Temp\scog.obj
+stacklo 20E2 0 ABS 0 - C:\Users\Luca\AppData\Local\Temp\scog.obj
 SPIWrite@srcPtr 71 0 COMMON 1 cstackCOMMON dist/default/debug\Sensore.X.debug.obj
 ?___lltoft 20 0 BANK0 1 cstackBANK0 dist/default/debug\Sensore.X.debug.obj
 ?___lwtoft 79 0 COMMON 1 cstackCOMMON dist/default/debug\Sensore.X.debug.obj

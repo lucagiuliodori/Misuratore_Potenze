@@ -29,7 +29,7 @@
  i soli NUM_ADCSAMPLES_CURR campioni.*/
 #define NUM_ADCSAMPLES_USEFULL_CURR (20)    //Numero di campioni da usare per il calcolo del'RMS della corrente misurata.
 
-#define RES 33.2                    //Valore in ohm della resistenza sul sensore di corrente.
+#define RES 33.2*2                  //Valore in ohm della resistenza sul sensore di corrente.
 #define WIND_RATIO 2000             //Rapporto spire del sensore in corrente.
 
 /*La misurazione della tensione della
